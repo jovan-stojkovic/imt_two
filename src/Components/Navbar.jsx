@@ -49,7 +49,7 @@ const Navbar = () => {
             </div>
           </div>
         </div>
-        <button className="menu-btn" onClick={handleMenu}></button>
+        <button className={`menu-btn ${menu ? "show-menu" : ""}`} onClick={handleMenu}></button>
       </div>
     </nav>
   );

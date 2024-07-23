@@ -7,6 +7,7 @@ nav {
 
   .nav-cont {
     max-width: 1200px;
+    padding: 0 10px;
     height: 100%;
     margin: 0 auto;
     display: flex;
@@ -76,14 +77,6 @@ nav {
     }
 
     .menu-btn {
-      all: unset;
-      height: 20px;
-      width: 20px;
-      background-image: url("/icons/menu.svg");
-      background-position: center;
-      background-repeat: no-repeat;
-      background-size: contain;
-      cursor: pointer;
       display: none;
     }
   }
@@ -111,11 +104,11 @@ nav {
         display: flex;
         transition: height 0.1s ease-out;
 
-
         .empty-space {
           width: 60%;
           height: 100%;
-          background-color: rgba(0, 0, 0, 0.3);
+          background-color: rgba(0, 0, 0, 0.2);
+          backdrop-filter: blur(10px);
         }
 
         .navlinks-cont {
@@ -159,7 +152,20 @@ nav {
       }
 
       .menu-btn {
+        all: unset;
+        height: 20px;
+        width: 20px;
+        background-image: url("/icons/menu.svg");
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: contain;
+        cursor: pointer;
         display: block;
+        transition: background-image 0.5s;
+
+        &.show-menu {
+          background-image: url("/icons/menu-close.svg");
+        }
       }
     }
   }
