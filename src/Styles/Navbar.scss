@@ -1,0 +1,166 @@
+@import "./App.scss";
+
+nav {
+  height: 80px;
+  background-color: $red;
+  width: 100%;
+
+  .nav-cont {
+    max-width: 1200px;
+    height: 100%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    #nav-logo {
+      height: 60px;
+      width: 60px;
+      background-image: url("/logos/logo.jpg");
+      background-size: contain;
+      background-position: center;
+      background-repeat: no-repeat;
+    }
+
+    .navlinks {
+      .navlinks-cont {
+        display: flex;
+        gap: 20px;
+        align-items: center;
+
+        .navlink {
+          all: unset;
+          font-size: 14px;
+          cursor: pointer;
+          transition: color 0.5s;
+
+          &:hover {
+            color: $white;
+          }
+
+          &.active {
+            color: $white;
+          }
+        }
+
+        .nav-btns {
+          display: flex;
+          gap: 5px;
+          .nav-btn {
+            all: unset;
+            height: 25px;
+            width: 25px;
+            background-position: center;
+            background-size: cover;
+            background-repeat: no-repeat;
+            cursor: pointer;
+            transition: all 0.5s;
+            filter: invert(0.1);
+            font-size: 14px;
+            content-visibility: hidden;
+
+            &.facebook {
+              background-image: url("/icons/facebook.svg");
+            }
+
+            &.instagram {
+              background-image: url("/icons/instagram.svg");
+            }
+
+            &:hover {
+              filter: invert(0.9);
+            }
+          }
+        }
+      }
+    }
+
+    .menu-btn {
+      all: unset;
+      height: 20px;
+      width: 20px;
+      background-image: url("/icons/menu.svg");
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: contain;
+      cursor: pointer;
+      display: none;
+    }
+  }
+}
+
+@media (max-width: 700px) {
+  nav {
+    height: 60px;
+
+    .nav-cont {
+      max-width: 95%;
+
+      #nav-logo {
+        height: 50px;
+        width: 50px;
+      }
+
+      .navlinks {
+        position: fixed;
+        height: 0;
+        overflow: hidden;
+        width: 100%;
+        top: 60px;
+        left: 0;
+        display: flex;
+        transition: height 0.1s ease-out;
+
+
+        .empty-space {
+          width: 60%;
+          height: 100%;
+          background-color: rgba(0, 0, 0, 0.3);
+        }
+
+        .navlinks-cont {
+          width: 40%;
+          height: 100%;
+          flex-direction: column;
+          align-items: baseline;
+          padding: 50px;
+          background-color: $red;
+
+          .navlink {
+            font-size: 16px;
+          }
+
+          .nav-btns {
+            flex-direction: column;
+            margin-top: 60vh;
+            .nav-btn {
+              filter: invert(0);
+              content-visibility: visible;
+
+              &.facebook {
+                background-image: none;
+              }
+
+              &.instagram {
+                background-image: none;
+              }
+
+              &:hover {
+                filter: invert(0);
+                color: $white;
+              }
+            }
+          }
+        }
+        &.show-menu {
+          height: 100%;
+          transition: height 0.3s ease-out;
+        }
+      }
+
+      .menu-btn {
+        display: block;
+      }
+    }
+  }
+}
