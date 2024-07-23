@@ -46,7 +46,8 @@ nav {
 
         .nav-btns {
           display: flex;
-          gap: 5px;
+          gap: 10px;
+          margin-left: 50px;
           .nav-btn {
             all: unset;
             height: 25px;
@@ -107,8 +108,8 @@ nav {
         .empty-space {
           width: 60%;
           height: 100%;
-          background-color: rgba(0, 0, 0, 0.2);
-          backdrop-filter: blur(10px);
+          background-color: rgba(0, 0, 0, 0);
+          backdrop-filter: blur(2px);
         }
 
         .navlinks-cont {
@@ -116,8 +117,8 @@ nav {
           height: 100%;
           flex-direction: column;
           align-items: baseline;
-          padding: 50px;
           background-color: $red;
+          padding-top: 50px;
 
           .navlink {
             font-size: 16px;
@@ -126,6 +127,7 @@ nav {
           .nav-btns {
             flex-direction: column;
             margin-top: 60vh;
+            margin-right: 0;
             .nav-btn {
               filter: invert(0);
               content-visibility: visible;

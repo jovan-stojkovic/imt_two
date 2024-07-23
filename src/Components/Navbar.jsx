@@ -44,11 +44,8 @@ const Navbar = () => {
     <nav>
       <div className="nav-cont">
         <Link id="nav-logo"></Link>
-        <div
-          className={`navlinks ${menu ? "show-menu" : ""}`}
-          onClick={handleMenu}
-        >
-          <div className="empty-space"></div>
+        <div className={`navlinks ${menu ? "show-menu" : ""}`}>
+          <div className="empty-space" onClick={handleMenu}></div>
           <motion.div
             variants={generalMotion}
             initial="hidden"
@@ -56,22 +53,22 @@ const Navbar = () => {
             className="navlinks-cont"
           >
             <motion.div variants={navlinksMotion}>
-              <NavLink className="navlink" to="/">
+              <NavLink className="navlink" to="/" onClick={handleMenu}>
                 POČETNA
               </NavLink>
             </motion.div>
             <motion.div variants={navlinksMotion}>
-              <NavLink className="navlink" to="/o-nama">
-                O NAMA
-              </NavLink>
-            </motion.div>
-            <motion.div variants={navlinksMotion}>
-              <NavLink className="navlink" to="/modeli">
+              <NavLink className="navlink" to="/modeli" onClick={handleMenu}>
                 MODELI
               </NavLink>
             </motion.div>
             <motion.div variants={navlinksMotion}>
-              <NavLink className="navlink" to="/kontakt">
+              <NavLink className="navlink" to="/vesti" onClick={handleMenu}>
+                VESTI
+              </NavLink>
+            </motion.div>
+            <motion.div variants={navlinksMotion}>
+              <NavLink className="navlink" to="/kontakt" onClick={handleMenu}>
                 KONTAKT
               </NavLink>
             </motion.div>

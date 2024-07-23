@@ -1,0 +1,23 @@
+@import "./App.scss";
+
+.home {
+  width: 100%;
+  .img-cont {
+      width: 100%;
+      background-color: $black;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      
+      img {
+          width: 100%;
+          max-width: 2200px;
+      }
+  }
+
+  .page-cont {
+    width: 1200px;
+    margin: 0 auto;
+    padding-top: 500px;
+  }
+}
