@@ -7,10 +7,10 @@ const Home = () => {
   const [expCount, setExpCount] = useState(0);
 
   const productsRef = useRef(null);
-  const isProductsInView = useInView(productsRef, { once: true, amount: 0.4 });
+  const isProductsInView = useInView(productsRef, { once: true, amount: 1 });
 
   const expRef = useRef(null);
-  const isExpInView = useInView(expRef, { once: true, amount: 0.4 });
+  const isExpInView = useInView(expRef, { once: true, amount: 1 });
 
   useEffect(() => {
     if (isProductsInView) {
@@ -38,7 +38,7 @@ const Home = () => {
     visible: {
       opacity: 1,
       transition: {
-        delay: 2,
+        delay: 1,
         duration: 0.5,
       },
     },
@@ -58,7 +58,7 @@ const Home = () => {
         <section ref={productsRef}>
           <div className="text-part">
             <h1>Industrija Mašina i Traktora</h1>
-            <p>
+            <p className="paragraph">
               Lorem ipsum dolor, sit amet consectetur adipisicing elit. Adipisci
               totam quisquam quae animi? Qui dignissimos laborum sed tempore
               eius molestias accusantium facilis? Voluptas delectus aspernatur
@@ -73,10 +73,12 @@ const Home = () => {
               rerum ducimus, maxime unde reprehenderit vel, quaerat nihil odit
               ea pariatur quas deserunt!
             </p>
-            <span>{`${productsCount}+`}</span>
-            <p>hiljada</p>
-            <p>proizvedenih</p>
-            <p>traktora</p>
+            <div className="count-segment">
+              <span className="count">{`${productsCount}+`}</span>
+              <p className="active-p">hiljada</p>
+              <p className="active-p">proizvedenih</p>
+              <p className="active-p">traktora</p>
+            </div>
           </div>
           <div className="img-part"></div>
         </section>
