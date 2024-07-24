@@ -51,9 +51,7 @@ const Home = () => {
         variants={imgMotion}
         initial="hidden"
         animate="visible"
-      >
-        <img src="/backgrounds/home.webp" alt="background-image" />
-      </motion.div>
+      ></motion.div>
       <div className="page-cont">
         <section ref={productsRef}>
           <div className="text-part">
