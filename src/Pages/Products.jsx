@@ -2,6 +2,7 @@ import "../Styles/Products.scss";
 import { motion, useInView } from "framer-motion";
 import VanillaTilt from "vanilla-tilt";
 import { useEffect, useRef } from "react";
+import { Link } from "react-router-dom";
 
 const Products = () => {
   useEffect(() => {
@@ -90,7 +91,8 @@ const Products = () => {
           variants={imgMotion}
           initial="hidden"
           animate="visible"
-        ></motion.div>
+        >
+        </motion.div>
         <div className="page-cont">
           <h1>Modeli</h1>
           <motion.div
@@ -106,10 +108,12 @@ const Products = () => {
                 className="single-product"
                 variants={productMotion}
               >
-                <img src={product.img} alt="tractor-image" />
-                <h3>{`IMT ${product.name}`}</h3>
-                <p className="hp">{`${product.hp}hp`}</p>
-                <p className="wd">{`${product.wd}WD`}</p>
+                <Link to={`/modeli/${product.name}`}>
+                  <img src={product.img} alt="tractor-image" />
+                  <h3>{`IMT ${product.name}`}</h3>
+                  <p className="hp">{`${product.hp}hp`}</p>
+                  <p className="wd">{`${product.wd}WD`}</p>
+                </Link>
               </motion.div>
             ))}
           </motion.div>

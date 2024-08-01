@@ -1,0 +1,80 @@
+@import "./App.scss";
+
+form {
+    width: 100%;
+    padding: 20px;
+  input {
+    all: unset;
+    width: calc(100% - 40px);
+    background-color: rgba(255, 255, 255, 0.5);
+    backdrop-filter: blur(2px);
+    height: 40px;
+    margin-bottom: 10px;
+    padding: 0 20px;
+    font-size: 15px;
+    color: $black;
+    letter-spacing: 2px;
+    cursor: pointer;
+    transition: 0.5s;
+    &::placeholder {
+      color: gray;
+      font-size: 15px;
+      letter-spacing: 2px;
+    }
+
+    &:hover {
+      background-color: rgba(255, 255, 255, 0.9);
+    }
+  }
+
+  #area {
+    all: unset;
+    padding: 20px;
+    width: calc(100% - 40px);
+    font-size: 15px;
+    color: $black;
+    letter-spacing: 2px;
+    background-color: rgba(255, 255, 255, 0.5);
+    backdrop-filter: blur(2px);
+    word-wrap: break-word;
+    line-height: 25px;
+    margin-bottom: 20px;
+    cursor: pointer;
+    transition: 0.5s;
+
+    &::placeholder {
+      color: gray;
+      font-size: 15px;
+      letter-spacing: 2px;
+    }
+
+    &:hover {
+      background-color: rgba(255, 255, 255, 0.9);
+    }
+  }
+
+  button {
+    all: unset;
+    width: calc(100% - 40px);
+    padding: 0 20px;
+    height: 60px;
+    color: white;
+    background-color: $red;
+    backdrop-filter: blur(2px);
+    font-size: 15px;
+    letter-spacing: 5px;
+    cursor: pointer;
+    transition: 0.5s;
+    &:hover {
+      filter: brightness(1.1);
+    }
+  }
+
+  .error {
+    color: rgb(213, 111, 111);
+    font-size: 12px;
+    letter-spacing: 2px;
+    text-align: right;
+    height: 14px;
+  }
+}

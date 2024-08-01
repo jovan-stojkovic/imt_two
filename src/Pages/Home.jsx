@@ -1,8 +1,7 @@
 import "../Styles/Home.scss";
 import { useState, useEffect, useRef } from "react";
-import { useInView } from "framer-motion";
 import { Link } from "react-router-dom";
-import { motion } from "framer-motion";
+import { motion, useInView } from "framer-motion";
 import VanillaTilt from "vanilla-tilt";
 
 const Home = () => {
