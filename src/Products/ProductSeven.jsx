@@ -45,9 +45,10 @@ const ProductSeven = () => {
 
         <div className="page-cont">
           <p className="upper-text">
-            IMT tractors, which range between 47 hp to 80 hp, are suitable for
-            cultivating agricultural lands, vineyards & orchards and for
-            infrastructure applications.
+            Our robust 4-cylinder engine delivers a remarkable 47-80 hp,
+            effortlessly propelling our versatile tractor, designed for optimal
+            comfort and productivity. Equipped with a 12-forward & 4- Reverse
+            Synchromesh transmission, seamless shifts are at your fingertips.
           </p>
           <div className="main-part">
             <div className="left">

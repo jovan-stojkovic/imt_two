@@ -46,7 +46,7 @@ const ProductFive = () => {
         <div className="page-cont">
           <p className="upper-text">
             IMT tractors, which range between 47 hp to 80 hp, are suitable for
-            cultivating agricultural lands, vineyards & orchards and for
+            cultivating agricultural land vineyards & orchards and for
             infrastructure applications.
           </p>
           <div className="main-part">
