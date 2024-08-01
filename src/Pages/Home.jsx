@@ -53,7 +53,7 @@ const Home = () => {
     visible: {
       opacity: 1,
       transition: {
-        delay: 1,
+        delay: 0.5,
         duration: 0.5,
       },
     },
@@ -164,6 +164,67 @@ const Home = () => {
             </p>
           </div>
           <div className="img-part"></div>
+        </motion.section>
+
+        <motion.section
+          className="flex-section"
+          variants={sectionMotion}
+          initial="hidden"
+          whileInView="visible"
+          viewport={{ amount: 0.4, once: true }}
+        >
+          <div className="left">
+            <h2>AKTUELNOSTI</h2>
+            <h4>Vesti i obaveštenja</h4>
+            <div className="news-part">
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae,
+                eius!
+              </p>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo,
+                architecto!
+              </p>
+              <p>Consectetur adipisicing elit. Quas, dignissimos officiis.</p>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea.
+              </p>
+              <p>
+                Lorem ipsum dolor sit amet consectetur elit. Eos ipsam voluptas
+                culpa.
+              </p>
+              <p>
+                Lorem ipsum dolor sit, adipisicing elit. Earum, sit rerum. Eos,
+                deserunt.
+              </p>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae,
+                eius!
+              </p>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo,
+                architecto!
+              </p>
+              <p>Consectetur adipisicing elit. Quas, dignissimos officiis.</p>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea.
+              </p>
+              <p>
+                Lorem ipsum dolor sit amet consectetur elit. Eos ipsam voluptas
+                culpa.
+              </p>
+              <p>
+                Lorem ipsum dolor sit, adipisicing elit. Earum, sit rerum. Eos,
+                deserunt.
+              </p>
+            </div>
+            <Link to="/vesti">POGLEDAJTE OSTALE VESTI</Link>
+          </div>
+          <div className="right">
+            <h2>Prodajna Mreža</h2>
+            <h4>Pronađite najbliže prodajno mesto</h4>
+            <div className="map-cont"></div>
+          </div>
         </motion.section>
       </div>
     </div>
