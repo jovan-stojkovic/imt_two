@@ -1,0 +1,93 @@
+@import "./App.scss";
+
+.products {
+  width: 100%;
+  min-height: 50vh;
+
+  .top-img-cont {
+    margin: 0 auto;
+    height: 90vh;
+    max-width: 2200px;
+    background-color: $black;
+    background-image: url("/backgrounds/products.webp");
+    background-size: cover;
+    background-position: center;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    border-radius: 10px;
+  }
+
+  .page-cont {
+    width: 1200px;
+    margin: 100px auto;
+    padding-top: 100px;
+    min-height: 90vh;
+    padding: 50px;
+    border-radius: 2px;
+
+    h1 {
+        font-size: 40px;
+        margin-bottom: 50px;
+        padding-left: 50px;
+    }
+
+    .products-grid {
+      width: 100%;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: flex-start;
+
+      .single-product {
+        width: calc(33% - 20px);
+        margin: 11.83px;
+        aspect-ratio: 1/1.1;
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: white;
+        border-radius: 2px;
+        box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+
+        img {
+          height: 65%;
+        }
+
+        h3 {
+          position: absolute;
+          width: 100%;
+          bottom: 0;
+          font-size: 30px;
+          text-align: right;
+          padding: 0 10px;
+          color: $black;
+        }
+
+        p {
+          position: absolute;
+          color: $black;
+          top: 30px;
+          font-size: 30px;
+          transform: rotate(270deg);
+          opacity: 0;
+          transition: opacity 0.5s;
+
+          &.hp {
+            right: 0;
+          }
+
+          &.wd {
+            left: 0;
+          }
+        }
+
+        &:hover {
+            cursor: pointer;
+
+            p {
+                opacity: 1;
+            }
+        }
+      }
+    }
+  }
+}

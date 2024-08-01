@@ -1,9 +1,9 @@
 import "../Styles/Home.scss";
 import { useState, useEffect, useRef } from "react";
 import { useInView } from "framer-motion";
-import TopImage from "../Components/TopImage";
 import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
+import VanillaTilt from "vanilla-tilt";
 
 const Home = () => {
   const [productsCount, setProductsCount] = useState(0);
@@ -30,6 +30,34 @@ const Home = () => {
     }
   }, [isProductsInView]);
 
+  useEffect(() => {
+    let elements = document.querySelectorAll(".category-link");
+    VanillaTilt.init(elements, {
+      max: 5,
+      speed: 1000,
+      scale: 1.1,
+      glare: true,
+    });
+
+    return () => {
+      elements.forEach((element) => {
+        element.vanillaTilt.destroy();
+      });
+    };
+  }, []);
+
+  const imgMotion = {
+    hidden: {
+      opacity: 0,
+    },
+    visible: {
+      opacity: 1,
+      transition: {
+        delay: 1,
+        duration: 0.5,
+      },
+    },
+  };
   const sectionMotion = {
     hidden: {
       opacity: 0,
@@ -49,10 +77,15 @@ const Home = () => {
 
   return (
     <div className="page home">
-      <TopImage />
+      <motion.div
+        className="top-img-cont"
+        variants={imgMotion}
+        initial="hidden"
+        animate="visible"
+      ></motion.div>
       <div className="page-cont">
         <motion.section
-        className="general-section"
+          className="general-section"
           ref={productsRef}
           variants={sectionMotion}
           initial="hidden"
@@ -95,15 +128,42 @@ const Home = () => {
         >
           <h1>Modeli</h1>
           <div className="model-group">
-            <Link to="/modeli/kategorija1" className="category one">
+            <Link to="/modeli/kategorija1" className="category-link one">
               <div className="category-img-part"></div>
               <h2>Kategorija 1</h2>
             </Link>
-            <Link to="/modeli/kategorija2" className="category two">
+            <Link to="/modeli/kategorija2" className="category-link two">
               <div className="category-img-part"></div>
               <h2>Kategorija 2</h2>
             </Link>
           </div>
+        </motion.section>
+
+        <motion.section
+          className="about-section"
+          variants={sectionMotion}
+          initial="hidden"
+          whileInView="visible"
+          viewport={{ amount: 0.4, once: true }}
+        >
+          <div className="text-part">
+            <h1>O Nama</h1>
+            <p className="paragraph">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam
+              reiciendis porro vel repellendus minima autem. Sapiente nobis rem
+              illum soluta eveniet iusto explicabo, architecto veritatis error
+              necessitatibus id, tempora corrupti, impedit quia? Quibusdam
+              doloribus, tempore dicta expedita, fuga dignissimos labore
+              pariatur voluptatem quasi deserunt voluptatibus? Iste accusantium
+              minus corrupti dicta minima provident, eaque numquam in nobis, at
+              quam enim ipsa optio accusamus atque, rem voluptate culpa?
+              Corporis recusandae cumque doloribus sequi reiciendis illum alias,
+              assumenda id tenetur in maiores aperiam libero? Ea quod quia qui
+              impedit vel, in totam non! Quod voluptas quisquam, voluptates at
+              ullam sit veritatis molestias facilis!
+            </p>
+          </div>
+          <div className="img-part"></div>
         </motion.section>
       </div>
     </div>
