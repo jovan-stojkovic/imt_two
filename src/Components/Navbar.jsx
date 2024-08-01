@@ -43,7 +43,7 @@ const Navbar = () => {
   return (
     <nav>
       <div className="nav-cont">
-        <Link id="nav-logo"></Link>
+        <Link id="nav-logo" to="/"></Link>
         <div className={`navlinks ${menu ? "show-menu" : ""}`}>
           <div className="empty-space" onClick={handleMenu}></div>
           <motion.div

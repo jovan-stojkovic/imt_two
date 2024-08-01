@@ -1,9 +1,13 @@
 @import "./App.scss";
 
 nav {
-  height: 80px;
-  background-color: $red;
+  height: 70px;
+  background-color: rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(5px);
   width: 100%;
+  position: fixed;
+  top: 0;
+  z-index: 1000;
 
   .nav-cont {
     max-width: 1200px;
@@ -18,9 +22,11 @@ nav {
       height: 60px;
       width: 60px;
       background-image: url("/logos/logo.jpg");
-      background-size: contain;
+      background-size: 90%;
       background-position: center;
       background-repeat: no-repeat;
+      border-radius: 100px;
+      background-color: $red;
     }
 
     .navlinks {
