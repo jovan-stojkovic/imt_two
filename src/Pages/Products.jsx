@@ -107,7 +107,12 @@ const Products = () => {
                 className="single-product"
                 variants={productMotion}
               >
-                <Link to={`/modeli/${product.name}`}>
+                <Link
+                  to={`/modeli/${product.name}`}
+                  onClick={() => {
+                    window.scrollTo({ top: 0, behavior: "smooth" });
+                  }}
+                >
                   <img src={product.img} alt="tractor-image" />
                   <h3>{`IMT ${product.name}`}</h3>
                   <p className="hp">{`${product.hp}hp`}</p>

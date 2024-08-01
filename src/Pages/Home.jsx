@@ -127,11 +127,11 @@ const Home = () => {
         >
           <h1>Modeli</h1>
           <div className="model-group">
-            <Link to="/modeli/kategorija1" className="category-link one">
+            <Link className="category-link one">
               <div className="category-img-part"></div>
               <h2>Kategorija 1</h2>
             </Link>
-            <Link to="/modeli/kategorija2" className="category-link two">
+            <Link className="category-link two">
               <div className="category-img-part"></div>
               <h2>Kategorija 2</h2>
             </Link>
@@ -217,7 +217,14 @@ const Home = () => {
                 deserunt.
               </p>
             </div>
-            <Link to="/vesti">POGLEDAJTE OSTALE VESTI</Link>
+            <Link
+              to="/vesti"
+              onClick={() => {
+                window.scrollTo({ top: 0, behavior: "smooth" });
+              }}
+            >
+              POGLEDAJTE OSTALE VESTI
+            </Link>
           </div>
           <div className="right">
             <h2>Prodajna Mreža</h2>

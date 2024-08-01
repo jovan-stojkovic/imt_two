@@ -1,0 +1,282 @@
+@import "./App.scss";
+
+.contact {
+    width: 100%;
+    min-height: 50vh;
+  
+    .top-img-cont {
+      margin: 0 auto;
+      height: 40vh;
+      max-width: 2200px;
+      background-color: $black;
+      background-image: url("/backgrounds/contact-banner.jpg");
+      background-size: cover;
+      background-position: center;
+      box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    }
+  
+    .page-cont {
+      width: 1200px;
+      margin: 0 auto;
+      padding-top: 100px;
+  
+      .general-section {
+        background-color: white;
+        padding: 50px;
+        border-radius: 2px;
+        width: 100%;
+        margin-bottom: 100px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  
+        .text-part {
+          width: 60%;
+          height: 100%;
+          h1 {
+            font-size: 30px;
+            letter-spacing: 1px;
+            margin-bottom: 20px;
+            color: $black;
+          }
+  
+          p {
+            line-height: 22px;
+            color: $black;
+            text-align: justify;
+  
+            &.paragraph {
+              margin-bottom: 20px;
+            }
+  
+            &.active-p {
+              font-size: 13px;
+              line-height: 15px;
+            }
+          }
+  
+          .count-segment {
+            padding: 20px;
+            width: 120px;
+            border-radius: 10px;
+            box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+            .count {
+              font-size: 35px;
+              font-weight: 600;
+            }
+          }
+        }
+  
+        .img-part {
+          background-image: url("/products/1.webp");
+          width: 40%;
+          height: 40vh;
+          background-position: center;
+          background-repeat: no-repeat;
+          background-size: contain;
+        }
+      }
+  
+      .category-section {
+        background-color: white;
+        padding: 50px;
+        border-radius: 2px;
+        width: 100%;
+        margin-bottom: 100px;
+        box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  
+        h1 {
+          font-size: 30px;
+          letter-spacing: 1px;
+          margin-bottom: 20px;
+          color: $black;
+        }
+  
+        .model-group {
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+  
+          .category-link {
+            height: 40vh;
+            width: 40%;
+            text-decoration: none;
+  
+            .category-img-part {
+              background-image: url("/products/549M.png");
+              height: 100%;
+              width: 100%;
+              background-position: center;
+              background-size: 80%;
+              background-repeat: no-repeat;
+            }
+  
+            h2 {
+              color: $black;
+              text-align: center;
+              margin-top: -20px;
+            }
+  
+            &.two {
+              .category-img-part {
+                background-image: url("/products/587M.png");
+              }
+            }
+          }
+        }
+      }
+  
+      .about-section {
+        background-color: white;
+        padding: 50px;
+        border-radius: 2px;
+        width: 100%;
+        margin-bottom: 100px;
+        box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+  
+        .text-part {
+          width: 60%;
+          height: 100%;
+          h1 {
+            font-size: 30px;
+            letter-spacing: 1px;
+            margin-bottom: 20px;
+            color: $black;
+          }
+  
+          p {
+            line-height: 22px;
+            color: $black;
+            text-align: justify;
+  
+            &.paragraph {
+              margin-bottom: 20px;
+            }
+  
+            &.active-p {
+              font-size: 13px;
+              line-height: 15px;
+            }
+          }
+  
+          .count-segment {
+            padding: 20px;
+            width: 120px;
+            border-radius: 10px;
+            box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+            .count {
+              font-size: 35px;
+              font-weight: 600;
+            }
+          }
+        }
+  
+        .img-part {
+          background-image: url("https://www.gradnja.rs/wp-content/uploads/2018/07/imt-beograd-1.jpg");
+          width: 35%;
+          height: 40vh;
+          background-position: center;
+          background-repeat: no-repeat;
+          background-size: contain;
+        }
+      }
+  
+      .flex-section {
+        background-color: white;
+        padding: 50px;
+        border-radius: 2px;
+        width: 100%;
+        margin-bottom: 100px;
+        box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+        display: flex;
+        gap: 20px;
+        align-items: baseline;
+        justify-content: space-between;
+  
+        .left {
+          width: 50%;
+          h2 {
+            font-size: 25px;
+            color: $black;
+          }
+  
+          h4 {
+            font-weight: 400;
+            font-size: 17px;
+            color: $gray;
+            margin-bottom: 20px;
+          }
+  
+          .news-part {
+            color: $black;
+            margin-bottom: 20px;
+            
+            p {
+              font-size: 16px;
+              margin-bottom: 10px;
+              background-image: linear-gradient($gray 0 0);
+              background-position: 0 100%;
+              background-size: 0% 2px;
+              background-repeat: no-repeat;
+              transition: background-size 0.5s, background-position 0s 0.5s;
+              width: fit-content;
+              cursor: pointer;
+  
+              &:hover {
+                background-position: 100% 100%;
+                background-size: 100% 2px;
+              }
+            }
+          }
+  
+          a {
+            text-decoration: none;
+            color: $red;
+            background-image: linear-gradient($red 0 0);
+            background-position: 0 100%;
+            background-size: 0% 2px;
+            background-repeat: no-repeat;
+            transition: background-size 0.5s, background-position 0s 0.5s;
+            width: fit-content;
+            cursor: pointer;
+  
+            &:hover {
+              background-position: 100% 100%;
+              background-size: 100% 2px;
+            }
+          }
+        }
+  
+        .right {
+          width: 50%;
+          display: flex;
+          flex-direction: column;
+          align-items: end;
+          h2 {
+            font-size: 25px;
+            color: $black;
+          }
+  
+          h4 {
+            font-weight: 400;
+            font-size: 17px;
+            color: $gray;
+            margin-bottom: 20px;
+          }
+  
+          .map-cont {
+            height: 400px;
+            width: 100%;
+            background-image: url("/rest/map.jpg");
+            background-position: center;
+            background-size: cover;
+            background-repeat: no-repeat;
+          }
+        }
+      }
+    }
+  }

@@ -12,6 +12,7 @@ import ProductFour from "./Products/ProductFour";
 import ProductFive from "./Products/ProductFive";
 import ProductSix from "./Products/ProductSix";
 import ProductSeven from "./Products/ProductSeven";
+import Contact from "./Pages/Contact";
 
 const App = () => {
   return (
@@ -30,6 +31,7 @@ const App = () => {
           <Route path="/modeli/565.2 DI" element={<ProductFive />} />
           <Route path="/modeli/577M HVAC" element={<ProductSix />} />
           <Route path="/modeli/587M HVAC" element={<ProductSeven />} />
+          <Route path="/kontakt" element={<Contact />} />
         </Routes>
         <Footer />
       </div>

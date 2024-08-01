@@ -43,7 +43,13 @@ const Navbar = () => {
   return (
     <nav>
       <div className="nav-cont">
-        <Link id="nav-logo" to="/"></Link>
+        <Link
+          id="nav-logo"
+          to="/"
+          onClick={() => {
+            window.scrollTo({ top: 0, behavior: "smooth" });
+          }}
+        ></Link>
         <div className={`navlinks ${menu ? "show-menu" : ""}`}>
           <div className="empty-space" onClick={handleMenu}></div>
           <motion.div
@@ -53,22 +59,50 @@ const Navbar = () => {
             className="navlinks-cont"
           >
             <motion.div variants={navlinksMotion}>
-              <NavLink className="navlink" to="/" onClick={handleMenu}>
+              <NavLink
+                className="navlink"
+                to="/"
+                onClick={() => {
+                  handleMenu();
+                  window.scrollTo({ top: 0, behavior: "smooth" });
+                }}
+              >
                 POČETNA
               </NavLink>
             </motion.div>
             <motion.div variants={navlinksMotion}>
-              <NavLink className="navlink" to="/modeli" onClick={handleMenu}>
+              <NavLink
+                className="navlink"
+                to="/modeli"
+                onClick={() => {
+                  handleMenu();
+                  window.scrollTo({ top: 0, behavior: "smooth" });
+                }}
+              >
                 MODELI
               </NavLink>
             </motion.div>
             <motion.div variants={navlinksMotion}>
-              <NavLink className="navlink" to="/vesti" onClick={handleMenu}>
+              <NavLink
+                className="navlink"
+                to="/vesti"
+                onClick={() => {
+                  handleMenu();
+                  window.scrollTo({ top: 0, behavior: "smooth" });
+                }}
+              >
                 VESTI
               </NavLink>
             </motion.div>
             <motion.div variants={navlinksMotion}>
-              <NavLink className="navlink" to="/kontakt" onClick={handleMenu}>
+              <NavLink
+                className="navlink"
+                to="/kontakt"
+                onClick={() => {
+                  handleMenu();
+                  window.scrollTo({ top: 0, behavior: "smooth" });
+                }}
+              >
                 KONTAKT
               </NavLink>
             </motion.div>
