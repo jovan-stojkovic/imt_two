@@ -8,6 +8,9 @@ import Footer from "./Components/Footer";
 import ProductOne from "./Products/ProductOne";
 import ProductTwo from "./Products/ProductTwo";
 import ProductThree from "./Products/ProductThree";
+import ProductFour from "./Products/ProductFour";
+import ProductFive from "./Products/ProductFive";
+
 
 const App = () => {
   return (
@@ -22,6 +25,9 @@ const App = () => {
           <Route path="/modeli/539.2 DI" element={<ProductOne />} />
           <Route path="/modeli/539.3 DI" element={<ProductTwo />} />
           <Route path="/modeli/549.3 DI" element={<ProductThree />} />
+          <Route path="/modeli/549M OS" element={<ProductFour />} />
+          <Route path="/modeli/565.2 DI" element={<ProductFive />} />
+
         </Routes>
         <Footer />
       </div>
