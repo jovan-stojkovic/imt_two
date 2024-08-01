@@ -2,7 +2,7 @@ import "../Styles/Product.scss";
 import { motion } from "framer-motion";
 import Form from "../Components/Form";
 
-const ProductFour = () => {
+const ProductSix = () => {
   const imgMotion = {
     hidden: {
       opacity: 0,
@@ -29,11 +29,11 @@ const ProductFour = () => {
     },
   };
 
-  const title = "IMT 549M OS";
+  const title = "IMT 577M HVAC";
 
   return (
     <>
-      <div className="page product four">
+      <div className="page product six">
         <motion.div
           className="top-img-cont"
           variants={imgMotion}
@@ -72,21 +72,23 @@ const ProductFour = () => {
                   <p className="l">Steering</p>
                   <p className="l">Ground Clearance</p>
                   <p className="l">Brakes</p>
+                  <p className="l">Comfort</p>
                 </div>
                 <div className="right-side">
-                  <p className="r">47</p>
+                  <p className="r">75</p>
                   <p className="r">4WD</p>
                   <p className="r">Dual</p>
-                  <p className="r">Partial Constant Mesh</p>
-                  <p className="r">8 Forward + 2 Reverse</p>
-                  <p className="r">34 kmph</p>
-                  <p className="r">Live PTO, 540 rpm</p>
+                  <p className="r">Partial Synchromesh</p>
+                  <p className="r">12 Forward + 4 Reverse</p>
+                  <p className="r">32 kmph</p>
+                  <p className="r">Independent PTO, 540 & 750 rpm</p>
                   <p className="r">Draft, Position & Response Control</p>
-                  <p className="r">1700 kgf</p>
+                  <p className="r">2400 kgf</p>
                   <p className="r">Yes</p>
                   <p className="r">Power</p>
-                  <p className="r">227 mm</p>
+                  <p className="r">330 mm</p>
                   <p className="r">Oil Immersed Brakes</p>
+                  <p className="r">HVAC cabin, Projector Headlamps</p>
                 </div>
               </div>
             </div>
@@ -97,4 +99,4 @@ const ProductFour = () => {
   );
 };
 
-export default ProductFour;
+export default ProductSix;
