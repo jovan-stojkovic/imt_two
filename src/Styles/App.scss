@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap");
 
 $red: rgb(235, 34, 39);
 $black: rgb(35, 31, 32);
@@ -43,5 +43,23 @@ main {
   img {
     height: 50px;
     filter: invert(0.5);
+  }
+}
+
+@media (max-width: 700px) {
+  main {
+    .nav-background {
+      height: 60px;
+    }
+  }
+
+  .to-the-top-button {
+    bottom: 20px;
+    right: 20px;
+    width: 40px;
+    height: 40px;
+    img {
+      height: 40px;
+    }
   }
 }
