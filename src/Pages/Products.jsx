@@ -67,7 +67,7 @@ const Products = () => {
     { name: "549M OS", img: "/products/IMT-549M-OS.webp", hp: 47, wd: 4 },
     { name: "565.2 DI", img: "/products/IMT-565.2-DI.webp", hp: 63, wd: 4 },
     {
-      name: "IMT 577M HVAC",
+      name: "577M HVAC",
       img: "/products/IMT-577M-HVAC.webp",
       hp: 75,
       wd: 4,
@@ -91,8 +91,7 @@ const Products = () => {
           variants={imgMotion}
           initial="hidden"
           animate="visible"
-        >
-        </motion.div>
+        ></motion.div>
         <div className="page-cont">
           <h1>Modeli</h1>
           <motion.div
