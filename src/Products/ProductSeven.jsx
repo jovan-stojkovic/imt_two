@@ -57,7 +57,7 @@ const ProductSeven = () => {
               <Form title={title} />
             </div>
             <div className="right">
-              <h4>Specifikacije Traktora</h4>
+              <h2>Specifikacije Traktora</h2>
               <div className="specs">
                 <div className="left-side">
                   <p className="l">hp</p>

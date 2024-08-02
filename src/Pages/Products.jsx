@@ -114,7 +114,7 @@ const Products = () => {
                   }}
                 >
                   <img src={product.img} alt="tractor-image" />
-                  <h3>{`IMT ${product.name}`}</h3>
+                  <h1>{`IMT ${product.name}`}</h1>
                   <p className="hp">{`${product.hp}hp`}</p>
                   <p className="wd">{`${product.wd}WD`}</p>
                 </Link>

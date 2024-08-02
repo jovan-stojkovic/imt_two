@@ -107,6 +107,10 @@ h1 {
   @include headline1()
 }
 
+h2 {
+  @include headline2()
+}
+
 .to-the-top-button {
   position: fixed;
   bottom: 120px;
