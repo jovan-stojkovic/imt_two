@@ -85,18 +85,6 @@ const Navbar = () => {
             <motion.div variants={navlinksMotion}>
               <NavLink
                 className="navlink"
-                to="/vesti"
-                onClick={() => {
-                  handleMenu();
-                  window.scrollTo({ top: 0, behavior: "smooth" });
-                }}
-              >
-                VESTI
-              </NavLink>
-            </motion.div>
-            <motion.div variants={navlinksMotion}>
-              <NavLink
-                className="navlink"
                 to="/kontakt"
                 onClick={() => {
                   handleMenu();

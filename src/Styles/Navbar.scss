@@ -105,9 +105,43 @@ nav {
 @media (max-width: 1440px) {
   $app-width: 1200px;
   nav {
-  
     .nav-cont {
       width: $app-width;
+    }
+  }
+}
+
+@media (max-width: 1024px) {
+  $app-width: 900px;
+
+  nav {
+    height: 60px;
+
+    .nav-cont {
+      width: $app-width;
+
+      #nav-logo {
+        height: 45px;
+        width: 45px;
+      }
+
+      .navlinks {
+        .navlinks-cont {
+          gap: 15px;
+
+          .navlink {
+            font-size: 14px;
+            padding: 5px 15px;
+          }
+
+          .nav-btns {
+            .nav-btn {
+              height: 20px;
+              width: 20px;
+            }
+          }
+        }
+      }
     }
   }
 }

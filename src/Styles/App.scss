@@ -71,17 +71,35 @@ main {
 
 @media (max-width: 1440px) {
   $app-width: 1200px;
-  
+
   .page {
-  
     .top-img-cont {
       height: 600px;
-
     }
-  
+
     .page-cont {
       width: $app-width;
       padding-top: 60px;
+    }
+  }
+}
+
+@media (max-width: 1024px) {
+  $app-width: 900px;
+
+  main {
+    .nav-background {
+      height: 60px;
+    }
+  }
+  .page {
+    .top-img-cont {
+      height: 450px;
+      aspect-ratio: 2.3/1;
+    }
+    .page-cont {
+      width: $app-width;
+      padding-top: 40px;
     }
   }
 }
