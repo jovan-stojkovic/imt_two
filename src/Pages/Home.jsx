@@ -173,7 +173,7 @@ const Home = () => {
           viewport={{ amount: 0.4, once: true }}
         >
           <div className="left">
-            <h2>AKTUELNOSTI</h2>
+            <h2>Aktuelnosti</h2>
             <h4>Vesti i obaveštenja</h4>
             <div className="news-part">
               <p>
