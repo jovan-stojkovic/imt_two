@@ -1,47 +1,41 @@
 @import "./App.scss";
 
 nav {
-  height: 70px;
-  background-color: rgba(0, 0, 0, 0);
-  backdrop-filter: blur(10px);
+  height: $nav-height;
+  background-color: rgba(255, 255, 255, 0);
+  backdrop-filter: blur(20px);
   width: 100%;
   position: fixed;
   top: 0;
-  z-index: 1000;
+  z-index: 100;
 
   .nav-cont {
     width: $app-width;
     height: 100%;
     margin: 0 auto;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+    @include flex($justify: space-between);
 
     #nav-logo {
-      height: 60px;
-      width: 60px;
+      height: 80%;
+      aspect-ratio: 1;
       background-image: url("/logos/logo.jpg");
-      background-size: 90%;
-      background-position: center;
-      background-repeat: no-repeat;
+      @include background($size: 80%);
       border-radius: 100px;
       background-color: $red;
     }
 
     .navlinks {
       .navlinks-cont {
-        display: flex;
+        @include flex();
         gap: 20px;
-        align-items: center;
 
         .navlink {
           all: unset;
-          font-size: 16px;
           cursor: pointer;
+          font-size: 16px;
           transition: color 0.5s;
           font-weight: 500;
           padding: 5px 20px;
-          // background-color: black;
           border-radius: 2px;
           transition: background-color 0.2s, color 0.2s;
           background-image: linear-gradient(
@@ -69,11 +63,8 @@ nav {
           margin-left: 50px;
           .nav-btn {
             all: unset;
-            height: 25px;
-            width: 25px;
-            background-position: center;
-            background-size: cover;
-            background-repeat: no-repeat;
+            height: 30px;
+            width: 30px;
             cursor: pointer;
             transition: all 0.5s;
             filter: invert(0.1);
@@ -98,50 +89,6 @@ nav {
 
     .menu-btn {
       display: none;
-    }
-  }
-}
-
-@media (max-width: 1440px) {
-  $app-width: 1200px;
-  nav {
-    .nav-cont {
-      width: $app-width;
-    }
-  }
-}
-
-@media (max-width: 1024px) {
-  $app-width: 900px;
-
-  nav {
-    height: 60px;
-
-    .nav-cont {
-      width: $app-width;
-
-      #nav-logo {
-        height: 45px;
-        width: 45px;
-      }
-
-      .navlinks {
-        .navlinks-cont {
-          gap: 15px;
-
-          .navlink {
-            font-size: 14px;
-            padding: 5px 15px;
-          }
-
-          .nav-btns {
-            .nav-btn {
-              height: 20px;
-              width: 20px;
-            }
-          }
-        }
-      }
     }
   }
 }

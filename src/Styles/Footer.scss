@@ -5,20 +5,16 @@ footer {
   background-color: $white;
 
   .footer-cont {
+    @include flex($justify: space-between);
     width: $app-width;
     margin: 0 auto;
     height: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
 
     .left {
-      height: 100px;
-      width: 100px;
+      @include background($size: 80%);
+      height: 100%;
+      aspect-ratio: 1;
       background-image: url("/logos/logo-w.JPG");
-      background-size: 80%;
-      background-position: center;
-      background-repeat: no-repeat;
     }
 
     .center {
@@ -26,14 +22,9 @@ footer {
       gap: 50px;
 
       p {
-        padding-left: 30px;
-        height: 50px;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        background-size: 25px;
-        background-position: left center;
-        background-repeat: no-repeat;
+        padding-left: 40px;
+        @include flex();
+        @include background($size: 25px, $position: left);
 
         &:nth-of-type(1) {
           background-image: url("/icons/phone.svg");
@@ -49,8 +40,7 @@ footer {
     }
 
     .right {
-      display: flex;
-      flex-direction: column;
+      @include flex($direction: column, $align: start);
       width: 100px;
       gap: 3px;
       a {
@@ -67,61 +57,6 @@ footer {
         &:hover {
           background-position: 100% 100%;
           background-size: 100% 3px;
-        }
-      }
-    }
-  }
-}
-
-@media (max-width: 1440px) {
-  $app-width: 1200px;
-
-  footer {
-    .footer-cont {
-      width: $app-width;
-    }
-  }
-}
-
-@media (max-width: 1024px) {
-  $app-width: 900px;
-
-  footer {
-    height: 80px;
-  
-    .footer-cont {
-      width: $app-width;
-  
-      .left {
-        height: 80px;
-        width: 80px;
-      }
-  
-      .center {
-        gap: 30px;
-      }
-    }
-  }
-}
-
-@media (max-width: 700px) {
-  footer {
-    height: 100px;
-
-    .footer-cont {
-      width: 99%;
-
-      .center {
-        flex-direction: column;
-        gap: 1px;
-
-        p {
-          height: 30px;
-          justify-content: left;
-          background-size: 15px;
-          &:nth-of-type(3) {
-            background-size: 14px;
-          }
         }
       }
     }
