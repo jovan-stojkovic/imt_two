@@ -23,7 +23,7 @@
       font-size: 20px;
       letter-spacing: 2px;
       line-height: 40px;
-      margin-right: 20px;
+      margin-bottom: 20px;
     }
 
     .main-part {
@@ -144,5 +144,13 @@
 
   .img {
     background-image: url("/products/IMT-587M-HVAC.webp");
+  }
+}
+
+@media (max-width: 1440px) {
+  .product {
+    .page-cont {
+      padding-bottom: 80px;
+    }
   }
 }

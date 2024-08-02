@@ -14,7 +14,7 @@ form {
     font-size: 15px;
     color: $black;
     letter-spacing: 2px;
-    cursor: pointer;
+    cursor: text;
     transition: 0.5s;
     &::placeholder {
       color: gray;
@@ -39,7 +39,7 @@ form {
     word-wrap: break-word;
     line-height: 25px;
     margin-bottom: 20px;
-    cursor: pointer;
+    cursor: text;
     transition: 0.5s;
 
     &::placeholder {

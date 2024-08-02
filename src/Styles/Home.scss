@@ -215,6 +215,77 @@
   }
 }
 
+@media (max-width: 1440px) {
+  .home {
+    .page-cont {
+      section {
+        margin-bottom: 80px;
+
+        h1 {
+          font-size: 35px;
+        }
+
+        &.general-section {
+          .img-part {
+            width: 450px;
+            height: 500px;
+          }
+        }
+      }
+
+      .category-section {
+        .model-group {
+          .category-link {
+            height: 500px;
+            width: 500px;
+
+            h2 {
+              margin-top: -60px;
+              font-size: 25px;
+            }
+          }
+        }
+      }
+
+      .about-section {
+        .img-part {
+          width: 450px;
+          height: 450px;
+        }
+      }
+
+      .flex-section {
+        .left {
+          width: 50%;
+          h2 {
+            font-size: 20px;
+          }
+          h4 {
+            font-size: 16px;
+          }
+          .news-part {
+            p {
+              font-size: 16px;
+            }
+          }
+        }
+
+        .right {
+          h2 {
+            font-size: 20px;
+          }
+          h4 {
+            font-size: 16px;
+          }
+          .map-cont {
+            width: 80%;
+          }
+        }
+      }
+    }
+  }
+}
+
 @media (max-width: 700px) {
   .home {
     width: 100%;

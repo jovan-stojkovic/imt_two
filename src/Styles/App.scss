@@ -35,7 +35,7 @@ main {
 
   .top-img-cont {
     margin: 0 auto;
-    height: 1100px;
+    height: 900px;
     aspect-ratio: 2.4/1;
     background-size: cover;
     background-position: center top;
@@ -66,6 +66,23 @@ main {
   img {
     height: 50px;
     filter: invert(0.5);
+  }
+}
+
+@media (max-width: 1440px) {
+  $app-width: 1200px;
+  
+  .page {
+  
+    .top-img-cont {
+      height: 600px;
+
+    }
+  
+    .page-cont {
+      width: $app-width;
+      padding-top: 60px;
+    }
   }
 }
 

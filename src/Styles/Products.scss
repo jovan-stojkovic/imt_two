@@ -78,3 +78,31 @@
     }
   }
 }
+
+@media (max-width: 1440px) {
+  $app-width: 1200px;
+
+  .products {
+    .page-cont {
+      h1 {
+        font-size: 45px;
+      }
+
+      .products-grid {
+        .single-product {
+          margin: 12px;
+
+          a {
+            img {
+              height: 60%;
+            }
+
+            h3 {
+              font-size: 35px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
