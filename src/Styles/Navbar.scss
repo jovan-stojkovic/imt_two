@@ -10,16 +10,16 @@ nav {
   z-index: 100;
 
   .nav-cont {
+    @include flex($justify: space-between);
     width: $app-width;
     height: 100%;
     margin: 0 auto;
-    @include flex($justify: space-between);
 
     #nav-logo {
+      @include background($size: 80%);
       height: 80%;
       aspect-ratio: 1;
       background-image: url("/logos/logo.jpg");
-      @include background($size: 80%);
       border-radius: 100px;
       background-color: $red;
     }

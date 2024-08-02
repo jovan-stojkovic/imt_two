@@ -22,9 +22,9 @@ footer {
       gap: 50px;
 
       p {
-        padding-left: 40px;
         @include flex();
         @include background($size: 25px, $position: left);
+        padding-left: 40px;
 
         &:nth-of-type(1) {
           background-image: url("/icons/phone.svg");

@@ -31,9 +31,9 @@
       .left {
         width: 50%;
         .img {
+          @include background();
           height: $img-height;
           width: 100%;
-          @include background();
         }
         h2 {
           text-align: center;

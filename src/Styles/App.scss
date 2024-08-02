@@ -1,5 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap");
-@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Display:ital,wght@0,100..900;1,100..900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+Display:ital,wght@0,100..900;1,100..900&display=swap");
 
 $red: rgb(235, 34, 39);
 $black: rgb(35, 31, 32);
@@ -55,7 +55,7 @@ $nav-height: 70px;
   flex-direction: $direction;
 }
 
-@mixin background ($size: contain, $position: center){
+@mixin background($size: contain, $position: center) {
   background-position: $position;
   background-repeat: no-repeat;
   background-size: $size;
@@ -86,30 +86,39 @@ main {
   min-height: 100vh;
 
   .top-img-cont {
+    @include background($size: cover, $position: center top);
     margin: 0 auto;
-    height: 900px;
-    aspect-ratio: 2.4/1;
-    background-size: cover;
-    background-position: center top;
+    width: 100vw;
+    max-width: calc($app-width * 1.5);
+    aspect-ratio: 2.5/1;
   }
 
   .page-cont {
     width: $app-width;
     margin: 0 auto;
-    padding-top: 100px;
+    padding-top: $page-padding;
   }
 }
 
 p {
-  @include paragraph()
+  @include paragraph();
 }
 
 h1 {
-  @include headline1()
+  @include headline1();
 }
 
 h2 {
-  @include headline2()
+  @include headline2();
+}
+
+h4 {
+  font-weight: 400;
+  font-size: 20px;
+  color: $gray;
+  margin-top: -25px;
+  margin-bottom: 20px;
+  letter-spacing: 2px;
 }
 
 .to-the-top-button {
@@ -155,7 +164,6 @@ h2 {
 
 //320px - 425px
 @media (max-width: 425px) {
-
 }
 
 //<<<     320px

@@ -39,10 +39,10 @@
         }
 
         .img-part {
+          @include background();
           background-image: url("/products/1.webp");
           width: $img-width;
           height: $img-height;
-          @include background();
         }
       }
     }
@@ -57,10 +57,10 @@
           text-decoration: none;
 
           .category-img-part {
+            @include background($size: 80%);
             background-image: url("/products/549M.png");
             height: 100%;
             width: 100%;
-            @include background($size: 80%);
           }
 
           h2 {
@@ -87,23 +87,16 @@
       }
 
       .img-part {
+        @include background();
         background-image: url("https://www.gradnja.rs/wp-content/uploads/2018/07/imt-beograd-1.jpg");
         width: $img-width;
         height: $img-height;
-        @include background();
       }
     }
 
     .flex-section {
       @include flex($justify: space-between, $align: baseline);
       gap: 20px;
-
-      h4 {
-        font-weight: 400;
-        font-size: 18px;
-        color: $gray;
-        margin-bottom: 20px;
-      }
    
       .left {
         width: 50%;
@@ -150,8 +143,8 @@
       }
 
       .right {
-        width: 50%;
         @include flex($align: end, $direction: column, $justify: space-between);
+        width: 50%;
 
         .map-cont {
           height: 400px;

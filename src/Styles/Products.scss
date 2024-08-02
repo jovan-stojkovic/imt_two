@@ -26,10 +26,10 @@
         box-shadow: $shadow;
 
         a {
+          @include flex;
           width: 100%;
           height: 100%;
           position: relative;
-          @include flex;
 
           img {
             height: 75%;
