@@ -2,10 +2,10 @@
 
 footer {
   height: 100px;
-  background-color: white;
+  background-color: $white;
 
   .footer-cont {
-    width: 1200px;
+    width: $app-width;
     margin: 0 auto;
     height: 100%;
     display: flex;
