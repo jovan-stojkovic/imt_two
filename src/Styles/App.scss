@@ -13,23 +13,38 @@ $quicksand: "Quicksand", sans-serif;
 
 $app-width: 1500px;
 $p-size: 16px;
-$p-height: 22px;
+$p-height: 25px;
 $p-spacing: 2px;
-$h1-size: 30px;
-$h1-spacing: 5px;
+$h1-size: 40px;
+$h1-spacing: 3px;
+$h2-size: 30px;
+$h2-spacing: 3px;
 $page-padding: 100px;
+$img-width: 550px;
+$img-height: 500px;
 
 @mixin paragraph {
   color: $black;
   font-size: $p-size;
   line-height: $p-height;
   letter-spacing: $p-spacing;
+  text-align: justify;
 }
 
 @mixin headline1 {
   color: $black;
   font-size: $h1-size;
   letter-spacing: $h1-spacing;
+  margin-bottom: 20px;
+  font-weight: 500;
+}
+
+@mixin headline2 {
+  color: $black;
+  font-size: $h2-size;
+  letter-spacing: $h2-spacing;
+  margin-bottom: 20px;
+  font-weight: 500;
 }
 
 @mixin flex($align: center, $justify: center, $direction: row) {
@@ -37,6 +52,12 @@ $page-padding: 100px;
   align-items: $align;
   justify-content: $justify;
   flex-direction: $direction;
+}
+
+@mixin background ($size: contain){
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: $size;
 }
 
 * {
@@ -76,6 +97,14 @@ main {
     margin: 0 auto;
     padding-top: 100px;
   }
+}
+
+p {
+  @include paragraph()
+}
+
+h1 {
+  @include headline1()
 }
 
 .to-the-top-button {

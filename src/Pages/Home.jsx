@@ -176,46 +176,14 @@ const Home = () => {
             <h2>Aktuelnosti</h2>
             <h4>Vesti i obaveštenja</h4>
             <div className="news-part">
-              <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae,
-                eius!
+              <p className="news">Lorem ipsum dolor sit amet.</p>
+              <p className="news">Lorem ipsum dolor sit.</p>
+              <p className="news">Lorem ipsum dolor sit amet consectetur.</p>
+              <p className="news">
+                Lorem ipsum dolor sit amet, consectetur adipis.
               </p>
-              <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo,
-                architecto!
-              </p>
-              <p>Consectetur adipisicing elit. Quas, dignissimos officiis.</p>
-              <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea.
-              </p>
-              <p>
-                Lorem ipsum dolor sit amet consectetur elit. Eos ipsam voluptas
-                culpa.
-              </p>
-              <p>
-                Lorem ipsum dolor sit, adipisicing elit. Earum, sit rerum. Eos,
-                deserunt.
-              </p>
-              <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae,
-                eius!
-              </p>
-              <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo,
-                architecto!
-              </p>
-              <p>Consectetur adipisicing elit. Quas, dignissimos officiis.</p>
-              <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea.
-              </p>
-              <p>
-                Lorem ipsum dolor sit amet consectetur elit. Eos ipsam voluptas
-                culpa.
-              </p>
-              <p>
-                Lorem ipsum dolor sit, adipisicing elit. Earum, sit rerum. Eos,
-                deserunt.
-              </p>
+              <p className="news">Lorem, ipsum dolor.</p>
+              <p className="news">Lorem ipsum dolor sit amet.</p>
             </div>
             <Link
               to="/vesti"
