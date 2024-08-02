@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Display:ital,wght@0,100..900;1,100..900&display=swap');
 
 $red: rgb(235, 34, 39);
 $black: rgb(35, 31, 32);
@@ -7,13 +8,42 @@ $white: rgb(255, 255, 255);
 
 $shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 
+$noto: "Noto Sans Display", sans-serif;
+$quicksand: "Quicksand", sans-serif;
+
 $app-width: 1500px;
+$p-size: 16px;
+$p-height: 22px;
+$p-spacing: 2px;
+$h1-size: 30px;
+$h1-spacing: 5px;
+$page-padding: 100px;
+
+@mixin paragraph {
+  color: $black;
+  font-size: $p-size;
+  line-height: $p-height;
+  letter-spacing: $p-spacing;
+}
+
+@mixin headline1 {
+  color: $black;
+  font-size: $h1-size;
+  letter-spacing: $h1-spacing;
+}
+
+@mixin flex($align: center, $justify: center, $direction: row) {
+  display: flex;
+  align-items: $align;
+  justify-content: $justify;
+  flex-direction: $direction;
+}
 
 * {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-  font-family: "Quicksand", sans-serif;
+  font-family: $noto;
 }
 
 main {
@@ -69,55 +99,31 @@ main {
   }
 }
 
-@media (max-width: 1440px) {
-  $app-width: 1200px;
-
-  .page {
-    .top-img-cont {
-      height: 600px;
-    }
-
-    .page-cont {
-      width: $app-width;
-      padding-top: 60px;
-    }
-  }
+//1440px - 2000px
+@media (max-width: 1700px) {
+  $app-width: 1400px;
 }
 
+//1024px - 1440px
+@media (max-width: 1440px) {
+  $app-width: 1000px;
+}
+
+//768px - 1024px
 @media (max-width: 1024px) {
   $app-width: 900px;
-
-  main {
-    .nav-background {
-      height: 60px;
-    }
-  }
-  .page {
-    .top-img-cont {
-      height: 450px;
-      aspect-ratio: 2.3/1;
-    }
-    .page-cont {
-      width: $app-width;
-      padding-top: 40px;
-    }
-  }
 }
 
-@media (max-width: 700px) {
-  main {
-    .nav-background {
-      height: 60px;
-    }
-  }
+//425px - 768px
+@media (max-width: 768px) {
+  $app-width: 700px;
+}
 
-  .to-the-top-button {
-    bottom: 20px;
-    right: 20px;
-    width: 40px;
-    height: 40px;
-    img {
-      height: 40px;
-    }
-  }
+//320px - 425px
+@media (max-width: 425px) {
+
+}
+
+//<<<     320px
+@media (max-width: 320px) {
 }

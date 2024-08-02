@@ -289,12 +289,13 @@
   .home {
     .page-cont {
       section {
+        padding: 40px;
         margin-bottom: 60px;
-  
+
         h1 {
           font-size: 30px;
         }
-  
+
         &.general-section {
           p {
             font-size: 14px;
@@ -316,62 +317,116 @@
           }
         }
       }
-  
+
       .category-section {
         .model-group {
-  
           .category-link {
             height: 400px;
             width: 450px;
-  
+
             h2 {
               margin-top: -40px;
             }
           }
         }
       }
-  
+
       .about-section {
         .text-part {
           font-size: 14px;
         }
-  
+
         .img-part {
           width: 350px;
         }
       }
-  
+
       .flex-section {
-  
         .left {
-  
           h2 {
             font-size: 18px;
           }
-  
+
           h4 {
             font-size: 15px;
           }
-  
+
           .news-part {
             p {
               font-size: 14px;
             }
           }
         }
-  
+
         .right {
           h2 {
             font-size: 18px;
           }
-  
+
           h4 {
             font-size: 15px;
           }
-  
+
           .map-cont {
             width: 80%;
           }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .home {
+    .page-cont {
+      section {
+        padding: 30px;
+        margin-bottom: 40px;
+
+        h1 {
+          font-size: 22px;
+        }
+
+        &.general-section {
+          p {
+            font-size: 14px;
+            line-height: 20px;
+          }
+
+          .text-part {
+            p.active-p {
+              font-size: 12px;
+            }
+
+            .count-segment {
+              .count {
+                font-size: 30px;
+              }
+            }
+          }
+
+          .img-part {
+            width: 350px;
+          }
+        }
+      }
+
+      .category-section {
+        .model-group {
+          .category-link {
+            height: 350px;
+            width: 400px;
+
+            h2 {
+              font-size: 25px;
+            }
+          }
+        }
+      }
+
+      .about-section {
+        .img-part {
+          width: 300px;
         }
       }
     }
