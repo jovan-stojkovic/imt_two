@@ -89,7 +89,7 @@ const Home = () => {
           variants={sectionMotion}
           initial="hidden"
           whileInView="visible"
-          viewport={{ amount: 0.4, once: true }}
+          viewport={{ amount: 0.2, once: true }}
         >
           <div className="text-part">
             <h1>Industrija Mašina i Traktora</h1>
@@ -123,7 +123,7 @@ const Home = () => {
           variants={sectionMotion}
           initial="hidden"
           whileInView="visible"
-          viewport={{ amount: 0.4, once: true }}
+          viewport={{ amount: 0.2, once: true }}
         >
           <h1>Modeli</h1>
           <div className="model-group">
@@ -143,7 +143,7 @@ const Home = () => {
           variants={sectionMotion}
           initial="hidden"
           whileInView="visible"
-          viewport={{ amount: 0.4, once: true }}
+          viewport={{ amount: 0.2, once: true }}
         >
           <div className="text-part">
             <h1>O Nama</h1>
@@ -170,7 +170,7 @@ const Home = () => {
           variants={sectionMotion}
           initial="hidden"
           whileInView="visible"
-          viewport={{ amount: 0.4, once: true }}
+          viewport={{ amount: 0.2, once: true }}
         >
           <div className="left">
             <h2>Aktuelnosti</h2>
