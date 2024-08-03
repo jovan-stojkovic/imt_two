@@ -132,12 +132,13 @@ main {
     @include background($size: cover, $position: center top);
     margin: 0 auto;
     width: 100vw;
-    max-width: calc($app-width * 1.5);
-    aspect-ratio: 2.5/1;
+    max-width: 2200px;
+    aspect-ratio: 2.35/1;
   }
 
   .page-cont {
     width: $app-width;
+    max-width: 1800px;
     margin: 0 auto;
     padding-top: $page-padding;
   }
@@ -161,12 +162,17 @@ main {
 @media (max-width: 1440px) {
   $h1-size: 32px;
   $page-padding: 40px;
+  $nav-height: 60px;
+
 
   @mixin headline1 {
     font-size: $h1-size;
   }
 
   main {
+    .nav-background {
+      height: $nav-height;
+    }
     h1 {
       @include headline1();
     }
@@ -187,7 +193,7 @@ main {
   $h2-size: 20px;
   $h2-spacing: 2px;
   $page-padding: 50px;
-  $nav-height: 60px;
+  $nav-height: 50px;
 
   @mixin paragraph {
     font-size: $p-size;
@@ -298,7 +304,7 @@ main {
   }
 }
 
-//<470px
+//<<<<<<<<470px
 @media (max-width: 470px) {
   $p-size: 12px;
   $p-height: 18px;
@@ -308,7 +314,7 @@ main {
   $h2-size: 17px;
   $h2-spacing: 2px;
   $page-padding: 25px;
-  $nav-height: 50px;
+  $nav-height: 40px;
 
   @mixin paragraph {
     font-size: $p-size;

@@ -81,7 +81,7 @@ const Products = () => {
   ];
 
   const ref = useRef(null);
-  const isInView = useInView(ref, { once: true, amount: 0.4 });
+  const isInView = useInView(ref, { once: true, amount: 0.2 });
 
   return (
     <>

@@ -18,8 +18,8 @@
       margin-bottom: $page-padding;
 
       .single-product {
-        width: calc(33% - 20px);
-        margin: 12.5px;
+        width: 31%;
+        margin: 1.1%;
         aspect-ratio: 1/1.1;
         background-color: $white;
         border-radius: 2px;
@@ -73,3 +73,153 @@
     }
   }
 }
+
+//1024px - 1440px
+@media (max-width: 1440px) {
+  $page-padding: 40px;
+  $h1-size: 25px;
+  $h1-spacing: 2px;
+
+  @mixin headline1 {
+    font-size: $h1-size;
+    letter-spacing: $h1-spacing;
+  }
+
+  .products {
+    .page-cont {
+      h1 {
+        margin-bottom: $page-padding;
+      }
+
+      .products-grid {
+        margin-bottom: $page-padding;
+
+        .single-product {
+          a {
+            h1 {
+              font-size: $h1-size;
+              letter-spacing: $h1-spacing;
+            }
+
+            p {
+              font-size: 25px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+//768px - 1024px
+@media (max-width: 1024px) {
+  $page-padding: 20px;
+  $h1-size: 22px;
+
+  @mixin headline1 {
+    font-size: $h1-size;
+  }
+
+  .products {
+    .page-cont {
+      h1 {
+        margin-bottom: $page-padding;
+      }
+
+      .products-grid {
+        margin-bottom: $page-padding;
+
+        .single-product {
+          a {
+            h1 {
+              font-size: $h1-size;
+            }
+
+            p {
+              font-size: 20px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+//470px - 768px
+@media (max-width: 768px) {
+  $page-padding: 10px;
+  $h1-size: 20px;
+
+  @mixin headline1 {
+    font-size: $h1-size;
+  }
+
+  .products {
+    .page-cont {
+      h1 {
+        margin-bottom: $page-padding;
+      }
+
+      .products-grid {
+        margin-bottom: $page-padding;
+
+        .single-product {
+          width: 45%;
+          margin: 2.5%;
+
+          a {
+            h1 {
+              font-size: $h1-size;
+            }
+
+            p {
+              top: 30px;
+              font-size: 18px;
+              opacity: 0.5;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+//<<<<<<<<470px
+@media (max-width: 470px) {
+  $page-padding: 10px;
+  $h1-size: 30px;
+
+  @mixin headline1 {
+    font-size: $h1-size;
+  }
+
+  .products {
+    .page-cont {
+      h1 {
+        margin-bottom: $page-padding;
+      }
+
+      .products-grid {
+        margin-bottom: $page-padding;
+
+        .single-product {
+          width: 90%;
+          margin: 5%;
+
+          a {
+            h1 {
+              font-size: $h1-size;
+            }
+
+            p {
+              font-size: 25px;
+              opacity: 0.5;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+

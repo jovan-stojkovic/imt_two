@@ -157,10 +157,6 @@
   }
 }
 
-//1440px - 1700px
-@media (max-width: 1700px) {
-  $img-width: 500px;
-}
 //1024px - 1440px
 @media (max-width: 1440px) {
   $page-padding: 40px;
@@ -237,6 +233,7 @@
     }
   }
 }
+
 //768px - 1024px
 @media (max-width: 1024px) {
   $page-padding: 30px;
@@ -325,6 +322,7 @@
     }
   }
 }
+
 //470px - 768px
 @media (max-width: 768px) {
   $page-padding: 20px;
