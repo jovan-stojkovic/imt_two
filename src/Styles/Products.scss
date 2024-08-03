@@ -194,6 +194,9 @@
   }
 
   .products {
+    .top-img-cont {
+      background-image: url("/backgrounds/products-mobile.webp");
+    }
     .page-cont {
       h1 {
         margin-bottom: $page-padding;

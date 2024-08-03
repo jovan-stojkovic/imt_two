@@ -62,3 +62,84 @@ footer {
     }
   }
 }
+
+//768px - 1024px
+@media (max-width: 1024px) {
+  footer {
+    height: 90px;
+
+    .footer-cont {
+      .center {
+        display: flex;
+        gap: 30px;
+
+        p {
+          @include background($size: 20px, $position: left);
+          height: 30px;
+
+          &:nth-of-type(3) {
+            background-size: 16px;
+          }
+        }
+      }
+
+      .right {
+        a {
+          font-size: 15px;
+        }
+      }
+    }
+  }
+}
+
+//470px - 768px
+@media (max-width: 768px) {
+  footer {
+    height: 300px;
+
+    .footer-cont {
+      @include flex($direction: column);
+      gap: 30px;
+
+      .left {
+        height: 120px;
+      }
+
+      .center {
+        display: flex;
+        gap: 30px;
+
+        p {
+          @include background($size: 20px, $position: left);
+          padding-left: 30px;
+          height: 30px;
+
+          &:nth-of-type(3) {
+            background-image: url("/icons/location.svg");
+            background-size: 15px;
+          }
+        }
+      }
+
+      .right {
+        @include flex($direction: row, $align: start);
+        gap: 20px;
+      }
+    }
+  }
+}
+
+//<<<<<<<<470px
+@media (max-width: 470px) {
+  footer {
+    .footer-cont {
+      gap: 20px;
+
+      .center {
+        display: flex;
+        flex-direction: column;
+        gap: 0px;
+      }
+    }
+  }
+}
