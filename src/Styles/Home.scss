@@ -237,7 +237,6 @@
     }
   }
 }
-
 //768px - 1024px
 @media (max-width: 1024px) {
   $page-padding: 30px;
@@ -326,7 +325,7 @@
     }
   }
 }
-//425px - 768px
+//470px - 768px
 @media (max-width: 768px) {
   $page-padding: 20px;
   $section-padding: 20px;
@@ -341,9 +340,6 @@
   }
 
   .home {
-    .top-img-cont {
-      background-image: url("/backgrounds/home-mobile.webp");
-    }
     .page-cont {
       section {
         padding: $section-padding;
@@ -443,8 +439,8 @@
     }
   }
 }
-//<<<<<<< 425px
-@media (max-width: 425px) {
+//<470px
+@media (max-width: 470px) {
   $page-padding: 20px;
   $section-padding: 15px;
   $h2-size: 15px;
@@ -458,6 +454,9 @@
   }
 
   .home {
+    .top-img-cont {
+      background-image: url("/backgrounds/home-mobile.webp");
+    }
     .page-cont {
       section {
         padding: $section-padding;
@@ -492,10 +491,12 @@
 
       .about-section {
         .img-part {
-          width: $img-width;
-          height: 200px;
+          width: 100%;
+          height: 300px;
         }
       }
     }
   }
 }
+
+

@@ -231,7 +231,7 @@ main {
   }
 }
 
-//425px - 768px
+//470px - 768px
 @media (max-width: 768px) {
   $p-size: 13px;
   $p-height: 20px;
@@ -291,7 +291,6 @@ main {
   .page {
     .top-img-cont {
       width: 100vw;
-      aspect-ratio: 1/1.4;
     }
     .page-cont {
       padding-top: $page-padding;
@@ -299,8 +298,8 @@ main {
   }
 }
 
-//<<<<<<< 425px
-@media (max-width: 425px) {
+//<470px
+@media (max-width: 470px) {
   $p-size: 12px;
   $p-height: 18px;
   $p-spacing: 1px;
