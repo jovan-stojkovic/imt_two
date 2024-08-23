@@ -1,33 +1,10 @@
 import "../Styles/Home.scss";
-import { useState, useEffect, useRef } from "react";
+import { useEffect, useRef } from "react";
 import { Link } from "react-router-dom";
-import { motion, useInView } from "framer-motion";
+import { motion } from "framer-motion";
 import VanillaTilt from "vanilla-tilt";
 
 const Home = () => {
-  const [productsCount, setProductsCount] = useState(0);
-
-  const productsRef = useRef(null);
-  const isProductsInView = useInView(productsRef, { once: true, amount: 1 });
-
-  useEffect(() => {
-    if (isProductsInView) {
-      let productsStart = 0;
-      const productsEnd = 700;
-      const productsDuration = 2000;
-      const productsIncrementTime = Math.floor(productsDuration / productsEnd);
-
-      const productsTimer = setInterval(() => {
-        productsStart += 1;
-        setProductsCount(productsStart);
-        if (productsStart === productsEnd) {
-          clearInterval(productsTimer);
-        }
-      }, productsIncrementTime);
-
-      return () => clearInterval(productsTimer);
-    }
-  }, [isProductsInView]);
 
   useEffect(() => {
     let elements = document.querySelectorAll(".category-link");
@@ -85,7 +62,6 @@ const Home = () => {
       <div className="page-cont">
         <motion.section
           className="general-section"
-          ref={productsRef}
           variants={sectionMotion}
           initial="hidden"
           whileInView="visible"
@@ -108,12 +84,6 @@ const Home = () => {
               rerum ducimus, maxime unde reprehenderit vel, quaerat nihil odit
               ea pariatur quas deserunt!
             </p>
-            <div className="count-segment">
-              <span className="count">{`${productsCount}+`}</span>
-              <p className="active-p">hiljada</p>
-              <p className="active-p">proizvedenih</p>
-              <p className="active-p">traktora</p>
-            </div>
           </div>
           <div className="img-part"></div>
         </motion.section>
@@ -163,42 +133,6 @@ const Home = () => {
             </p>
           </div>
           <div className="img-part"></div>
-        </motion.section>
-
-        <motion.section
-          className="flex-section"
-          variants={sectionMotion}
-          initial="hidden"
-          whileInView="visible"
-          viewport={{ amount: 0.2, once: true }}
-        >
-          <div className="left">
-            <h2>Aktuelnosti</h2>
-            <h4>Vesti i obaveštenja</h4>
-            <div className="news-part">
-              <p className="news">Lorem ipsum dolor sit amet.</p>
-              <p className="news">Lorem ipsum dolor sit.</p>
-              <p className="news">Lorem ipsum dolor sit amet consectetur.</p>
-              <p className="news">
-                Lorem ipsum dolor sit amet, consectetur adipis.
-              </p>
-              <p className="news">Lorem, ipsum dolor.</p>
-              <p className="news">Lorem ipsum dolor sit amet.</p>
-            </div>
-            <Link
-              to="/vesti"
-              onClick={() => {
-                window.scrollTo({ top: 0, behavior: "smooth" });
-              }}
-            >
-              POGLEDAJTE OSTALE VESTI
-            </Link>
-          </div>
-          <div className="right">
-            <h2>Prodajna Mreža</h2>
-            <h4>Pronađite najbliže prodajno mesto</h4>
-            <div className="map-cont"></div>
-          </div>
         </motion.section>
       </div>
     </div>

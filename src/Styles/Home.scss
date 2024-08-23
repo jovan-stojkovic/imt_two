@@ -6,8 +6,13 @@
   }
   .page-cont {
     section {
+      background-image: url("/backgrounds/page.JPG");
+      background-size: cover;
+      background-position: top right;
+      background-repeat: no-repeat;
       background-color: $white;
       padding: $section-padding;
+      padding-top: 300px;
       border-radius: 2px;
       width: 100%;
       margin-bottom: $page-padding;
