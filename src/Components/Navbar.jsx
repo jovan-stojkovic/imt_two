@@ -70,7 +70,42 @@ const Navbar = () => {
                 POČETNA
               </NavLink>
             </motion.div>
-            <motion.div variants={navlinksMotion}>
+
+            <motion.div variants={navlinksMotion} className="about-us">
+              <NavLink
+                className="navlink"
+                to="/o-nama"
+                onClick={() => {
+                  handleMenu();
+                  window.scrollTo({ top: 0, behavior: "smooth" });
+                }}
+              >
+                O NAMA
+              </NavLink>
+
+              <div className="dropdown-about">
+                <div className="padding-div"></div>
+                <div className="dropdown-about-cont">
+                  <NavLink className="dropdown-navlink" to="/o-nama/tafe">
+                    TAFE
+                  </NavLink>
+                  <NavLink className="dropdown-navlink" to="/o-nama/imt">
+                    INDUSTRIJA MAŠINA I TRAKTORA
+                  </NavLink>
+                  <NavLink className="dropdown-navlink" to="/o-nama/industrija">
+                    INDUSTRIJA MEHANIZACIJE I TRAKTORA
+                  </NavLink>
+                  <NavLink
+                    className="dropdown-navlink"
+                    to="/o-nama/politika-kvaliteta"
+                  >
+                    POLITIKA KVALITETA
+                  </NavLink>
+                </div>
+              </div>
+            </motion.div>
+
+            <motion.div variants={navlinksMotion} className="models">
               <NavLink
                 className="navlink"
                 to="/modeli"
@@ -81,7 +116,86 @@ const Navbar = () => {
               >
                 MODELI
               </NavLink>
+
+              <div className="dropdown-models">
+                <div className="padding-div"></div>
+                <div className="dropdown-models-cont">
+                  <NavLink className="dropdown-navlink" to="/modeli/standardni">
+                    STANDARDNI
+                  </NavLink>
+                  <NavLink className="dropdown-navlink" to="/modeli/kompaktni">
+                    KOMPAKTNI
+                  </NavLink>
+                  <NavLink className="dropdown-navlink" to="/modeli/magna">
+                    MAGNA
+                  </NavLink>
+                </div>
+              </div>
             </motion.div>
+
+            <motion.div variants={navlinksMotion}>
+              <NavLink
+                className="navlink"
+                to="/prodajna-mreza"
+                onClick={() => {
+                  handleMenu();
+                  window.scrollTo({ top: 0, behavior: "smooth" });
+                }}
+              >
+                PRODAJNA MREŽA
+              </NavLink>
+            </motion.div>
+
+            <motion.div variants={navlinksMotion} className="download">
+              <NavLink
+                className="navlink"
+                to="/preuzimanje"
+                onClick={() => {
+                  handleMenu();
+                  window.scrollTo({ top: 0, behavior: "smooth" });
+                }}
+              >
+                PREUZIMANJE
+              </NavLink>
+
+              <div className="dropdown-download">
+                <div className="padding-div"></div>
+                <div className="dropdown-download-cont">
+                  <NavLink
+                    className="dropdown-navlink"
+                    to="/preuzimanje/o-firmi"
+                  >
+                    PODACI O FIRMI
+                  </NavLink>
+                  <NavLink
+                    className="dropdown-navlink"
+                    to="/preuzimanje/brosure"
+                  >
+                    BROŠURE
+                  </NavLink>
+                  <NavLink
+                    className="dropdown-navlink"
+                    to="/preuzimanje/upustva"
+                  >
+                    UPUTSTVA
+                  </NavLink>
+                </div>
+              </div>
+            </motion.div>
+
+            <motion.div variants={navlinksMotion}>
+              <NavLink
+                className="navlink"
+                to="/media"
+                onClick={() => {
+                  handleMenu();
+                  window.scrollTo({ top: 0, behavior: "smooth" });
+                }}
+              >
+                MEDIA
+              </NavLink>
+            </motion.div>
+
             <motion.div variants={navlinksMotion}>
               <NavLink
                 className="navlink"

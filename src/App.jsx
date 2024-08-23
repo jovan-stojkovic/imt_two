@@ -3,6 +3,9 @@ import Navbar from "./Components/Navbar";
 import { Routes, Route } from "react-router-dom";
 import Home from "./Pages/Home";
 import Products from "./Pages/Products";
+import About from "./Pages/About";
+import Network from "./Pages/Network";
+import Media from "./Pages/Media";
 import BackToTopButton from "./Components/BackToTopButton";
 import Footer from "./Components/Footer";
 import ProductOne from "./Products/ProductOne";
@@ -23,6 +26,8 @@ const App = () => {
       <div className="app">
         <Routes>
           <Route path="/" element={<Home />} />
+          <Route path="/o-nama" element={<About />} />
+
           <Route path="/modeli" element={<Products />} />
           <Route path="/modeli/539.2 DI" element={<ProductOne />} />
           <Route path="/modeli/539.3 DI" element={<ProductTwo />} />
@@ -31,6 +36,9 @@ const App = () => {
           <Route path="/modeli/565.2 DI" element={<ProductFive />} />
           <Route path="/modeli/577M HVAC" element={<ProductSix />} />
           <Route path="/modeli/587M HVAC" element={<ProductSeven />} />
+          <Route path="/prodajna-mreza" element={<Network />} />
+          <Route path="/media" element={<Media />} />
+
           <Route path="/kontakt" element={<Contact />} />
         </Routes>
         <Footer />
