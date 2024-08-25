@@ -394,13 +394,13 @@ nav {
         backdrop-filter: blur(10px);
 
         .empty-space {
-          width: 55%;
+          width: 40%;
           height: 100%;
           background-color: rgba(0, 0, 0, 0.5);
         }
 
         .navlinks-cont {
-          width: 45%;
+          width: 60%;
           height: 100%;
           flex-direction: column;
           gap: 30px;
@@ -408,7 +408,7 @@ nav {
           background-color: rgb(235, 34, 39, 0.95);
 
           .navlink {
-            font-size: 20px;
+            font-size: 14px;
             width: 100%;
           }
 

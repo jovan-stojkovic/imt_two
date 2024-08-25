@@ -1,5 +1,5 @@
 const Download = () => {
-  return <>preuzimanja</>;
+  return <div className="page download">preuzimanja</div>;
 };
 
 export default Download;

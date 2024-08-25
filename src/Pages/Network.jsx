@@ -1,5 +1,6 @@
 const Network = () => {
-    return ( <>network</> );
+    return ( <div className="page network">prodajna mreza</div>
+    );
 }
  
 export default Network;
