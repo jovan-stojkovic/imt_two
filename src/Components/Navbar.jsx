@@ -3,13 +3,7 @@ import { Link, NavLink } from "react-router-dom";
 import { useState } from "react";
 import { motion } from "framer-motion";
 
-const Navbar = () => {
-  const [menu, setMenu] = useState(false);
-
-  const handleMenu = () => {
-    setMenu(!menu);
-  };
-
+const Navbar = ({ menu, setMenu, handleMenu }) => {
   const generalMotion = {
     hidden: {
       opacity: 0,
