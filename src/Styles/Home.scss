@@ -465,6 +465,9 @@
       section {
         padding: $section-padding;
         margin-bottom: $page-padding;
+      padding-top: 50px;
+      background-size: 100%;
+
         &.general-section {
           .img-part {
             width: $img-width;
