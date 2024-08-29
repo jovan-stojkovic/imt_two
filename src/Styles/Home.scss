@@ -5,10 +5,6 @@
     background-image: url("/backgrounds/home.webp");
   }
   .page-cont {
-    scroll-snap-type: y mandatory;
-    overflow-y: scroll;
-    min-height: 100vh;
-
     section {
       background-image: url("/backgrounds/page.JPG");
       background-size: cover;
@@ -21,7 +17,6 @@
       width: 100%;
       margin-bottom: $page-padding;
       box-shadow: $shadow;
-      scroll-snap-align: start;
 
       &.general-section {
         @include flex($justify: space-between);

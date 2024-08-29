@@ -45,7 +45,7 @@ const Navbar = ({ menu, setMenu, handleMenu }) => {
           }}
         ></Link>
         <div className={`navlinks ${menu ? "show-menu" : ""}`}>
-          <div className="empty-space" onClick={handleMenu}></div>
+          <div className="empty-space" onClick={() => setMenu(false)}></div>
           <motion.div
             variants={generalMotion}
             initial="hidden"
@@ -57,7 +57,7 @@ const Navbar = ({ menu, setMenu, handleMenu }) => {
                 className="navlink"
                 to="/"
                 onClick={() => {
-                  handleMenu();
+                  setMenu(false);
                   window.scrollTo({ top: 0, behavior: "smooth" });
                 }}
               >
@@ -70,7 +70,7 @@ const Navbar = ({ menu, setMenu, handleMenu }) => {
                 className="navlink"
                 to="/o-nama"
                 onClick={() => {
-                  handleMenu();
+                  setMenu(false);
                   window.scrollTo({ top: 0, behavior: "smooth" });
                 }}
               >
@@ -104,7 +104,7 @@ const Navbar = ({ menu, setMenu, handleMenu }) => {
                 className="navlink"
                 to="/modeli"
                 onClick={() => {
-                  handleMenu();
+                  setMenu(false);
                   window.scrollTo({ top: 0, behavior: "smooth" });
                 }}
               >
@@ -132,7 +132,7 @@ const Navbar = ({ menu, setMenu, handleMenu }) => {
                 className="navlink"
                 to="/prodajna-mreza"
                 onClick={() => {
-                  handleMenu();
+                  setMenu(false);
                   window.scrollTo({ top: 0, behavior: "smooth" });
                 }}
               >
@@ -145,7 +145,7 @@ const Navbar = ({ menu, setMenu, handleMenu }) => {
                 className="navlink"
                 to="/preuzimanje"
                 onClick={() => {
-                  handleMenu();
+                  setMenu(false);
                   window.scrollTo({ top: 0, behavior: "smooth" });
                 }}
               >
@@ -182,7 +182,7 @@ const Navbar = ({ menu, setMenu, handleMenu }) => {
                 className="navlink"
                 to="/media"
                 onClick={() => {
-                  handleMenu();
+                  setMenu(false);
                   window.scrollTo({ top: 0, behavior: "smooth" });
                 }}
               >
@@ -195,7 +195,7 @@ const Navbar = ({ menu, setMenu, handleMenu }) => {
                 className="navlink"
                 to="/kontakt"
                 onClick={() => {
-                  handleMenu();
+                  setMenu(false);;
                   window.scrollTo({ top: 0, behavior: "smooth" });
                 }}
               >
