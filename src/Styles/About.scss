@@ -1,0 +1,28 @@
+@import "./App.scss";
+
+.about {
+  .top-img-cont {
+    background-image: url("/backgrounds/home.webp");
+  }
+  .page-cont {
+    section {
+      height: 80vh;
+      margin: 10vh 10vw;
+      background-image: url("/backgrounds/section.png");
+      background-position: top;
+      background-size: cover;
+      background-repeat: no-repeat;
+      border-radius: 5px;
+      box-shadow: $shadow;
+      padding: 150px 50px;
+
+      h1 {
+        font-size: 50px;
+        line-height: 55px;
+        font-weight: 300;
+        color: $gray;
+        letter-spacing: 10px;
+      }
+    }
+  }
+}

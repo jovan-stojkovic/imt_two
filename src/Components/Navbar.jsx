@@ -1,6 +1,7 @@
 import "../Styles/Navbar.scss";
 import { Link, NavLink } from "react-router-dom";
 import { motion } from "framer-motion";
+import { Link as ScrollLink } from "react-scroll";
 
 const Navbar = ({ menu, setMenu, handleMenu }) => {
   const generalMotion = {
@@ -79,7 +80,7 @@ const Navbar = ({ menu, setMenu, handleMenu }) => {
               <div className="dropdown-about">
                 <div className="padding-div"></div>
                 <div className="dropdown-about-cont">
-                  <NavLink className="dropdown-navlink" to="/o-nama/tafe">
+                  <NavLink className="dropdown-navlink" to="tafe">
                     TAFE
                   </NavLink>
                   <NavLink className="dropdown-navlink" to="/o-nama/imt">
@@ -202,6 +203,19 @@ const Navbar = ({ menu, setMenu, handleMenu }) => {
               </NavLink>
             </motion.div>
 
+            <motion.div variants={navlinksMotion}>
+              <NavLink
+                className="navlink"
+                to="/servis"
+                onClick={() => {
+                  setMenu(false);
+                  window.scrollTo({ top: 0, behavior: "smooth" });
+                }}
+              >
+                ZAKAŽITE SERVIS
+              </NavLink>
+            </motion.div>
+
             <div className="nav-btns">
               <Link
                 target="_blank"
@@ -224,8 +238,6 @@ const Navbar = ({ menu, setMenu, handleMenu }) => {
           className={`menu-btn ${menu ? "show-menu" : ""}`}
           onClick={handleMenu}
         ></button>
-
-        <button className="service">ZAKAŽITE SERVIS</button>
       </div>
     </nav>
   );
