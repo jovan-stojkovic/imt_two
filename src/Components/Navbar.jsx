@@ -1,6 +1,5 @@
 import "../Styles/Navbar.scss";
 import { Link, NavLink } from "react-router-dom";
-import { useState } from "react";
 import { motion } from "framer-motion";
 
 const Navbar = ({ menu, setMenu, handleMenu }) => {
@@ -195,7 +194,7 @@ const Navbar = ({ menu, setMenu, handleMenu }) => {
                 className="navlink"
                 to="/kontakt"
                 onClick={() => {
-                  setMenu(false);;
+                  setMenu(false);
                   window.scrollTo({ top: 0, behavior: "smooth" });
                 }}
               >
