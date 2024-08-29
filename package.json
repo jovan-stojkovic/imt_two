@@ -16,6 +16,7 @@
     "react-dom": "^18.3.1",
     "react-hook-form": "^7.52.1",
     "react-router-dom": "^6.25.1",
+    "react-scroll-snap": "^1.0.0",
     "sass": "^1.77.8",
     "vanilla-tilt": "^1.8.1",
     "yup": "^1.4.0"

@@ -225,6 +225,8 @@ const Navbar = ({ menu, setMenu, handleMenu }) => {
           className={`menu-btn ${menu ? "show-menu" : ""}`}
           onClick={handleMenu}
         ></button>
+
+        <button className="service">ZAKAŽITE SERVIS</button>
       </div>
     </nav>
   );
