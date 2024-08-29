@@ -16,11 +16,11 @@ const slides = [
     text: "Sklapamo traktore u pogonima IMT u Jarkovcu, opština Sečanj. Traktori se dopremaju u nesastavljenom stanju i namenjeni su za industrijsku montažu.",
   },
   {
-    image: "/swiper/jm00.jpg",
+    image: "/swiper/jm02.jpg",
     text: "Najbolji izbor za sve Vaše potrebe! Traktori od 26KS - 85KS za korišćenje u ratarstvu, vinogradarstvu kao i komunalnoj delatnosti.",
   },
   {
-    image: "/swiper/jm01.jpg",
+    image: "/swiper/jm03.jpg",
     text: "Najbolji izbor za sve Vaše potrebe! Garantni period od dve godine ili 2000h.",
   },
 ];
