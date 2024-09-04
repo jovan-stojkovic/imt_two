@@ -1,7 +1,6 @@
 import "../Styles/Navbar.scss";
 import { Link, NavLink } from "react-router-dom";
 import { motion } from "framer-motion";
-import { Link as ScrollLink } from "react-scroll";
 
 const Navbar = ({ menu, setMenu, handleMenu }) => {
   const generalMotion = {
@@ -44,6 +43,7 @@ const Navbar = ({ menu, setMenu, handleMenu }) => {
             window.scrollTo({ top: 0, behavior: "smooth" });
           }}
         ></Link>
+
         <div className={`navlinks ${menu ? "show-menu" : ""}`}>
           <div className="empty-space" onClick={() => setMenu(false)}></div>
           <motion.div
@@ -65,7 +65,10 @@ const Navbar = ({ menu, setMenu, handleMenu }) => {
               </NavLink>
             </motion.div>
 
-            <motion.div variants={navlinksMotion} className="about-us">
+            <motion.div
+              variants={navlinksMotion}
+              className="navlink-with-dropdown about-us"
+            >
               <NavLink
                 className="navlink"
                 to="/o-nama"
@@ -77,9 +80,9 @@ const Navbar = ({ menu, setMenu, handleMenu }) => {
                 O NAMA
               </NavLink>
 
-              <div className="dropdown-about">
+              <div className="dropdown dropdown-about">
                 <div className="padding-div"></div>
-                <div className="dropdown-about-cont">
+                <div className="dropdown-cont">
                   <NavLink className="dropdown-navlink" to="tafe">
                     TAFE
                   </NavLink>
@@ -99,7 +102,10 @@ const Navbar = ({ menu, setMenu, handleMenu }) => {
               </div>
             </motion.div>
 
-            <motion.div variants={navlinksMotion} className="models">
+            <motion.div
+              variants={navlinksMotion}
+              className="navlink-with-dropdown models"
+            >
               <NavLink
                 className="navlink"
                 to="/modeli"
@@ -111,9 +117,9 @@ const Navbar = ({ menu, setMenu, handleMenu }) => {
                 MODELI
               </NavLink>
 
-              <div className="dropdown-models">
+              <div className="dropdown dropdown-models">
                 <div className="padding-div"></div>
-                <div className="dropdown-models-cont">
+                <div className="dropdown-cont">
                   <NavLink className="dropdown-navlink" to="/modeli/standardni">
                     STANDARDNI
                   </NavLink>
@@ -140,7 +146,10 @@ const Navbar = ({ menu, setMenu, handleMenu }) => {
               </NavLink>
             </motion.div>
 
-            <motion.div variants={navlinksMotion} className="download">
+            <motion.div
+              variants={navlinksMotion}
+              className="navlink-with-dropdown download"
+            >
               <NavLink
                 className="navlink"
                 to="/preuzimanje"
@@ -152,9 +161,9 @@ const Navbar = ({ menu, setMenu, handleMenu }) => {
                 PREUZIMANJE
               </NavLink>
 
-              <div className="dropdown-download">
+              <div className="dropdown dropdown-download">
                 <div className="padding-div"></div>
-                <div className="dropdown-download-cont">
+                <div className="dropdown-cont">
                   <NavLink
                     className="dropdown-navlink"
                     to="/preuzimanje/o-firmi"
@@ -221,16 +230,12 @@ const Navbar = ({ menu, setMenu, handleMenu }) => {
                 target="_blank"
                 to="https://www.facebook.com/"
                 className="nav-btn facebook"
-              >
-                FACEBOOK
-              </Link>
+              ></Link>
               <Link
                 target="_blank"
                 to="https://www.instagram.com/"
                 className="nav-btn instagram"
-              >
-                INSTAGRAM
-              </Link>
+              ></Link>
             </div>
           </motion.div>
         </div>
