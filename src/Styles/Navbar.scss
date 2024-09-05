@@ -212,8 +212,9 @@ nav {
           flex-direction: column;
           justify-content: start;
           align-items: start;
+          padding-top: 10px;
+          gap: 5px;
           background-color: rgb(235, 34, 39, 0.95);
-
 
           .navlink {
             font-size: 14px;
@@ -243,7 +244,7 @@ nav {
                 border-radius: none;
                 box-shadow: none;
                 width: 100%;
-                height: 110px;
+                height: auto;
                 gap: 5px;
                 margin-left: 20px;
                 @include flex(

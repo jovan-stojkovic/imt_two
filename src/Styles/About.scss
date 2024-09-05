@@ -6,8 +6,8 @@
   }
   .page-cont {
     section {
-      height: 80vh;
-      margin: 10vh 10vw;
+      height: 90vh;
+      margin: 5vh 5vw;
       background-image: url("/backgrounds/section.png");
       background-position: top;
       background-size: cover;
@@ -17,11 +17,36 @@
       padding: 150px 50px;
 
       h1 {
-        font-size: 50px;
-        line-height: 55px;
+        font-size: 40px;
+        line-height: 50px;
         font-weight: 300;
         color: $gray;
         letter-spacing: 10px;
+      }
+    }
+  }
+}
+
+//<<<<<<<<650px
+@media (max-width: 650px) {
+  .about {
+    .top-img-cont {
+      background-image: url("/backgrounds/home-mobile.webp");
+    }
+    .page-cont {
+      section {
+        background-image: url("/backgrounds/section.png");
+        background-position: top right;
+        height: auto;
+        background-size: 100%;
+        background-color: white;
+        padding: 50px 20px;
+
+        h1 {
+          font-size: 24px;
+          line-height: 30px;
+          letter-spacing: 6px;
+        }
       }
     }
   }
