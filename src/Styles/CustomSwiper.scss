@@ -59,3 +59,35 @@
     left: 20px;
   }
 }
+
+//<<<<<<<<650px
+@media (max-width: 650px) {
+  .custom-swiper {
+    .slide-content {
+      background-size: cover;
+      background-position: center;
+      text-align: center;
+      position: relative;
+
+      img {
+        margin-left: 0px;
+        height: 90%;
+        width: 95%;
+        object-fit: cover;
+      }
+
+      .slide-text {
+        bottom: 50px;
+        right: 40px;
+        padding: 5px 10px;
+        line-height: 22px;
+        font-size: 14px;
+      }
+    }
+
+    .swiper-button-next,
+    .swiper-button-prev {
+      display: none;
+    }
+  }
+}
