@@ -91,9 +91,10 @@ const Products = () => {
           variants={imgMotion}
           initial="hidden"
           animate="visible"
-        ></motion.div>
-        <div className="page-cont">
+        >
           <h1>Modeli</h1>
+        </motion.div>
+        <div className="page-cont">
           <motion.div
             className="products-grid"
             ref={ref}

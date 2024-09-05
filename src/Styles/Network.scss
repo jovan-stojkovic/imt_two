@@ -1,0 +1,16 @@
+@import "./App.scss";
+
+.network {
+  .top-img-cont {
+    background-image: url("/backgrounds/home.webp");
+  }
+}
+
+//<<<<<<<<650px
+@media (max-width: 650px) {
+  .network {
+    .top-img-cont {
+      background-image: url("/backgrounds/home-mobile.webp");
+    }
+  }
+}

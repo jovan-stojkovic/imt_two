@@ -133,6 +133,15 @@ main {
     width: 100vw;
     max-width: 2200px;
     aspect-ratio: 2.35/1;
+    @include flex();
+
+    h1 {
+      margin-top: 100px;
+      font-size: 70px;
+      color: $white;
+      text-shadow: $white 1px 0 5px;
+      text-align: center;
+    }
   }
 
   .page-cont {
@@ -162,7 +171,6 @@ main {
   $h1-size: 32px;
   $page-padding: 40px;
   $nav-height: 60px;
-
 
   @mixin headline1 {
     font-size: $h1-size;

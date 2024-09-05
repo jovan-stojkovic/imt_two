@@ -39,7 +39,9 @@ const About = () => {
         variants={imgMotion}
         initial="hidden"
         animate="visible"
-      ></motion.div>
+      >
+        <h1>O Nama</h1>
+      </motion.div>
       <div className="page-cont">
         <motion.section
           id="tafe"
