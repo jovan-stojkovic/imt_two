@@ -3,9 +3,6 @@
 .custom-swiper {
   width: 100%;
   height: calc(100vh - 50px);
-  background-image: url("/backgrounds/Home.png");
-  background-position: center;
-  background-size: cover;
 
   .slide-content {
     display: flex;
@@ -18,31 +15,36 @@
     position: relative;
 
     img {
-      margin-left: 100px;
-      width: 80%;
+      height: 80%;
       box-shadow: $shadow;
       border-radius: 2px;
       object-fit: contain;
     }
 
     .slide-text {
-      text-align: right;
       position: absolute;
-      box-shadow: $shadow;
-      bottom: 120px;
-      right: 100px;
+      bottom: 10%;
+      left: 5%;
       background-color: rgba(255, 0, 0, 0.5);
-      backdrop-filter: blur(7px);
+      backdrop-filter: blur(3px);
       padding: 40px;
       border-radius: 5px;
-      width: 40%;
+      width: 50%;
+      height: 40%;
       color: $black;
-      line-height: 30px;
-      font-size: 20px;
-      letter-spacing: 2px;
+
+      p {
+        color: white;
+        line-height: 35px;
+        font-size: 20px;
+        letter-spacing: 2px;
+        text-align: left;
+      }
 
       h2 {
-        color: $black;
+        color: white;
+        text-align: left;
+        font-size: 50px;
       }
     }
   }
@@ -64,10 +66,6 @@
 //<<<<<<<<650px
 @media (max-width: 650px) {
   .custom-swiper {
-  background-image: url("/logos/logo-w.JPG");
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-color: white;
 
     .slide-content {
       height: 90vh;
@@ -78,23 +76,28 @@
 
       img {
         margin-left: 0px;
-        height: 90%;
+        height: 80%;
         width: 95%;
         object-fit: cover;
         border-radius: 5px;
       }
 
       .slide-text {
-        bottom: 100px;
-        right: 40px;
+        bottom: 10%;
+        left: 2.5%;
         width: 80%;
-        line-height: 30px;
-        text-align: left;
         padding: 20px;
+        width: 70%;
+        height: 35%;
+
+        p {
+          font-size: 16px;
+          line-height: 25px;
+          text-align: left;
+        }
 
         h2 {
           font-size: 30px;
-          text-align: right;
         }
       }
     }
