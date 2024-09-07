@@ -5,11 +5,11 @@ import "swiper/scss";
 import "swiper/scss/navigation";
 import "swiper/scss/autoplay";
 import "../Styles/CustomSwiper.scss";
+import { motion } from "framer-motion";
 
 const headline = "IMT TRAKTORI";
 
 const slides = [
-  { image: "/backgrounds/Home.png" },
   {
     image: "/swiper/jm00.jpg",
     headline: headline,
@@ -32,6 +32,19 @@ const slides = [
   },
 ];
 
+const swiperMotion = {
+  hidden: {
+    opacity: 0,
+  },
+  visible: {
+    opacity: 1,
+    transition: {
+      delay: 4,
+      duration: 0.5,
+    },
+  },
+};
+
 const CustomSwiper = () => {
   return (
     <Swiper
@@ -40,22 +53,25 @@ const CustomSwiper = () => {
       navigation
       loop={true}
       autoplay={{
-        delay: 3000,
+        delay: 5000,
         disableOnInteraction: false,
       }}
       className="custom-swiper"
     >
       {slides.map((slide, index) => (
         <SwiperSlide key={index}>
-          <div className="slide-content">
+          <motion.div
+            className="slide-content"
+            variants={swiperMotion}
+            initial="hidden"
+            animate="visible"
+          >
             <img src={slide.image} alt="" />
-            {slide.headline && (
-              <div className="slide-text">
-                <h2>{slide.headline}</h2>
-                {slide.text}
-              </div>
-            )}
-          </div>
+            <div className="slide-text">
+              <h2>{slide.headline}</h2>
+              {slide.text}
+            </div>
+          </motion.div>
         </SwiperSlide>
       ))}
     </Swiper>
