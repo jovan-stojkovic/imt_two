@@ -3,6 +3,7 @@
 footer {
   height: 100px;
   background-color: $white;
+  box-shadow: $shadow;
 
   .footer-cont {
     @include flex($justify: space-between);

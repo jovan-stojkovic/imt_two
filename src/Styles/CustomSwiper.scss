@@ -19,7 +19,7 @@
 
     img {
       margin-left: 100px;
-      height: 75%;
+      width: 80%;
       box-shadow: $shadow;
       border-radius: 2px;
       object-fit: contain;
@@ -64,6 +64,11 @@
 //<<<<<<<<650px
 @media (max-width: 650px) {
   .custom-swiper {
+  background-image: url("/logos/logo-w.JPG");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-color: white;
+
     .slide-content {
       height: 90vh;
       background-size: cover;
