@@ -5,56 +5,143 @@
     background-image: url("/backgrounds/home.webp");
   }
 
+  //   .bar {
+  //   display: flex;
+  //   width: 100%;
+  //   height: 50px;
+  //   position: relative;
+
+  //   .red-part {
+  //     width: 80%;
+  //     background-color: $red;
+  //   }
+
+  //   .triangle {
+  //     width: 20px;
+  //     background-color: $gray;
+  //     display: flex;
+
+  //     .red {
+  //       width: 20px;
+  //       height: 100%;
+  //       background-color: $red;
+  //       border-radius: 0 0 20px 0;
+  //       position: relative;
+
+  //       .red-triangle {
+  //         position: absolute;
+  //         width: 0px;
+  //         height: 0px;
+  //         right: -34.8px;
+  //         border-style: solid;
+  //         border-width: 44px 40px 0 0;
+  //         border-color: $red transparent transparent transparent;
+  //         z-index: 2;
+  //       }
+
+  //       .gray-triangle {
+  //         position: absolute;
+  //         width: 0px;
+  //         height: 0px;
+  //         right: -55px;
+  //         border-style: solid;
+  //         border-width: 44px 40px 0 0;
+  //         border-color: $gray transparent transparent transparent;
+  //       }
+
+  //       .gray {
+  //         position: absolute;
+  //         width: 20px;
+  //         background-color: $gray;
+  //         height: 100%;
+  //         z-index: 1;
+  //         right: -20px;
+  //         border-radius: 0 0 20px 0;
+  //       }
+  //     }
+  //   }
+
+
+  // }
+
+  .custom-shape {
+    width: 300px;
+    height: 200px;
+    background-color: #3498db;
+
+    clip-path: polygon(0% 0%, 100% 0%, 50% 100%, 0% 100%);
+  }
+
   .bar {
-    display: flex;
+    height: 70px;
     width: 100%;
-    height: 50px;
-    position: relative;
+    display: flex;
 
-    .red-patch {
-      position: absolute;
-      background-color: $red;
-      left: -30px;
-      top: 0;
-      height: 50px;
-      width: 100px;
-    }
-
-    .red-part {
+    .left-red {
       width: 80%;
       background-color: $red;
-      transform: skew(-45deg);
-      border-radius: 0 0 10px 0;
-      z-index: 2;
-
-
     }
 
-    .gray-part {
+    .creation {
       position: relative;
-      width: 20px;
-      background-color: $gray;
-      transform: skew(-45deg);
-      border-radius: 0 0 10px 0;
+      flex-direction: column;
+      align-items: baseline;
 
-      .gray-triangle {
+      .background-gray {
         position: absolute;
-        left: -19px;
-        height: 100%;
         width: 20px;
+        height: 100%;
         background-color: $gray;
+      }
+
+      .creation-left {
+        .left-trap {
+          width: 60px;
+          height: 50px;
+          background-color: $gray;
+          position: absolute;
+          right: -80px;
+          clip-path: polygon(0% 0%, 100% 0%, 58% 100%, 0% 100%);
+        }
+
+        .left-round {
+          position: absolute;
+          height: 70px;
+          width: 40px;
+          right: -60px;
+          background-color: $gray;
+          border-radius: 0 0 100px 0;
+        }
+      }
+
+      .creation-right {
+        .right-trap {
+          width: 60px;
+          height: 50px;
+          background-color: $red;
+          position: absolute;
+          clip-path: polygon(0% 0%, 100% 0%, 58% 100%, 0% 100%);
+        }
+
+        .right-round {
+          position: absolute;
+          height: 70px;
+          width: 40px;
+          background-color: $red;
+          border-radius: 0 0 100px 0;
+        }
       }
     }
 
-    .transparent-part {
+    .right-transparent {
       width: 20%;
       background-color: transparent;
       position: relative;
 
       .logo-cont {
         position: absolute;
-        height: 100px;
-        width: 100px;
+        height: 150px;
+        width: 150px;
         background-image: url("/logos/logo-no-bg.png");
         background-size: contain;
         right: 0;
@@ -63,7 +150,7 @@
         border-radius: 100px;
       }
     }
-  } 
+  }
 }
 
 //<<<<<<<<650px
