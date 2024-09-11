@@ -2,20 +2,18 @@
 
 .custom-swiper {
   width: 100%;
-  height: calc(100vh - 50px);
+  height: 100vh;
 
   .slide-content {
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    @include flex();
     height: 100%;
-    background-size: cover;
-    background-position: center;
+    width: 100%;
     text-align: center;
     position: relative;
 
     img {
-      height: 80%;
+      height: 100%;
+      width: 100%;
       box-shadow: $shadow;
       border-radius: 2px;
       object-fit: contain;
