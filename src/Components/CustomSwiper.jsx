@@ -9,7 +9,7 @@ import "../Styles/CustomSwiper.scss";
 const headline = "IMT TRAKTORI";
 
 const slides = [
-  { image: "/backgrounds/Home.png" },
+  { image: "/swiper/background-imt.jpeg" },
   {
     image: "/swiper/jm02.jpg",
     headline: headline,
