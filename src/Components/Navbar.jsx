@@ -36,14 +36,6 @@ const Navbar = ({ menu, setMenu, handleMenu }) => {
   return (
     <nav>
       <div className="nav-cont">
-        <Link
-          id="nav-logo"
-          to="/"
-          onClick={() => {
-            window.scrollTo({ top: 0, behavior: "smooth" });
-          }}
-        ></Link>
-
         <div className={`navlinks ${menu ? "show-menu" : ""}`}>
           <div className="empty-space" onClick={() => setMenu(false)}></div>
           <motion.div
@@ -185,20 +177,6 @@ const Navbar = ({ menu, setMenu, handleMenu }) => {
                 </div>
               </div>
             </motion.div>
-
-            <motion.div variants={navlinksMotion}>
-              <NavLink
-                className="navlink"
-                to="/media"
-                onClick={() => {
-                  setMenu(false);
-                  window.scrollTo({ top: 0, behavior: "smooth" });
-                }}
-              >
-                MEDIA
-              </NavLink>
-            </motion.div>
-
             <motion.div variants={navlinksMotion}>
               <NavLink
                 className="navlink"
@@ -224,25 +202,35 @@ const Navbar = ({ menu, setMenu, handleMenu }) => {
                 ZAKAŽITE SERVIS
               </NavLink>
             </motion.div>
-
-            <div className="nav-btns">
-              <Link
-                target="_blank"
-                to="https://www.facebook.com/"
-                className="nav-btn facebook"
-              ></Link>
-              <Link
-                target="_blank"
-                to="https://www.instagram.com/"
-                className="nav-btn instagram"
-              ></Link>
-            </div>
           </motion.div>
         </div>
         <button
           className={`menu-btn ${menu ? "show-menu" : ""}`}
           onClick={handleMenu}
         ></button>
+      </div>
+      <div className="creation">
+        <div className="background-gray"></div>
+        <div className="creation-left">
+          <div className="left-trap"></div>
+          <div className="left-round"></div>
+        </div>
+
+        <div className="creation-right">
+          <div className="right-trap"></div>
+          <div className="right-round"></div>
+        </div>
+      </div>
+      <div className="right-transparent">
+        <div className="logo-cont">
+          <Link
+            id="nav-logo"
+            to="/"
+            onClick={() => {
+              window.scrollTo({ top: 0, behavior: "smooth" });
+            }}
+          ></Link>
+        </div>
       </div>
     </nav>
   );

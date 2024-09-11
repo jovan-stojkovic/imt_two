@@ -1,32 +1,23 @@
 @import "./App.scss";
 
 nav {
-  height: 60px;
-  background-color: rgba(255, 255, 255, 0);
-  backdrop-filter: blur(20px);
+  height: 70px;
   width: 100%;
-  position: fixed;
+  position: absolute;
+  display: flex;
   top: 0;
   z-index: 100;
 
   .nav-cont {
     @include flex($justify: space-between);
-    width: $app-width;
-    height: 100%;
-    margin: 0 auto;
-
-    #nav-logo {
-      @include background($size: 80%);
-      height: 80%;
-      aspect-ratio: 1;
-      background-image: url("/logos/logo.jpg");
-      border-radius: 100px;
-      background-color: $red;
-    }
+    width: 70%;
+    background-color: $red;
 
     .navlinks {
+      width: 100%;
       .navlinks-cont {
-        @include flex();
+        margin-left: 70px;
+        @include flex($justify: baseline);
         gap: 5px;
 
         .navlink {
@@ -179,6 +170,87 @@ nav {
       display: none;
     }
   }
+
+  .creation {
+    position: relative;
+    flex-direction: column;
+    align-items: baseline;
+
+    .background-gray {
+      position: absolute;
+      width: 20px;
+      height: 100%;
+      background-color: $gray;
+    }
+
+    .creation-left {
+      .left-trap {
+        width: 60px;
+        height: 50px;
+        background-color: $gray;
+        position: absolute;
+        right: -80px;
+        clip-path: polygon(0% 0%, 100% 0%, 58% 100%, 0% 100%);
+      }
+
+      .left-round {
+        position: absolute;
+        height: 70px;
+        width: 40px;
+        right: -60px;
+        background-color: $gray;
+        border-radius: 0 0 100px 0;
+      }
+    }
+
+    .creation-right {
+      .right-trap {
+        width: 60px;
+        height: 50px;
+        background-color: $red;
+        position: absolute;
+        clip-path: polygon(0% 0%, 100% 0%, 58% 100%, 0% 100%);
+      }
+
+      .right-round {
+        position: absolute;
+        height: 70px;
+        width: 40px;
+        background-color: $red;
+        border-radius: 0 0 100px 0;
+      }
+    }
+  }
+
+  .right-transparent {
+    width: 30%;
+    background-color: transparent;
+
+    .logo-cont {
+      margin: 10px auto;
+      height: 120px;
+      width: 120px;
+      background-image: url("/logos/logo-no-bg.png");
+      background-size: contain;
+      right: 20%;
+      background-position: center;
+      backdrop-filter: blur(5px);
+      border-radius: 100px;
+      @include flex();
+      transition: transform 0.1s;
+
+      a {
+        height: 90px;
+        width: 90px;
+        cursor: pointer;
+        border-radius: 100px;
+
+      }
+      &:hover {
+        transform: rotate(360deg);
+      }
+    }
+  }
 }
 
 //<<<<<<<<650px
@@ -188,7 +260,6 @@ nav {
   nav {
     height: $nav-height;
     .nav-cont {
-
       .navlinks {
         position: fixed;
         height: 0;
@@ -223,7 +294,7 @@ nav {
 
           .navlink-with-dropdown {
             // position: relative;
-  
+
             .dropdown {
               display: flex;
               flex-direction: column;
@@ -232,12 +303,12 @@ nav {
               // overflow: hidden;
               position: unset;
               // top: 26px;
-  
+
               .padding-div {
                 width: 0;
                 height: 0;
               }
-  
+
               .dropdown-cont {
                 padding: 10px;
                 background-color: transparent;
@@ -252,7 +323,7 @@ nav {
                   $align: left,
                   $justify: space-between
                 );
-  
+
                 .dropdown-navlink {
                   padding: none;
                   text-decoration: none;
@@ -266,12 +337,12 @@ nav {
                   );
                   background-size: 200% 100%;
                   transition: background-position 0.2s ease;
-  
+
                   &:hover {
                     color: $white;
                     background-position: -100% 0;
                   }
-  
+
                   &.active {
                     color: $white;
                     background-color: $black;
@@ -279,14 +350,14 @@ nav {
                 }
               }
             }
-  
+
             &:hover {
               .dropdown {
                 height: auto;
                 width: auto;
               }
             }
-  
+
             &.models,
             &.download {
               .dropdown {
@@ -294,13 +365,13 @@ nav {
                   width: 0;
                   height: 0;
                 }
-  
+
                 .dropdown-cont {
                   width: auto;
                   height: 100px;
                 }
               }
-  
+
               &:hover {
                 .dropdown {
                   height: 100px;
@@ -317,7 +388,7 @@ nav {
             margin-left: 10px;
             .nav-btn {
               all: unset;
-              height:  20px;
+              height: 20px;
               width: 20px;
               cursor: pointer;
               transition: all 0.5s;
@@ -325,15 +396,15 @@ nav {
               font-size: 12px;
               letter-spacing: 2px;
               content-visibility: hidden;
-  
+
               &.facebook {
                 background-image: url("/icons/facebook.svg");
               }
-  
+
               &.instagram {
                 background-image: url("/icons/instagram.svg");
               }
-  
+
               &:hover {
                 filter: invert(0.9);
               }

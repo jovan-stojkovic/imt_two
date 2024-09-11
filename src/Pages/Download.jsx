@@ -42,20 +42,6 @@ const Download = () => {
           impedit quidem dolores!
         </p>
 
-        {/* <div className="bar">
-          <div className="red-part"></div>
-          <div className="triangle">
-            <div className="red">
-              <div className="red-triangle"></div>
-              <div className="gray-triangle"></div>
-              <div className="gray"></div>
-            </div>
-          </div>
-          <div className="transparent-part">
-            <div className="logo-cont"></div>
-          </div>
-        </div> */}
-
         <div className="bar">
           <div className="left-red"></div>
           <div className="creation">

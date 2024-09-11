@@ -37,7 +37,6 @@ const App = () => {
   return (
     <main>
       <BackToTopButton />
-      <div className="nav-background"></div>
       <Navbar menu={menu} setMenu={setMenu} handleMenu={handleMenu} />
       <div className="app">
         <Routes>
