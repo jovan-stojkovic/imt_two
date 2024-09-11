@@ -4,6 +4,66 @@
   .top-img-cont {
     background-image: url("/backgrounds/home.webp");
   }
+
+  .bar {
+    display: flex;
+    width: 100%;
+    height: 50px;
+    position: relative;
+
+    .red-patch {
+      position: absolute;
+      background-color: $red;
+      left: -30px;
+      top: 0;
+      height: 50px;
+      width: 100px;
+    }
+
+    .red-part {
+      width: 80%;
+      background-color: $red;
+      transform: skew(-45deg);
+      border-radius: 0 0 10px 0;
+      z-index: 2;
+
+
+    }
+
+    .gray-part {
+      position: relative;
+      width: 20px;
+      background-color: $gray;
+      transform: skew(-45deg);
+      border-radius: 0 0 10px 0;
+
+      .gray-triangle {
+        position: absolute;
+        left: -19px;
+        height: 100%;
+        width: 20px;
+        background-color: $gray;
+      }
+    }
+
+    .transparent-part {
+      width: 20%;
+      background-color: transparent;
+      position: relative;
+
+      .logo-cont {
+        position: absolute;
+        height: 100px;
+        width: 100px;
+        background-image: url("/logos/logo-no-bg.png");
+        background-size: contain;
+        right: 0;
+        background-position: center;
+        backdrop-filter: blur(5px);
+        border-radius: 100px;
+      }
+    }
+  } 
 }
 
 //<<<<<<<<650px
