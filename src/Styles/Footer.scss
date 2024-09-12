@@ -7,7 +7,7 @@ footer {
 
   .footer-cont {
     @include flex($justify: space-between);
-    width: $app-width;
+    width: 1600px;
     margin: 0 auto;
     height: 100%;
 

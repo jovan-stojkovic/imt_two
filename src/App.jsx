@@ -58,8 +58,8 @@ const App = () => {
 
           <Route path="/kontakt" element={<Contact />} />
         </Routes>
-        <Footer />
       </div>
+      <Footer />
     </main>
   );
 };

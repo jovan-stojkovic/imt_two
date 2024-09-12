@@ -1,0 +1,191 @@
+@import "./App.scss";
+
+.custom-swiper {
+  width: 100%;
+  height: 100vh;
+
+  .swiper-slide {
+    @include flex();
+  }
+
+  .slide-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-width: 1600px;
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+    position: relative;
+
+    img {
+      width: 100%;
+      border-radius: 2px;
+      object-fit: cover;
+    }
+
+    .slide-text {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      background-color: rgba(255, 0, 0, 0.2);
+      padding: 10px;
+      border-radius: 5px;
+      width: 40%;
+      height: 35%;
+      color: $black;
+
+      p {
+        color: white;
+        line-height: 30px;
+        font-size: 20px;
+        letter-spacing: 2px;
+        text-align: left;
+      }
+
+      h2 {
+        color: white;
+        text-align: left;
+        font-size: 40px;
+      }
+    }
+  }
+
+  .swiper-button-next,
+  .swiper-button-prev {
+    color: rgb(35, 31, 32);
+  }
+
+  .swiper-button-next {
+    right: 20px;
+  }
+
+  .swiper-button-prev {
+    left: 20px;
+  }
+}
+
+.home-models {
+  margin-bottom: 100px;
+  width: 100%;
+  height: 700px;
+  background-color: $gray;
+  padding: 50px;
+
+  h1 {
+    font-size: 70px;
+    letter-spacing: 10px;
+    text-align: center;
+  }
+
+  .models {
+    height: 80%;
+    @include flex();
+
+    .part {
+      width: 30%;
+
+      .model-img {
+        height: 350px;
+        background-image: url("/products/IMT-549M-OS.webp");
+        background-size: contain;
+        background-position: center;
+        background-repeat: no-repeat;
+        transition: 0.2s;
+      }
+
+      .series-name {
+        text-align: center;
+        font-size: 24px;
+        letter-spacing: 4px;
+      }
+
+      &:hover {
+        cursor: pointer;
+        .model-img {
+          transform: scale(1.1);
+        }
+      }
+
+      &:nth-child(2) {
+        .model-img {
+          background-image: url("/products/IMT-565.2-DI.webp");
+        }
+      }
+      &:nth-child(3) {
+        .model-img {
+          background-image: url("/products/IMT-577M-HVAC.webp");
+        }
+      }
+    }
+  }
+}
+
+.home-about {
+  margin-bottom: 100px;
+  width: 100%;
+  height: 700px;
+  padding: 50px;
+  background-image: url("public/backgrounds/home.webp");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  h1 {
+    font-size: 70px;
+    letter-spacing: 10px;
+    text-align: center;
+  }
+
+  .text-part {
+    padding: 20px;
+    border-radius: 5px;
+    text-align: justify;
+    background-color: rgba(0, 0, 0, 0.2);
+    backdrop-filter: blur(20px);
+  }
+}
+
+//<<<<<<<<650px
+@media (max-width: 650px) {
+  .custom-swiper {
+    .slide-content {
+      height: 90vh;
+      background-size: cover;
+      background-position: center;
+      text-align: center;
+      position: relative;
+
+      img {
+        margin-left: 0px;
+        height: 80%;
+        width: 95%;
+        object-fit: cover;
+        border-radius: 5px;
+      }
+
+      .slide-text {
+        bottom: 10%;
+        left: 2.5%;
+        width: 80%;
+        padding: 20px;
+        width: 70%;
+        height: 35%;
+
+        p {
+          font-size: 16px;
+          line-height: 25px;
+          text-align: left;
+        }
+
+        h2 {
+          font-size: 30px;
+        }
+      }
+    }
+
+    .swiper-button-next,
+    .swiper-button-prev {
+      display: none;
+    }
+  }
+}

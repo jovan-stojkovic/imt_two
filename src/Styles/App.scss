@@ -72,7 +72,6 @@ $section-padding: 50px;
 main {
   min-height: 100vh;
   width: 100%;
-  background-color: white;
 
   .nav-background {
     width: 100%;
@@ -121,6 +120,11 @@ main {
       filter: invert(0.5);
     }
   }
+}
+
+.app {
+  width: 1600px;
+  margin: 0 auto;
 }
 
 .page {

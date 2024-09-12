@@ -4,22 +4,11 @@ import { Navigation, Autoplay } from "swiper/modules";
 import "swiper/scss";
 import "swiper/scss/navigation";
 import "swiper/scss/autoplay";
-import "../Styles/CustomSwiper.scss";
 
 const headline = "IMT TRAKTORI";
 
 const slides = [
-  { image: "/swiper/background-imt.jpeg" },
-  {
-    image: "/swiper/jm02.jpg",
-    headline: headline,
-    text: "Najbolji izbor za sve Vaše potrebe! Traktori od 26KS - 85KS za korišćenje u ratarstvu, vinogradarstvu kao i komunalnoj delatnosti.",
-  },
-  {
-    image: "/swiper/jm03.jpg",
-    headline: headline,
-    text: "Najbolji izbor za sve Vaše potrebe! Garantni period od dve godine ili 2000h.",
-  },
+  { image: "/logos/logo-wide.jpg" },
   {
     image: "/swiper/jm00.jpg",
     headline: headline,
@@ -29,6 +18,16 @@ const slides = [
     image: "/swiper/jm01.jpg",
     headline: headline,
     text: "Sklapamo traktore u pogonima IMT u Jarkovcu, opština Sečanj. Traktori se dopremaju u nesastavljenom stanju i namenjeni su za industrijsku montažu.",
+  },
+  {
+    image: "/swiper/jm02.jpg",
+    headline: headline,
+    text: "Najbolji izbor za sve Vaše potrebe! Traktori od 26KS - 85KS za korišćenje u ratarstvu, vinogradarstvu kao i komunalnoj delatnosti.",
+  },
+  {
+    image: "/swiper/jm03.jpg",
+    headline: headline,
+    text: "Najbolji izbor za sve Vaše potrebe! Garantni period od dve godine ili 2000h.",
   },
 ];
 

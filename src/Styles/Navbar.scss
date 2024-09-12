@@ -12,13 +12,13 @@ nav {
     @include flex($justify: space-between);
     width: 70%;
     background-color: $red;
+    box-shadow: $shadow;
 
     .navlinks {
-      width: 100%;
+      width: 1600px;
       .navlinks-cont {
-        margin-left: 70px;
-        @include flex($justify: baseline);
-        gap: 5px;
+        @include flex($justify: end);
+        gap: 20px;
 
         .navlink {
           all: unset;
@@ -244,7 +244,6 @@ nav {
         width: 90px;
         cursor: pointer;
         border-radius: 100px;
-
       }
       &:hover {
         transform: rotate(360deg);
