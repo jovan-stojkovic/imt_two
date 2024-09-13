@@ -1,16 +1,249 @@
 @import "./App.scss";
 
 .network {
-  .top-img-cont {
-    background-image: url("/backgrounds/home.webp");
-  }
-}
+  .page-cont {
+    section {
+      height: 1000px;
+      border-radius: 5px;
+      box-shadow: $shadow;
+      position: relative;
+      padding: 200px 50px;
+      margin-bottom: 100px;
+      @include flex($justify: space-between, $align: start);
 
-//<<<<<<<<650px
-@media (max-width: 650px) {
-  .network {
-    .top-img-cont {
-      background-image: url("/backgrounds/home-mobile.webp");
+      .text-part {
+        width: 40%;
+        line-height: 30px;
+        text-align: justify;
+      }
+
+      .img-cont {
+        height: 700px;
+        width: 600px;
+        @include background();
+        background-image: url("/rest/map2.png");
+        position: relative;
+
+        .dot-logo {
+          @include background($size: cover);
+          background-image: url("/logos/logo-no-bg.png");
+          height: 40px;
+          width: 40px;
+          border-radius: 100px;
+          position: absolute;
+          top: 145px;
+          left: 265px;
+          cursor: pointer;
+
+          &:hover {
+            .info {
+              display: block;
+            }
+          }
+
+          .info {
+            position: absolute;
+            z-index: 40;
+            left: -600px;
+            top: 40px;
+            height: 250px;
+            width: 600px;
+            border-radius: 5px;
+            box-shadow: $shadow;
+            backdrop-filter: blur(5px);
+            padding: 30px;
+            @include flex($direction: column, $align: start);
+            gap: 5px;
+            display: none;
+            background-image: url("/logos/logo-no-bg.png");
+            background-size: 200px;
+            background-repeat: no-repeat;
+            background-position: right;
+            background-blend-mode: darken;
+
+            h5 {
+              font-size: 22px;
+            }
+
+            p {
+              font-size: 18px;
+              letter-spacing: 2px;
+              line-height: 30px;
+            }
+
+            span {
+              font-weight: 600;
+            }
+          }
+        }
+
+        .dot {
+          position: absolute;
+          height: 30px;
+          width: 30px;
+          border-radius: 100px;
+          background-color: $red;
+          cursor: pointer;
+
+          &.agrorid {
+            top: 190px;
+            left: 220px;
+
+            .info {
+              .logo-cont {
+                background-image: url("/network/agrorid.JPG");
+              }
+            }
+
+            &:hover {
+              .info {
+                display: block;
+              }
+            }
+          }
+
+          &.agrogas {
+            top: 270px;
+            left: 260px;
+
+            .info {
+              width: 550px;
+              left: -550px;
+              .logo-cont {
+                background-image: url("/network/agrogas.png");
+              }
+            }
+
+            &:hover {
+              .info {
+                display: block;
+              }
+            }
+          }
+
+          &.jugometal {
+            top: 310px;
+            left: 340px;
+
+            .info {
+              .logo-cont {
+                background-image: url("/network/jugometal.png");
+
+              }
+            }
+
+            &:hover {
+              .info {
+                display: block;
+              }
+            }
+          }
+
+          &.agrouniverzal {
+            top: 330px;
+            left: 240px;
+
+            .info {
+              .logo-cont {
+                background-image: url("/network/agrouniverzal.png");
+
+              }
+            }
+
+            &:hover {
+              .info {
+                display: block;
+              }
+            }
+          }
+
+          &.agrouniverzal {
+            top: 330px;
+            left: 240px;
+
+            .info {
+              .logo-cont {
+                background-image: url("/network/agrouniverzal.png");
+
+              }
+            }
+
+            &:hover {
+              .info {
+                display: block;
+              }
+            }
+          }
+
+          &.agribau {
+            top: 540px;
+            left: 315px;
+
+            .info {
+              .logo-cont {
+                background-image: url("/network/agribau.png");
+
+              }
+            }
+
+            &:hover {
+              .info {
+                display: block;
+              }
+            }
+          }
+
+          &.rakic {
+            top: 225px;
+            left: 75px;
+
+            .info {
+              .logo-cont {
+                background-image: url("/network/rakic.png");
+
+              }
+            }
+
+            &:hover {
+              .info {
+                display: block;
+              }
+            }
+          }
+
+          .info {
+            z-index: 40;
+            position: absolute;
+            left: -400px;
+            top: 30px;
+            height: 250px;
+            width: 400px;
+            border-radius: 5px;
+            box-shadow: $shadow;
+            backdrop-filter: blur(5px);
+            padding: 30px;
+            @include flex($direction: column, $align: start);
+            display: none;
+
+            .logo-cont {
+              @include background();
+              height: 70px;
+              width: 100%;
+              margin-bottom: 20px;
+            }
+
+            p {
+              font-size: 18px;
+              letter-spacing: 2px;
+              line-height: 30px;
+            }
+
+            span {
+              font-weight: 600;
+            }
+          }
+        }
+      }
     }
   }
 }
