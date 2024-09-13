@@ -10,7 +10,6 @@ footer {
     width: 1600px;
     margin: 0 auto;
     height: 100%;
-    background-color: gray;
 
     .left {
       @include background($size: 80%);

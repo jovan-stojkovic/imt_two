@@ -6,24 +6,24 @@
   }
 
   .page-cont {
-    h1 {
-      margin-bottom: $page-padding;
-    }
 
-    .products-grid {
+    section {
       width: 100%;
+      padding: 200px 50px 50px 50px;
+      margin-bottom: 100px;
+      position: relative;
+      border-radius: 10px;
+      box-shadow: $shadow;
       display: flex;
       flex-wrap: wrap;
       justify-content: flex-start;
-      margin-bottom: $page-padding;
+      min-height: 500px;
 
       .single-product {
         width: 31%;
-        margin: 1.1%;
-        aspect-ratio: 1/1.1;
-        background-color: $white;
+        margin: 1%;
+        aspect-ratio: 1.2/1;
         border-radius: 2px;
-        box-shadow: $shadow;
 
         a {
           @include flex;
@@ -32,22 +32,27 @@
           position: relative;
 
           img {
-            height: 75%;
+            height: 90%;
+            aspect-ratio: 1;
+            object-fit: cover;
+            border-radius: 5px;
+            margin-bottom: 30px;
           }
 
           h1 {
             position: absolute;
             width: 100%;
             bottom: 0;
-            text-align: right;
+            text-align: center;
             padding-right: 10px;
             margin-bottom: 0;
+            font-size: 30px;
           }
 
           p {
             position: absolute;
             top: 40px;
-            font-size: 30px;
+            font-size: 25px;
             transform: rotate(270deg);
             opacity: 0;
             transition: opacity 0.5s;
@@ -71,6 +76,8 @@
         }
       }
     }
+
+
   }
 }
 

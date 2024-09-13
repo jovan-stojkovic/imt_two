@@ -6,7 +6,7 @@ const About = () => {
   const sectionMotion = {
     hidden: {
       opacity: 0,
-      x: -500,
+      x: -300,
     },
     visible: {
       opacity: 1,

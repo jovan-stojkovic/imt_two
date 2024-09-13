@@ -21,7 +21,7 @@ const Home = () => {
   const sectionMotion = {
     hidden: {
       opacity: 0,
-      x: -100,
+      x: -300,
     },
     visible: {
       opacity: 1,

@@ -1,17 +1,18 @@
 import "../Styles/Products.scss";
-import { motion, useInView } from "framer-motion";
+import { motion } from "framer-motion";
 import VanillaTilt from "vanilla-tilt";
-import { useEffect, useRef } from "react";
+import { useEffect } from "react";
 import { Link } from "react-router-dom";
+import Bar from "../Components/Bar";
 
 const Products = () => {
   useEffect(() => {
     let elements = document.querySelectorAll(".single-product");
     VanillaTilt.init(elements, {
-      max: 5,
+      max: 3,
       speed: 1000,
-      scale: 1.02,
-      glare: true,
+      scale: 1.01,
+      glare: false,
     });
 
     return () => {
@@ -21,41 +22,19 @@ const Products = () => {
     };
   }, []);
 
-  const imgMotion = {
+  const sectionMotion = {
     hidden: {
       opacity: 0,
+      x: -300,
     },
     visible: {
       opacity: 1,
-      transition: {
-        delay: 0.5,
-        duration: 0.5,
-      },
-    },
-  };
-
-  const containerMotion = {
-    hidden: {},
-    visible: {
-      transition: {
-        staggerChildren: 0.3,
-        delayChildren: 0.1,
-      },
-    },
-  };
-
-  const productMotion = {
-    hidden: {
-      x: -50,
-      opacity: 0,
-    },
-    visible: {
       x: 0,
-      opacity: 1,
       transition: {
+        delay: 0.1,
         duration: 0.3,
         type: "spring",
-        stiffness: 120,
+        stiffness: 200,
       },
     },
   };
@@ -80,33 +59,74 @@ const Products = () => {
     },
   ];
 
-  const ref = useRef(null);
-  const isInView = useInView(ref, { once: true, amount: 0.2 });
+  const standard = [
+    {
+      name: "IMT 539.2 kabina ",
+      img: "/products/IMT 539.2 DI 2WD kabina.png",
+      hp: 47,
+      wd: 2,
+    },
+    {
+      name: "IMT 539.2 ROPS ",
+      img: "/products/IMT 539.2 DI 2WD ROPS.png",
+      hp: 47,
+      wd: 2,
+    },
+    {
+      name: "IMT 549.3 kabina ",
+      img: "/products/IMT 549.3 DI 4WD kabina.png",
+      hp: 47,
+      wd: 4,
+    },
+    {
+      name: "IMT 549.3 ROPS ",
+      img: "/products/IMT 549.3 DI 4WD ROPS.png",
+      hp: 47,
+      wd: 4,
+    },
+    {
+      name: "IMT 565.2 kabina",
+      img: "/products/IMT 565.2 DI 4WD kabina.png",
+      hp: 63,
+      wd: 4,
+    },
+    {
+      name: "IMT 565.2 ROPS",
+      img: "/products/IMT 565.2 DI 4WD ROPS.png",
+      hp: 63,
+      wd: 4,
+    },
+    {
+      name: "TAFE 4615 ROPS",
+      img: "/products/TAFE 4615 4WD ROPS.png",
+      hp: 47,
+      wd: 4,
+    },
+    {
+      name: "TAFE 6515 ROPS",
+      img: "/products/TAFE 6515 4WD ROPS.png",
+      hp: 65,
+      wd: 4,
+    },
+  ];
 
   return (
     <>
       <div className="page products">
-        <motion.div
-          className="top-img-cont"
-          variants={imgMotion}
-          initial="hidden"
-          animate="visible"
-        >
-          <h1>Modeli</h1>
-        </motion.div>
+        <h1 className="main-headline">MODELI</h1>
+
         <div className="page-cont">
-          <motion.div
-            className="products-grid"
-            ref={ref}
-            variants={containerMotion}
+          <motion.section
+            variants={sectionMotion}
             initial="hidden"
-            animate={isInView ? "visible" : "hidden"}
+            whileInView="visible"
+            viewport={{ amount: 0.2, once: true }}
           >
-            {productsObj.map((product, index) => (
-              <motion.div
+            <Bar headline={"STANDARDNA SERIJA"} />
+            {standard.map((product, index) => (
+              <div
                 key={index}
                 className="single-product"
-                variants={productMotion}
               >
                 <Link
                   to={`/modeli/${product.name}`}
@@ -114,14 +134,35 @@ const Products = () => {
                     window.scrollTo({ top: 0, behavior: "smooth" });
                   }}
                 >
-                  <img src={product.img} alt="tractor-image" />
-                  <h1>{`IMT ${product.name}`}</h1>
+                  <img src={product.img} alt={product.name} />
+                  <h1>{product.name}</h1>
                   <p className="hp">{`${product.hp}hp`}</p>
                   <p className="wd">{`${product.wd}WD`}</p>
                 </Link>
-              </motion.div>
+              </div>
             ))}
-          </motion.div>
+          </motion.section>
+
+
+          <motion.section
+            variants={sectionMotion}
+            initial="hidden"
+            whileInView="visible"
+            viewport={{ amount: 0.2, once: true }}
+          >
+            <Bar headline={"KOMPAKTNA SERIJA"} />
+
+          </motion.section>
+
+          <motion.section
+            variants={sectionMotion}
+            initial="hidden"
+            whileInView="visible"
+            viewport={{ amount: 0.2, once: true }}
+          >
+            <Bar headline={"MAGNA SERIJA"} />
+
+          </motion.section>
         </div>
       </div>
     </>
