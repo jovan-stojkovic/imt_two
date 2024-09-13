@@ -11,7 +11,6 @@ $shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 $noto: "Noto Sans Display", sans-serif;
 $quicksand: "Quicksand", sans-serif;
 
-$app-width: 95vw;
 $p-size: 16px;
 $p-height: 25px;
 $p-spacing: 2px;
@@ -130,6 +129,18 @@ main {
 .page {
   width: 100%;
   min-height: 100vh;
+  overflow-x: hidden;
+
+  .main-headline {
+    font-size: 150px;
+    line-height: 150px;
+    letter-spacing: 20px;
+    font-weight: 600;
+    color: $gray;
+    text-align: center;
+    margin-top: 200px;
+    margin-bottom: 130px;
+  }
 
   .top-img-cont {
     @include background($size: cover, $position: center top);
@@ -149,10 +160,8 @@ main {
   }
 
   .page-cont {
-    width: $app-width;
-    max-width: 1800px;
+    width: 1600px;
     margin: 0 auto;
-    padding-top: $page-padding;
   }
 }
 
@@ -169,7 +178,7 @@ main {
     background-color: $red;
 
     h1 {
-      font-size: 60px;
+      font-size: 40px;
       line-height: 70px;
       padding-left: 10%;
       letter-spacing: 10px;
@@ -254,7 +263,6 @@ main {
     }
 
     .page-cont {
-      width: $app-width;
       max-width: 1500px;
     }
   }

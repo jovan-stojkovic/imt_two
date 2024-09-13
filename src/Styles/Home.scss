@@ -53,15 +53,7 @@
 
   .swiper-button-next,
   .swiper-button-prev {
-    color: rgb(35, 31, 32);
-  }
-
-  .swiper-button-next {
-    right: 20px;
-  }
-
-  .swiper-button-prev {
-    left: 20px;
+    display: none;
   }
 }
 
