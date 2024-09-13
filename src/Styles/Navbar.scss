@@ -9,15 +9,18 @@ nav {
   z-index: 100;
 
   .nav-cont {
-    @include flex($justify: space-between);
-    width: 70%;
-    background-color: $red;
-    box-shadow: $shadow;
+    @include flex();
+    width: 1600px;
+    margin: 0 auto;
 
     .navlinks {
-      width: 1600px;
+      width: 80%;
+      background-color: $red;
+      height: 100%;
+      @include flex($justify: baseline);
+
       .navlinks-cont {
-        @include flex($justify: end);
+        @include flex($justify: baseline);
         gap: 20px;
 
         .navlink {
@@ -166,88 +169,92 @@ nav {
       }
     }
 
+    .creation {
+      position: relative;
+      flex-direction: column;
+      align-items: baseline;
+      height: 70px;
+
+      .background-gray {
+        position: absolute;
+        width: 20px;
+        height: 100%;
+        background-color: $gray;
+      }
+
+      .creation-left {
+        .left-trap {
+          width: 60px;
+          height: 50px;
+          background-color: $gray;
+          position: absolute;
+          right: -80px;
+          clip-path: polygon(0% 0%, 100% 0%, 58% 100%, 0% 100%);
+        }
+
+        .left-round {
+          position: absolute;
+          height: 70px;
+          width: 40px;
+          right: -60px;
+          background-color: $gray;
+          border-radius: 0 0 100px 0;
+        }
+      }
+
+      .creation-right {
+        .right-trap {
+          width: 60px;
+          height: 50px;
+          background-color: $red;
+          position: absolute;
+          clip-path: polygon(0% 0%, 100% 0%, 58% 100%, 0% 100%);
+        }
+
+        .right-round {
+          position: absolute;
+          height: 70px;
+          width: 40px;
+          background-color: $red;
+          border-radius: 0 0 100px 0;
+        }
+      }
+    }
+
+    .right-transparent {
+      width: 20%;
+      background-color: transparent;
+      height: 70px;
+      display: flex;
+      align-items: center;
+      justify-content: end;
+
+      .logo-cont {
+        margin-top: 100px;
+        height: 120px;
+        width: 120px;
+        background-image: url("/logos/logo-no-bg.png");
+        background-size: contain;
+        background-position: center;
+        backdrop-filter: blur(5px);
+        border-radius: 100px;
+        @include flex();
+        transition: transform 0.1s;
+
+        a {
+          height: 90px;
+          width: 90px;
+          cursor: pointer;
+          border-radius: 100px;
+        }
+        &:hover {
+          transform: rotate(360deg);
+        }
+      }
+    }
+
     .menu-btn {
       display: none;
-    }
-  }
-
-  .creation {
-    position: relative;
-    flex-direction: column;
-    align-items: baseline;
-
-    .background-gray {
-      position: absolute;
-      width: 20px;
-      height: 100%;
-      background-color: $gray;
-    }
-
-    .creation-left {
-      .left-trap {
-        width: 60px;
-        height: 50px;
-        background-color: $gray;
-        position: absolute;
-        right: -80px;
-        clip-path: polygon(0% 0%, 100% 0%, 58% 100%, 0% 100%);
-      }
-
-      .left-round {
-        position: absolute;
-        height: 70px;
-        width: 40px;
-        right: -60px;
-        background-color: $gray;
-        border-radius: 0 0 100px 0;
-      }
-    }
-
-    .creation-right {
-      .right-trap {
-        width: 60px;
-        height: 50px;
-        background-color: $red;
-        position: absolute;
-        clip-path: polygon(0% 0%, 100% 0%, 58% 100%, 0% 100%);
-      }
-
-      .right-round {
-        position: absolute;
-        height: 70px;
-        width: 40px;
-        background-color: $red;
-        border-radius: 0 0 100px 0;
-      }
-    }
-  }
-
-  .right-transparent {
-    width: 30%;
-    background-color: transparent;
-
-    .logo-cont {
-      margin: 10px auto;
-      height: 120px;
-      width: 120px;
-      background-image: url("/logos/logo-no-bg.png");
-      background-size: contain;
-      right: 20%;
-      background-position: center;
-      backdrop-filter: blur(5px);
-      border-radius: 100px;
-      @include flex();
-      transition: transform 0.1s;
-
-      a {
-        height: 90px;
-        width: 90px;
-        cursor: pointer;
-        border-radius: 100px;
-      }
-      &:hover {
-        transform: rotate(360deg);
-      }
     }
   }
 }
