@@ -2,19 +2,6 @@ import "../Styles/About.scss";
 import { motion } from "framer-motion";
 
 const About = () => {
-  const imgMotion = {
-    hidden: {
-      opacity: 0,
-    },
-    visible: {
-      opacity: 1,
-      transition: {
-        delay: 0.5,
-        duration: 0.5,
-      },
-    },
-  };
-
   const sectionMotion = {
     hidden: {
       opacity: 0,
@@ -34,14 +21,7 @@ const About = () => {
 
   return (
     <div className="page about">
-      <motion.div
-        className="top-img-cont"
-        variants={imgMotion}
-        initial="hidden"
-        animate="visible"
-      >
-        <h1>O Nama</h1>
-      </motion.div>
+
       <div className="page-cont">
         <motion.section
           id="tafe"

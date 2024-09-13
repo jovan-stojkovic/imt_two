@@ -3,6 +3,7 @@ import CustomSwiper from "../Components/CustomSwiper";
 import { motion } from "framer-motion";
 import HomeModels from "../Components/HomeModels";
 import HomeAbout from "../Components/HomeAbout";
+import HomeNetwork from "../Components/HomeNetwork";
 
 const Home = () => {
   const imgMotion = {
@@ -40,23 +41,32 @@ const Home = () => {
         <CustomSwiper />
       </motion.div>
 
-      <motion.div
+      <motion.section
         variants={sectionMotion}
         initial="hidden"
         whileInView="visible"
         viewport={{ amount: 0.5, once: true }}
       >
         <HomeModels />
-      </motion.div>
+      </motion.section>
 
-      <motion.div
+      <motion.section
         variants={sectionMotion}
         initial="hidden"
         whileInView="visible"
         viewport={{ amount: 0.5, once: true }}
       >
         <HomeAbout />
-      </motion.div>
+      </motion.section>
+
+      <motion.section
+        variants={sectionMotion}
+        initial="hidden"
+        whileInView="visible"
+        viewport={{ amount: 0.5, once: true }}
+      >
+        <HomeNetwork />
+      </motion.section>
     </>
   );
 };

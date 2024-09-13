@@ -1,4 +1,5 @@
 import { useEffect } from "react";
+import Bar from "./Bar";
 
 const HomeModels = () => {
   useEffect(() => {
@@ -20,7 +21,7 @@ const HomeModels = () => {
   return (
     <>
       <div className="home-models">
-        <h1>MODELI</h1>
+        <Bar headline={"MODELI"} />
         <div className="models">
           <div className="part">
             <div className="model-img"></div>

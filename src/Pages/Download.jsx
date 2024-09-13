@@ -42,24 +42,7 @@ const Download = () => {
           impedit quidem dolores!
         </p>
 
-        <div className="bar">
-          <div className="left-red"></div>
-          <div className="creation">
-            <div className="background-gray"></div>
-            <div className="creation-left">
-              <div className="left-trap"></div>
-              <div className="left-round"></div>
-            </div>
 
-            <div className="creation-right">
-              <div className="right-trap"></div>
-              <div className="right-round"></div>
-            </div>
-          </div>
-          <div className="right-transparent">
-            <div className="logo-cont"></div>
-          </div>
-        </div>
       </div>
     </div>
   );
