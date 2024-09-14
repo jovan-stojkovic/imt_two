@@ -4,6 +4,7 @@ import VanillaTilt from "vanilla-tilt";
 import { useEffect } from "react";
 import { Link } from "react-router-dom";
 import Bar from "../Components/Bar";
+import { Element } from "react-scroll";
 
 const Products = () => {
   useEffect(() => {
@@ -116,53 +117,53 @@ const Products = () => {
         <h1 className="main-headline">MODELI</h1>
 
         <div className="page-cont">
-          <motion.section
-            variants={sectionMotion}
-            initial="hidden"
-            whileInView="visible"
-            viewport={{ amount: 0.2, once: true }}
-          >
-            <Bar headline={"STANDARDNA SERIJA"} />
-            {standard.map((product, index) => (
-              <div
-                key={index}
-                className="single-product"
-              >
-                <Link
-                  to={`/modeli/${product.name}`}
-                  onClick={() => {
-                    window.scrollTo({ top: 0, behavior: "smooth" });
-                  }}
-                >
-                  <img src={product.img} alt={product.name} />
-                  <h1>{product.name}</h1>
-                  <p className="hp">{`${product.hp}hp`}</p>
-                  <p className="wd">{`${product.wd}WD`}</p>
-                </Link>
-              </div>
-            ))}
-          </motion.section>
+          <Element name="standardni">
+            <motion.section
+              variants={sectionMotion}
+              initial="hidden"
+              whileInView="visible"
+              viewport={{ amount: 0.2, once: true }}
+            >
+              <Bar headline={"STANDARDNA SERIJA"} />
+              {standard.map((product, index) => (
+                <div key={index} className="single-product">
+                  <Link
+                    to={`/modeli/${product.name}`}
+                    onClick={() => {
+                      window.scrollTo({ top: 0, behavior: "smooth" });
+                    }}
+                  >
+                    <img src={product.img} alt={product.name} />
+                    <h1>{product.name}</h1>
+                    <p className="hp">{`${product.hp}hp`}</p>
+                    <p className="wd">{`${product.wd}WD`}</p>
+                  </Link>
+                </div>
+              ))}
+            </motion.section>
+          </Element>
 
+          <Element name="kompaktni">
+            <motion.section
+              variants={sectionMotion}
+              initial="hidden"
+              whileInView="visible"
+              viewport={{ amount: 0.2, once: true }}
+            >
+              <Bar headline={"KOMPAKTNA SERIJA"} />
+            </motion.section>
+          </Element>
 
-          <motion.section
-            variants={sectionMotion}
-            initial="hidden"
-            whileInView="visible"
-            viewport={{ amount: 0.2, once: true }}
-          >
-            <Bar headline={"KOMPAKTNA SERIJA"} />
-
-          </motion.section>
-
-          <motion.section
-            variants={sectionMotion}
-            initial="hidden"
-            whileInView="visible"
-            viewport={{ amount: 0.2, once: true }}
-          >
-            <Bar headline={"MAGNA SERIJA"} />
-
-          </motion.section>
+          <Element name="magna">
+            <motion.section
+              variants={sectionMotion}
+              initial="hidden"
+              whileInView="visible"
+              viewport={{ amount: 0.2, once: true }}
+            >
+              <Bar headline={"MAGNA SERIJA"} />
+            </motion.section>
+          </Element>
         </div>
       </div>
     </>

@@ -1,6 +1,7 @@
 import "../Styles/Navbar.scss";
 import { Link, NavLink } from "react-router-dom";
 import { motion } from "framer-motion";
+import { Link as ScrollLink } from "react-scroll";
 
 const Navbar = ({ menu, setMenu, handleMenu }) => {
   const generalMotion = {
@@ -112,15 +113,15 @@ const Navbar = ({ menu, setMenu, handleMenu }) => {
               <div className="dropdown dropdown-models">
                 <div className="padding-div"></div>
                 <div className="dropdown-cont">
-                  <NavLink className="dropdown-navlink" to="/modeli/standardni">
+                  <ScrollLink className="dropdown-navlink" to="standardni" spy={true} smooth={true} offset={-70} duration={500}>
                     STANDARDNI
-                  </NavLink>
-                  <NavLink className="dropdown-navlink" to="/modeli/kompaktni">
+                  </ScrollLink>
+                  <ScrollLink className="dropdown-navlink" to="kompaktni" spy={true} smooth={true} offset={-70} duration={500}>
                     KOMPAKTNI
-                  </NavLink>
-                  <NavLink className="dropdown-navlink" to="/modeli/magna">
+                  </ScrollLink>
+                  <ScrollLink className="dropdown-navlink" to="magna" spy={true} smooth={true} offset={-70} duration={500}>
                     MAGNA
-                  </NavLink>
+                  </ScrollLink>
                 </div>
               </div>
             </motion.div>
