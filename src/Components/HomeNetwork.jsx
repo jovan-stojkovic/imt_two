@@ -1,4 +1,5 @@
 import Bar from "./Bar";
+import { Link } from "react-router-dom";
 
 const HomeNetwork = () => {
   return (
@@ -37,7 +38,15 @@ const HomeNetwork = () => {
           </p>
         </div>
 
-        <div className="img-cont"></div>
+        <div className="img-cont">
+          <Link
+          className="network-link"
+            to="/prodajna-mreza"
+            onClick={() => {
+              window.scrollTo({ top: 0, behavior: "smooth" });
+            }}
+          ></Link>
+        </div>
       </div>
     </>
   );

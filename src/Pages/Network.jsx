@@ -32,23 +32,42 @@ const Network = () => {
         >
           <Bar />
           <div className="text-part">
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatem
-            esse perferendis consequuntur porro dolore animi quasi delectus
-            voluptates soluta sequi ad, voluptatum maiores voluptas natus saepe
-            assumenda autem. Animi esse nobis debitis iusto est eos, quisquam
-            unde culpa amet. Quis et quibusdam illo, molestiae dolore ea commodi
-            totam provident alias velit natus vero, sint quidem voluptates
-            beatae? Ipsa voluptatibus, placeat reiciendis omnis aliquam
-            quibusdam animi dolorem quasi aliquid, aspernatur nam, nisi possimus
-            consequatur! Sequi sapiente molestias deserunt, vitae mollitia eius!
-            Voluptates animi error ut minima delectus? Nulla, facere. Quos
-            voluptatum veniam a quasi asperiores hic, eveniet facere
-            reprehenderit debitis ad voluptatem. Exercitationem alias iure,
-            perspiciatis consequuntur voluptatem error. Iste odio ea aspernatur
-            molestias maxime impedit laboriosam asperiores iusto, voluptate esse
-            harum quo tenetur iure nobis ut error ab, ratione doloribus. Tempora
-            delectus sit consequuntur pariatur, quasi impedit debitis, soluta id
-            amet rerum eum ullam quisquam sunt alias, assumenda ex quas.
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+              Voluptatem esse perferendis consequuntur porro dolore animi quasi
+              delectus voluptates soluta sequi ad, voluptatum maiores voluptas
+              natus saepe assumenda autem. Animi esse nobis debitis iusto est
+              eos, quisquam unde culpa amet. Quis et quibusdam illo, molestiae
+              dolore ea commodi totam provident alias velit natus vero, sint
+              quidem voluptates.
+            </p>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+              Voluptatem esse perferendis consequuntur porro dolore animi quasi
+              delectus voluptates soluta sequi ad, voluptatum maiores voluptas
+              natus saepe assumenda autem. Animi esse nobis debitis iusto est
+              eos, quisquam unde culpa amet. Quis et quibusdam illo, molestiae
+              dolore ea commodi totam provident alias velit natus vero, sint
+              quidem voluptates.
+            </p>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+              Voluptatem esse perferendis consequuntur porro dolore animi quasi
+              delectus voluptates soluta sequi ad, voluptatum maiores voluptas
+              natus saepe assumenda autem. Animi esse nobis debitis iusto est
+              eos, quisquam unde culpa amet. Quis et quibusdam illo, molestiae
+              dolore ea commodi totam provident alias velit natus vero, sint
+              quidem voluptates.
+            </p>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+              Voluptatem esse perferendis consequuntur porro dolore animi quasi
+              delectus voluptates soluta sequi ad, voluptatum maiores voluptas
+              natus saepe assumenda autem. Animi esse nobis debitis iusto est
+              eos, quisquam unde culpa amet. Quis et quibusdam illo, molestiae
+              dolore ea commodi totam provident alias velit natus vero, sint
+              quidem voluptates.
+            </p>
           </div>
           <div className="img-cont">
             <div className="dot-logo">
@@ -56,8 +75,12 @@ const Network = () => {
                 <h5>INDUSTRIJA MEHANIZACIJE I TRAKTORA</h5>
                 <p>Žanke Stokić 39, 11000 Beograd</p>
                 <p>Konstantina Danila BB, 23250 Jarkovac</p>
-                <span>www.tafe.com</span>
-                <span>info@tractors-europe.com</span>
+                <p>
+                  <span>www.tafe.com</span>
+                </p>
+                <p>
+                  <span>info@tractors-europe.com</span>
+                </p>
               </div>
             </div>
             <div className="dot agrorid">

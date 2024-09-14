@@ -3,18 +3,21 @@
 .network {
   .page-cont {
     section {
-      height: 1000px;
       border-radius: 5px;
       box-shadow: $shadow;
       position: relative;
       padding: 200px 50px;
-      margin-bottom: 100px;
+      margin-bottom: 200px;
       @include flex($justify: space-between, $align: start);
 
       .text-part {
-        width: 40%;
+        width: 60%;
         line-height: 30px;
         text-align: justify;
+
+        p {
+          margin-bottom: 20px;
+        }
       }
 
       .img-cont {

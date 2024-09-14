@@ -120,7 +120,6 @@
   box-shadow: $shadow;
   @include flex($justify: space-between);
 
-
   .text-part {
     margin-top: 100px;
     text-align: justify;
@@ -179,6 +178,13 @@
     background-position: center;
     background-repeat: no-repeat;
     background-size: contain;
+    @include flex();
+
+    .network-link {
+      height: 97%;
+      width: 70%;
+      cursor: pointer;
+    }
   }
 }
 
