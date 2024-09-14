@@ -5,8 +5,12 @@ import { useEffect } from "react";
 import { Link } from "react-router-dom";
 import Bar from "../Components/Bar";
 import { Element } from "react-scroll";
+import { useParams } from "react-router-dom";
+import { scroller } from "react-scroll";
 
 const Products = () => {
+  const { section } = useParams();
+
   useEffect(() => {
     let elements = document.querySelectorAll(".single-product");
     VanillaTilt.init(elements, {
@@ -22,6 +26,17 @@ const Products = () => {
       });
     };
   }, []);
+
+  useEffect(() => {
+    if (section) {
+      scroller.scrollTo(section, {
+        duration: 800,
+        delay: 0,
+        smooth: "easeInOutQuart",
+        offset: -70,
+      });
+    }
+  }, [section]);
 
   const sectionMotion = {
     hidden: {

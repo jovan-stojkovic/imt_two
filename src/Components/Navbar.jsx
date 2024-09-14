@@ -76,13 +76,16 @@ const Navbar = ({ menu, setMenu, handleMenu }) => {
               <div className="dropdown dropdown-about">
                 <div className="padding-div"></div>
                 <div className="dropdown-cont">
-                  <NavLink className="dropdown-navlink" to="tafe">
+                  <NavLink className="dropdown-navlink" to="/o-nama/tafe">
                     TAFE
                   </NavLink>
-                  <NavLink className="dropdown-navlink" to="/o-nama/imt">
+                  <NavLink className="dropdown-navlink" to="/o-nama/ind-masina">
                     INDUSTRIJA MAŠINA I TRAKTORA
                   </NavLink>
-                  <NavLink className="dropdown-navlink" to="/o-nama/industrija">
+                  <NavLink
+                    className="dropdown-navlink"
+                    to="/o-nama/ind-mehanizacije"
+                  >
                     INDUSTRIJA MEHANIZACIJE I TRAKTORA
                   </NavLink>
                   <NavLink
@@ -113,15 +116,15 @@ const Navbar = ({ menu, setMenu, handleMenu }) => {
               <div className="dropdown dropdown-models">
                 <div className="padding-div"></div>
                 <div className="dropdown-cont">
-                  <ScrollLink className="dropdown-navlink" to="standardni" spy={true} smooth={true} offset={-70} duration={500}>
+                  <NavLink className="dropdown-navlink" to="/modeli/standardni">
                     STANDARDNI
-                  </ScrollLink>
-                  <ScrollLink className="dropdown-navlink" to="kompaktni" spy={true} smooth={true} offset={-70} duration={500}>
+                  </NavLink>
+                  <NavLink className="dropdown-navlink" to="/modeli/kompaktni">
                     KOMPAKTNI
-                  </ScrollLink>
-                  <ScrollLink className="dropdown-navlink" to="magna" spy={true} smooth={true} offset={-70} duration={500}>
+                  </NavLink>
+                  <NavLink className="dropdown-navlink" to="/modeli/magna">
                     MAGNA
-                  </ScrollLink>
+                  </NavLink>
                 </div>
               </div>
             </motion.div>
