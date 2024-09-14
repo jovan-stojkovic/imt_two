@@ -6,7 +6,8 @@ import Products from "./Pages/Products";
 import About from "./Pages/About";
 import Network from "./Pages/Network";
 import Download from "./Pages/Download";
-import Media from "./Pages/Media";
+import Service from "./Pages/Service";
+
 import BackToTopButton from "./Components/BackToTopButton";
 import Footer from "./Components/Footer";
 import ProductOne from "./Products/ProductOne";
@@ -54,10 +55,8 @@ const App = () => {
           <Route path="/modeli/587M HVAC" element={<ProductSeven />} />
           <Route path="/prodajna-mreza" element={<Network />} />
           <Route path="/preuzimanje" element={<Download />} />
-
-          <Route path="/media" element={<Media />} />
-
           <Route path="/kontakt" element={<Contact />} />
+          <Route path="/zakazite-servis" element={<Service />} />
         </Routes>
       </div>
       <Footer />

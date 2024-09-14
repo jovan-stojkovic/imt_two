@@ -197,7 +197,7 @@ const Navbar = ({ menu, setMenu, handleMenu }) => {
             <motion.div variants={navlinksMotion}>
               <NavLink
                 className="navlink"
-                to="/servis"
+                to="/zakazite-servis"
                 onClick={() => {
                   setMenu(false);
                   window.scrollTo({ top: 0, behavior: "smooth" });
