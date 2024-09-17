@@ -5,6 +5,7 @@ import { Element } from "react-scroll";
 import { useEffect } from "react";
 import { scroller } from "react-scroll";
 import { useParams } from "react-router-dom";
+import TextReveal from "../Components/TextReveal";
 
 const About = () => {
   const { section } = useParams();
@@ -39,10 +40,9 @@ const About = () => {
 
   return (
     <div className="page about">
-      <h1 className="main-headline">O NAMA</h1>
+      <TextReveal text="O NAMA"/>
       <div className="page-cont">
         <Element name="tafe">
-          {" "}
           <motion.section
             id="tafe"
             variants={sectionMotion}

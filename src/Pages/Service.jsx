@@ -3,6 +3,7 @@ import { useForm } from "react-hook-form";
 import * as yup from "yup";
 import { yupResolver } from "@hookform/resolvers/yup";
 import { useState } from "react";
+import TextReveal from "../Components/TextReveal";
 
 const Service = () => {
   const [success, setSuccess] = useState(false);
@@ -35,7 +36,8 @@ const Service = () => {
   return (
     <>
       <div className="page about">
-        <h1 className="main-headline">ZAKAŽITE SERVIS</h1>
+        <TextReveal text="ZAKAŽITE SERVIS" />
+
         <div className="page-cont">
           {/* <h2>PODACI O VLASNIKU I MODELU</h2> */}
           {/* <div className="service-form">

@@ -7,6 +7,7 @@ import Bar from "../Components/Bar";
 import { Element } from "react-scroll";
 import { useParams } from "react-router-dom";
 import { scroller } from "react-scroll";
+import TextReveal from "../Components/TextReveal";
 
 const Products = () => {
   const { section } = useParams();
@@ -129,7 +130,7 @@ const Products = () => {
   return (
     <>
       <div className="page products">
-        <h1 className="main-headline">MODELI</h1>
+        <TextReveal text="MODELI"/>
 
         <div className="page-cont">
           <Element name="standardni">

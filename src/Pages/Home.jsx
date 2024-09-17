@@ -5,7 +5,7 @@ import HomeModels from "../Components/HomeModels";
 import HomeAbout from "../Components/HomeAbout";
 import HomeNetwork from "../Components/HomeNetwork";
 
-const Home = () => {
+const Home = ({ TextReveal }) => {
   const imgMotion = {
     hidden: {
       opacity: 0,

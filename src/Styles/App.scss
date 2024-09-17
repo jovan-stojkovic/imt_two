@@ -133,17 +133,6 @@ main {
   width: 100%;
   min-height: 100vh;
 
-  .main-headline {
-    font-size: 150px;
-    line-height: 150px;
-    letter-spacing: 20px;
-    font-weight: 600;
-    color: $gray;
-    text-align: center;
-    margin-top: 200px;
-    margin-bottom: 130px;
-  }
-
   .top-img-cont {
     @include background($size: cover, $position: center top);
     margin: 0 auto;
@@ -256,6 +245,19 @@ main {
       border-radius: 100px;
     }
   }
+}
+
+.text-reveal-div {
+  width: 100%;
+  font-size: 150px;
+  line-height: 150px;
+  letter-spacing: 20px;
+  font-weight: 600;
+  color: $gray;
+  text-align: center;
+  margin-top: 200px;
+  margin-bottom: 130px;
+
 }
 
 //1440px - 1700px

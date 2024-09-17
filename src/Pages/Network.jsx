@@ -1,6 +1,7 @@
 import "../Styles/Network.scss";
 import { motion } from "framer-motion";
 import Bar from "../Components/Bar";
+import TextReveal from "../Components/TextReveal";
 
 const Network = () => {
   const sectionMotion = {
@@ -22,13 +23,13 @@ const Network = () => {
 
   return (
     <div className="page network">
-      <h1 className="main-headline">PRODAJNA MREŽA</h1>
+      <TextReveal text="PRODAJNA MREŽA"/>
       <div className="page-cont">
         <motion.section
           variants={sectionMotion}
           initial="hidden"
           whileInView="visible"
-          viewport={{ amount: 0.5, once: true }}
+          viewport={{ amount: 0.2, once: true }}
         >
           <Bar />
           <div className="text-part">

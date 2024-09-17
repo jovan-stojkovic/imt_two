@@ -45,7 +45,10 @@ const App = () => {
           <Route path="/" element={<Home />} />
           <Route path="/o-nama/:section?" element={<About />} />
 
-          <Route path="/modeli/:section?" element={<Products />} />
+          <Route
+            path="/modeli/:section?"
+            element={<Products/>}
+          />
           <Route path="/modeli/539.2 DI" element={<ProductOne />} />
           <Route path="/modeli/539.3 DI" element={<ProductTwo />} />
           <Route path="/modeli/549.3 DI" element={<ProductThree />} />
