@@ -139,6 +139,20 @@ const Network = () => {
               </div>
             </div>
 
+            <div className="dot agrocentar">
+              <div className="info">
+                <div className="logo-cont"></div>
+                <p>Šume 1a</p>
+                <p>Ivanjica</p>
+                <p>
+                  <span>email:</span> office@simpeks.rs
+                </p>
+                <p>
+                  <span>tel:</span> 069 101 1852
+                </p>
+              </div>
+            </div>
+
             <div className="dot agribau">
               <div className="info">
                 <div className="logo-cont"></div>
