@@ -1,5 +1,6 @@
 import { useEffect } from "react";
 import Bar from "./Bar";
+import { Link } from "react-router-dom";
 
 const HomeModels = () => {
   useEffect(() => {
@@ -23,18 +24,18 @@ const HomeModels = () => {
       <div className="home-models">
         <Bar headline={"MODELI"} />
         <div className="models">
-          <div className="part">
+          <Link className="part" to="/modeli/standardni">
             <div className="model-img"></div>
             <p className="series-name">Standardna Serija</p>
-          </div>
-          <div className="part">
+          </Link>
+          <Link className="part" to="/modeli/kompaktni">
             <div className="model-img"></div>
             <p className="series-name">Kompaktna Serija</p>
-          </div>
-          <div className="part">
+          </Link>
+          <Link className="part" to="/modeli/magna">
             <div className="model-img"></div>
             <p className="series-name">Magna Serija</p>
-          </div>
+          </Link>
         </div>
       </div>
     </>

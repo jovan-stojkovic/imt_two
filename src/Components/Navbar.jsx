@@ -1,7 +1,6 @@
 import "../Styles/Navbar.scss";
 import { Link, NavLink } from "react-router-dom";
 import { motion } from "framer-motion";
-import { Link as ScrollLink } from "react-scroll";
 
 const Navbar = ({ menu, setMenu, handleMenu }) => {
   const generalMotion = {

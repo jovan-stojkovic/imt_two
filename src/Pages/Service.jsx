@@ -37,8 +37,8 @@ const Service = () => {
       <div className="page about">
         <h1 className="main-headline">ZAKAŽITE SERVIS</h1>
         <div className="page-cont">
-          <h2>PODACI O VLASNIKU I MODELU</h2>
-          <div className="service-form">
+          {/* <h2>PODACI O VLASNIKU I MODELU</h2> */}
+          {/* <div className="service-form">
             <div className="service-left">
               <label htmlFor="name">
                 Ime i prezime<span>*</span>
@@ -78,7 +78,7 @@ const Service = () => {
                 
               </label>
             </div>
-          </div>
+          </div> */}
         </div>
       </div>
     </>
