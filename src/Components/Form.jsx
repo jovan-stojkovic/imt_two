@@ -48,6 +48,7 @@ const Form = ({ title }) => {
         </div>
       ) : (
         <form
+        className="form"
           onSubmit={handleSubmit(onSubmit)}
         >
             <input type="text" value={title} placeholder="Predmet" />

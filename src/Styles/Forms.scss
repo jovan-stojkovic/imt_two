@@ -1,6 +1,6 @@
 @import "./App.scss";
 
-form {
+.form {
   width: 100%;
   padding: 20px;
   input {
@@ -77,5 +77,163 @@ form {
     letter-spacing: 2px;
     text-align: right;
     height: 22px;
+  }
+}
+
+.page.service {
+  .page-cont {
+    h2 {
+      font-size: 40px;
+      width: 100%;
+      border-bottom: 5px solid $red;
+      line-height: 32px;
+      margin-bottom: 50px;
+    }
+
+    .service-form {
+      .service-flex {
+        @include flex($align: top, $justify: space-between);
+        gap: 50px;
+
+        label {
+          font-size: 20px;
+          letter-spacing: 1px;
+          margin-left: 5px;
+
+          span {
+            color: $red;
+          }
+        }
+
+        .service-text-input {
+          all: unset;
+          width: calc(100% - 30px);
+          padding: 0 15px;
+          background-color: rgba(164, 164, 164, 0.5);
+          backdrop-filter: blur(2px);
+          height: 40px;
+          margin-bottom: 20px;
+          font-size: 18px;
+          color: $black;
+          letter-spacing: 2px;
+          cursor: text;
+          transition: 0.5s;
+          border-radius: 5px;
+          &::placeholder {
+            color: gray;
+            font-size: 15px;
+            letter-spacing: 2px;
+          }
+
+          &:hover {
+            background-color: rgba(164, 164, 164, 0.8);
+          }
+        }
+
+        .service-left {
+          width: 50%;
+
+          .model-input {
+            margin: 50px 0;
+            .model-boxes {
+              width: 100%;
+              display: flex;
+              flex-wrap: wrap;
+              justify-content: space-between;
+              gap: 20px;
+
+              label {
+                cursor: pointer;
+              }
+
+              input {
+                margin-right: 10px;
+                cursor: pointer;
+              }
+            }
+          }
+
+          .input-flex {
+            display: flex;
+            gap: 10px;
+
+            .hours-cont {
+              width: 50%;
+            }
+
+            .contact-cont {
+              width: 50%;
+
+              p {
+                font-size: 20px;
+                letter-spacing: 1px;
+                margin-left: 5px;
+              }
+
+              .labels {
+                display: flex;
+                justify-content: center;
+                gap: 10%;
+
+                input {
+                  margin-right: 10px;
+                }
+              }
+            }
+          }
+        }
+
+        .service-right {
+          width: 50%;
+          display: flex;
+          flex-direction: column;
+
+          .service-area {
+            all: unset;
+            padding: 15px;
+            width: calc(100% - 30px);
+            font-size: 18px;
+            color: $black;
+            letter-spacing: 2px;
+            background-color: rgba(164, 164, 164, 0.5);
+            backdrop-filter: blur(2px);
+            word-wrap: break-word;
+            line-height: 25px;
+            margin-bottom: 20px;
+            cursor: text;
+            transition: 0.5s;
+            border-radius: 5px;
+
+            &::placeholder {
+              color: gray;
+              font-size: 15px;
+              letter-spacing: 2px;
+            }
+
+            &:hover {
+              background-color: rgba(164, 164, 164, 0.9);
+            }
+          }
+        }
+      }
+      button {
+        all: unset;
+        width: calc(20% - 30px);
+        margin-left: 80%;
+        padding: 0 15px;
+        height: 60px;
+        border-radius: 5px;
+        color: $white;
+        background-color: $red;
+        backdrop-filter: blur(2px);
+        font-size: 15px;
+        letter-spacing: 5px;
+        cursor: pointer;
+        transition: 0.5s;
+        &:hover {
+          filter: brightness(1.1);
+        }
+      }
+    }
   }
 }
