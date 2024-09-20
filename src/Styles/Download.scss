@@ -1,16 +1,129 @@
 @import "./App.scss";
 
 .download {
-  .top-img-cont {
-    background-image: url("/backgrounds/home.webp");
-  }
-}
+  .page-cont {
+    section {
+      border-radius: 5px;
+      box-shadow: $shadow;
+      position: relative;
+      padding: 200px 50px 50px 50px;
+      margin-bottom: 100px;
 
-//<<<<<<<<650px
-@media (max-width: 650px) {
-  .download {
-    .top-img-cont {
-      background-image: url("/backgrounds/home-mobile.webp");
+      p {
+        margin-bottom: 30px;
+        font-size: 18px;
+        line-height: 28px;
+      }
+
+      .segment {
+        width: 30%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+        height: 250px;
+        margin-bottom: 100px;
+
+        h2 {
+          font-size: 18px;
+          text-align: center;
+        }
+
+        a {
+          height: 200px;
+          width: 200px;
+          background-image: url("/icons/pdf.svg");
+          background-position: center;
+          background-size: 80%;
+          background-repeat: no-repeat;
+          transition: 0.3s;
+        }
+
+        &:hover {
+          h2 {
+            color: $red;
+          }
+          a {
+            background-image: url("/icons/pdf red.svg");
+            scale: 1.05;
+          }
+        }
+      }
+
+      &.info {
+        display: flex;
+        justify-content: space-between;
+      }
+
+      &.brochures {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+
+        .segment {
+          height: 190px;
+
+          h2 {
+            font-size: 18px;
+            text-align: center;
+          }
+
+          a {
+            height: 200px;
+            width: 200px;
+            background-image: url("/icons/pdf.svg");
+            background-position: center;
+            background-size: 80%;
+            background-repeat: no-repeat;
+            transition: 0.3s;
+          }
+
+          &:hover {
+            h2 {
+              color: $red;
+            }
+            a {
+              background-image: url("/icons/pdf red.svg");
+              scale: 1.05;
+            }
+          }
+        }
+      }
+
+      &.manuals {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+
+        .segment {
+          height: 190px;
+
+          h2 {
+            font-size: 18px;
+            text-align: center;
+          }
+
+          a {
+            height: 200px;
+            width: 200px;
+            background-image: url("/icons/pdf.svg");
+            background-position: center;
+            background-size: 80%;
+            background-repeat: no-repeat;
+            transition: 0.3s;
+          }
+
+          &:hover {
+            h2 {
+              color: $red;
+            }
+            a {
+              background-image: url("/icons/pdf red.svg");
+              scale: 1.05;
+            }
+          }
+        }
+      }
     }
   }
 }

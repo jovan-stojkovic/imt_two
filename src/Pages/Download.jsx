@@ -1,48 +1,84 @@
 import "../Styles/Download.scss";
-import { motion } from "framer-motion";
+import TextReveal from "../Components/TextReveal";
+import Bar from "../Components/Bar";
+
+const brochures = [
+  "IMT 539.2",
+  "IMT 549.3",
+  "IMT 565.2",
+  "IMT 569 M",
+  "IMT 577 M",
+  "IMT 587 M",
+  "TAFE 4615",
+  "TAFE 6028 M",
+  "TAFE 6515",
+];
+
+const manuals = [
+  "IMT 539.2, 539.3",
+  "IMT 549.3",
+  "IMT 565",
+  "IMT 569M, 577M, 587M",
+  "TAFE 4615",
+  "TAFE 6028M",
+  "TAFE 6515",
+];
 
 const Download = () => {
-  const imgMotion = {
-    hidden: {
-      opacity: 0,
-    },
-    visible: {
-      opacity: 1,
-      transition: {
-        delay: 0.5,
-        duration: 0.5,
-      },
-    },
-  };
-
   return (
     <div className="page download">
-      <motion.div
-        className="top-img-cont"
-        variants={imgMotion}
-        initial="hidden"
-        animate="visible"
-      >
-        <h1>Preuzimanja</h1>
-      </motion.div>
-
+      <TextReveal text="PREUZIMANJE" />
       <div className="page-cont">
-        <p>
-          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quidem vero
-          voluptates dolorum, error fuga nulla? Aperiam, rem omnis, provident
-          mollitia suscipit reiciendis tenetur magnam enim, sequi reprehenderit
-          magni? Enim unde, officiis doloremque expedita dicta cupiditate. Ipsum
-          quibusdam vero, est reiciendis voluptas voluptatibus, beatae expedita
-          delectus placeat commodi blanditiis reprehenderit corrupti iste sit,
-          repellat quisquam dolore quos id tenetur dolores assumenda praesentium
-          enim nam quis. Temporibus error dolorum pariatur voluptatibus hic
-          perspiciatis sed non excepturi inventore ipsam voluptas minus
-          cupiditate libero ducimus quaerat maxime vero quas illum suscipit
-          corrupti id labore, fugiat dignissimos nam. Magnam unde veritatis non
-          impedit quidem dolores!
-        </p>
+        <section className="info">
+          <Bar headline={"PODACI O FIRMI"} />
+          <div className="segment">
+            <h2>APR REŠENJE</h2>
+            <a
+              href="/files/firma/APR Rešenje.PDF"
+              download="/APR Rešenje.PDF"
+            ></a>
+          </div>
+          <div className="segment">
+            <h2>POTVRDA O IZVRŠENOJ REGISTRACIJI</h2>
+            <a
+              href="/files/firma/Potvrda o izvršenoj registraciji.PDF"
+              download="/Potvrda o izvršenoj registraciji.PDF"
+            ></a>
+          </div>
+          <div className="segment">
+            <h2>POTVRDA O IZVRŠENOM EVIDENTIRANJU PDV-a</h2>
+            <a
+              href="/files/firma/Potvrda o izvršenom evidentiranju pdv-a.pdf"
+              download="/Potvrda o izvršenom evidentiranju pdv-a.pdf"
+            ></a>
+          </div>
+        </section>
 
+        <section className="brochures">
+          <Bar headline={"PROSPEKTI"} />
+          {brochures.map((brochure) => (
+            <div className="segment" key={brochure}>
+              <h2>{brochure}</h2>
+              <a
+                href={`/files/brosure/${brochure}.pdf`}
+                download={`${brochure}.pdf`}
+              ></a>
+            </div>
+          ))}
+        </section>
 
+        <section className="manuals">
+          <Bar headline={"UPUTSTVA ZA RUKOVANJE"} />
+          {manuals.map((manual) => (
+            <div className="segment" key={manual}>
+              <h2>{manual}</h2>
+              <a
+                href={`/files/brosure/${manual}.pdf`}
+                download={`${manual}.pdf`}
+              ></a>
+            </div>
+          ))}
+        </section>
       </div>
     </div>
   );
