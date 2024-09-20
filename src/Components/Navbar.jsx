@@ -143,7 +143,6 @@ const Navbar = ({ menu, setMenu, handleMenu }) => {
 
             <motion.div
               variants={navlinksMotion}
-              className="navlink-with-dropdown download"
             >
               <NavLink
                 className="navlink"
@@ -155,30 +154,6 @@ const Navbar = ({ menu, setMenu, handleMenu }) => {
               >
                 PREUZIMANJE
               </NavLink>
-
-              <div className="dropdown dropdown-download">
-                <div className="padding-div"></div>
-                <div className="dropdown-cont">
-                  <NavLink
-                    className="dropdown-navlink"
-                    to="/preuzimanje/o-firmi"
-                  >
-                    PODACI O FIRMI
-                  </NavLink>
-                  <NavLink
-                    className="dropdown-navlink"
-                    to="/preuzimanje/brosure"
-                  >
-                    BROŠURE
-                  </NavLink>
-                  <NavLink
-                    className="dropdown-navlink"
-                    to="/preuzimanje/upustva"
-                  >
-                    UPUTSTVA
-                  </NavLink>
-                </div>
-              </div>
             </motion.div>
             <motion.div variants={navlinksMotion}>
               <NavLink

@@ -56,26 +56,6 @@ const Products = () => {
     },
   };
 
-  const productsObj = [
-    { name: "539.2 DI", img: "/products/IMT-539.2-DI.webp", hp: 47, wd: 2 },
-    { name: "539.3 DI", img: "/products/IMT-539.3-DI.webp", hp: 47, wd: 2 },
-    { name: "549.3 DI", img: "/products/IMT-549.3-DI.webp", hp: 47, wd: 4 },
-    { name: "549M OS", img: "/products/IMT-549M-OS.webp", hp: 47, wd: 4 },
-    { name: "565.2 DI", img: "/products/IMT-565.2-DI.webp", hp: 63, wd: 4 },
-    {
-      name: "577M HVAC",
-      img: "/products/IMT-577M-HVAC.webp",
-      hp: 75,
-      wd: 4,
-    },
-    {
-      name: "587M HVAC",
-      img: "/products/IMT-587M-HVAC.webp",
-      hp: 80,
-      wd: 4,
-    },
-  ];
-
   const standard = [
     {
       name: "IMT 539.2 kabina ",
