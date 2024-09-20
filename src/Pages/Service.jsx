@@ -4,6 +4,7 @@ import * as yup from "yup";
 import { yupResolver } from "@hookform/resolvers/yup";
 import { useState } from "react";
 import TextReveal from "../Components/TextReveal";
+import Bar from "../Components/Bar";
 
 const Service = () => {
   const [success, setSuccess] = useState(false);
@@ -39,8 +40,11 @@ const Service = () => {
         <TextReveal text="ZAKAŽITE SERVIS" />
 
         <div className="page-cont">
-          <h2>PODACI O VLASNIKU I MODELU</h2>
-          <form className="service-form">
+          <Bar headline={"PODACI O VLASNIKU I MODELU"} />
+
+          <form className="service-form" 
+          // onSubmit={handleSubmit(onSubmit)}
+          >
             <div className="service-flex">
               <div className="service-left">
                 <label htmlFor="name">
@@ -86,7 +90,7 @@ const Service = () => {
                         type="radio"
                         name="model"
                         value="IMT 539.2 DI"
-                        defaultChecked 
+                        defaultChecked
                       />
                       IMT 539.2 DI
                     </label>
@@ -143,7 +147,7 @@ const Service = () => {
                       placeholder="Broj radnih sati"
                       {...register("hours")}
                     />
-                    <p className="error">{errors.email?.message}</p>
+                    <p className="error">{errors.hours?.message}</p>
                   </div>
 
                   <div className="contact-cont">
@@ -156,7 +160,7 @@ const Service = () => {
                           type="radio"
                           name="contact"
                           value="email"
-                          defaultChecked 
+                          defaultChecked
                         />
                         Mailom
                       </label>
@@ -181,7 +185,6 @@ const Service = () => {
                   rows="8"
                   placeholder="Unesite opis kvara"
                   className="service-area"
-
                   {...register("desc")}
                 />
 
