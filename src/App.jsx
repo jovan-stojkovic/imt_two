@@ -7,18 +7,14 @@ import About from "./Pages/About";
 import Network from "./Pages/Network";
 import Download from "./Pages/Download";
 import Service from "./Pages/Service";
+import SingleProduct from "./Pages/SingleProduct";
 
 import BackToTopButton from "./Components/BackToTopButton";
 import Footer from "./Components/Footer";
-import ProductOne from "./Products/ProductOne";
-import ProductTwo from "./Products/ProductTwo";
-import ProductThree from "./Products/ProductThree";
-import ProductFour from "./Products/ProductFour";
-import ProductFive from "./Products/ProductFive";
-import ProductSix from "./Products/ProductSix";
-import ProductSeven from "./Products/ProductSeven";
 import Contact from "./Pages/Contact";
 import { useEffect, useState } from "react";
+
+import { tractors } from "./Helpers/Tractors";
 
 const App = () => {
   const [menu, setMenu] = useState(false);
@@ -47,15 +43,12 @@ const App = () => {
 
           <Route
             path="/modeli/:section?"
-            element={<Products/>}
+            element={<Products tractors={tractors} />}
           />
-          <Route path="/modeli/539.2 DI" element={<ProductOne />} />
-          <Route path="/modeli/539.3 DI" element={<ProductTwo />} />
-          <Route path="/modeli/549.3 DI" element={<ProductThree />} />
-          <Route path="/modeli/549M OS" element={<ProductFour />} />
-          <Route path="/modeli/565.2 DI" element={<ProductFive />} />
-          <Route path="/modeli/577M HVAC" element={<ProductSix />} />
-          <Route path="/modeli/587M HVAC" element={<ProductSeven />} />
+          <Route
+            path="/modeli/:series/:tractorName"
+            element={<SingleProduct tractors={tractors} />}
+          />
           <Route path="/prodajna-mreza" element={<Network />} />
           <Route path="/preuzimanje" element={<Download />} />
           <Route path="/kontakt" element={<Contact />} />

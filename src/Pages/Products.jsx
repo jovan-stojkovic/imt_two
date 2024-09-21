@@ -9,7 +9,7 @@ import { useParams } from "react-router-dom";
 import { scroller } from "react-scroll";
 import TextReveal from "../Components/TextReveal";
 
-const Products = () => {
+const Products = ({ tractors }) => {
   const { section } = useParams();
 
   useEffect(() => {
@@ -110,7 +110,7 @@ const Products = () => {
   return (
     <>
       <div className="page products">
-        <TextReveal text="MODELI"/>
+        <TextReveal text="MODELI" />
 
         <div className="page-cont">
           <Element name="standardni">
@@ -121,18 +121,18 @@ const Products = () => {
               viewport={{ amount: 0.2, once: true }}
             >
               <Bar headline={"STANDARDNA SERIJA"} />
-              {standard.map((product, index) => (
+              {tractors.map((product, index) => (
                 <div key={index} className="single-product">
                   <Link
-                    to={`/modeli/${product.name}`}
+                    to={`/modeli/standardni/${product.name.trim().replace(/\s+/g, '-')}`}
                     onClick={() => {
                       window.scrollTo({ top: 0, behavior: "smooth" });
                     }}
                   >
                     <img src={product.img} alt={product.name} />
                     <h1>{product.name}</h1>
-                    <p className="hp">{`${product.hp}hp`}</p>
-                    <p className="wd">{`${product.wd}WD`}</p>
+                    <p className="hp">{product.Snaga}</p>
+                    <p className="wd">{product.Pogon}</p>
                   </Link>
                 </div>
               ))}
