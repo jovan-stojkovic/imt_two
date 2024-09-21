@@ -6,6 +6,15 @@ const HomeNetwork = () => {
     <>
       <div className="home-network">
         <Bar headline={"PRODAJNA MREŽA"} />
+        <div className="img-cont">
+          <Link
+            className="network-link"
+            to="/prodajna-mreza"
+            onClick={() => {
+              window.scrollTo({ top: 0, behavior: "smooth" });
+            }}
+          ></Link>
+        </div>
         <div className="text-part">
           <p>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit
@@ -36,16 +45,6 @@ const HomeNetwork = () => {
             Deserunt aliquam ullam saepe aspernatur quasi iusto fuga, soluta
             eveniet aut explicabo vel totam maiores quas nemo velit.
           </p>
-        </div>
-
-        <div className="img-cont">
-          <Link
-          className="network-link"
-            to="/prodajna-mreza"
-            onClick={() => {
-              window.scrollTo({ top: 0, behavior: "smooth" });
-            }}
-          ></Link>
         </div>
       </div>
     </>
