@@ -269,3 +269,58 @@ main {
     margin-bottom: 90px;
   }
 }
+
+@media (max-width: 1050px) {
+  .app {
+    width: 750px;
+  }
+  .page {
+    .page-cont {
+      width: 750px;
+    }
+  }
+  
+  .bar {
+    height: 50px;
+    .left-red {
+      .bar-h1 {
+        font-size: 18px;
+        line-height: 50px;
+        letter-spacing: 5px;
+      }
+    }
+    .creation {
+      .creation-left {
+        .left-trap {
+          width: 60px;
+          height: 30px;
+        }
+        .left-round {
+          height: 50px;
+        }
+      }
+      .creation-right {
+        .right-trap {
+          height: 30px;
+        }
+        .right-round {
+          height: 50px;
+        }
+      }
+    }
+    .right-transparent {
+      .logo-cont {
+        height: 90px;
+        width: 90px;
+      }
+    }
+  }
+  
+  .text-reveal-div {
+    font-size: 70px;
+    line-height: 70px;
+    letter-spacing: 10px;
+    margin-top: 140px;
+    margin-bottom: 70px;
+  }
+}

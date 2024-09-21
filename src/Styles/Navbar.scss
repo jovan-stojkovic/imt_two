@@ -278,16 +278,10 @@ nav {
           }
           .navlink-with-dropdown {
             .dropdown {
-              .padding-div {
-                width: 325px;
-                height: 30px;
-              }
               .dropdown-cont {
-                width: 325px;
-                height: 180px;
                 .dropdown-navlink {
                   padding: 2px 8px;
-                  font-size: 14px;
+                  font-size: 12px;
                 }
               }
             }
@@ -302,6 +296,45 @@ nav {
           a {
             height: 80px;
             width: 80px;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 1050px) {
+  nav {
+    .nav-cont {
+      width: 750px;
+      .navlinks {
+        .navlinks-cont {
+          gap: 5px;
+          .navlink {
+            font-size: 11px;
+            letter-spacing: 1px;
+            padding: 4px;
+          }
+          .navlink-with-dropdown {
+            .dropdown {
+              .dropdown-cont {
+                .dropdown-navlink {
+                  padding: 2px 8px;
+                  font-size: 11px;
+                }
+              }
+            }
+          }
+        }
+      }
+      .right-transparent {
+        .logo-cont {
+          margin-top: 50px;
+          height: 80px;
+          width: 80px;
+          a {
+            height: 70px;
+            width: 70px;
           }
         }
       }

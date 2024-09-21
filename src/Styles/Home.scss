@@ -311,3 +311,103 @@
     }
   }
 }
+
+@media (max-width: 1050px) {
+  .custom-swiper {
+    .slide-content {
+      max-width: 750px;
+
+      .slide-text {
+        width: 50%;
+        height: 40%;
+
+        h2 {
+          font-size: 20px;
+          margin-bottom: 12px;
+        }
+
+        p {
+          font-size: 12px;
+          line-height: 20px;
+        }
+      }
+    }
+  }
+
+  .home-models {
+    height: 400px;
+    .models {
+      margin-top: 20px;
+  
+      .part {
+  
+        .model-img {
+          height: 250px;
+        }
+  
+        .series-name {
+          font-size: 15px;
+          letter-spacing: 2px;
+        }
+      }
+    }
+  }
+
+  .home-about {
+    height: 500px;
+    padding: 20px;
+
+    .text-part {
+      margin-top: 50px;
+      height: 400px;
+      width: 60%;
+
+      p {
+        margin-bottom: 15px;
+        font-size: 12px;
+        line-height: 16px;
+        letter-spacing: 1px;
+      }
+    }
+
+    .img-cont {
+      height: 350px;
+      margin-right: 10px;
+      width: 30%;
+      margin-top: 10px;
+    }
+  }
+
+  .home-network {
+    margin-bottom: 80px;
+    height: 550px;
+    padding: 50px;
+
+    .text-part {
+      height: 400px;
+      width: 70%;
+      
+      p {
+        line-height: 16px;
+        font-size: 12px;
+        margin-bottom: 10px;
+      }
+    }
+
+    .img-cont {
+      background-image: url("/rest/network.jpg");
+      height: 500px;
+      width: 30%;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: contain;
+      @include flex();
+
+      .network-link {
+        height: 97%;
+        width: 70%;
+        cursor: pointer;
+      }
+    }
+  }
+}

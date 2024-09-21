@@ -362,3 +362,50 @@
     }
   }
 }
+
+@media (max-width: 1050px) {
+  .page.service {
+    .page-cont {
+      padding: 8px;
+      padding-top: 100px;
+      .service-form {
+        .service-flex {
+          label {
+            font-size: 12px;
+          }
+          .service-text-input {
+            font-size: 12px;
+            &::placeholder {
+              font-size: 12px;
+            }
+          }
+          .service-left {
+            .model-input {
+              .model-boxes {
+                gap: 12px;
+              }
+            }
+            .input-flex {
+              .contact-cont {
+                p {
+                  font-size: 12px;
+                }
+              }
+            }
+          }
+          .service-right {
+            .service-area {
+              font-size: 12px;
+              &::placeholder {
+                font-size: 12px;
+              }
+            }
+          }
+        }
+        button {
+          height: 40px;
+        }
+      }
+    }
+  }
+}

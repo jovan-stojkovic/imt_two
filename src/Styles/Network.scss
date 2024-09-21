@@ -377,3 +377,119 @@
     }
   }
 }
+
+@media (max-width: 1050px) {
+  .network {
+    .page-cont {
+      section {
+        padding: 120px 30px;
+        @include flex($justify: space-between, $align: start, $direction: column);
+  
+        .text-part {
+          width: 100%;
+          margin-bottom: 50px;
+        }
+  
+        .img-cont {
+          height: 700px;
+          width: 600px;
+          margin: 0 auto;
+  
+          .dot-logo {
+            height: 40px;
+            width: 40px;
+            top: 145px;
+            left: 265px;
+  
+            .info {
+              left: -300px;
+              top: 50px;
+              height: 250px;
+              width: 600px;
+              padding: 30px;
+              background-size: 200px;
+  
+              h5 {
+                font-size: 20px;
+              }
+  
+              p {
+                font-size: 18px;
+                letter-spacing: 2px;
+                line-height: 30px;
+              }
+            }
+          }
+  
+          .dot {
+            height: 30px;
+            width: 30px;
+  
+            &.agrorid {
+              top: 190px;
+              left: 220px;
+            }
+  
+            &.agrogas {
+              top: 270px;
+              left: 260px;
+  
+              .info {
+                width: 550px;
+                left: -275px;
+              }
+            }
+  
+            &.jugometal {
+              top: 310px;
+              left: 340px;
+            }
+  
+            &.agrouniverzal {
+              top: 330px;
+              left: 240px;
+            }
+  
+            &.agrocentar {
+              top: 400px;
+              left: 210px;
+            }
+  
+            &.agribau {
+              top: 540px;
+              left: 315px;
+            }
+  
+            &.rakic {
+              top: 225px;
+              left: 75px;
+            }
+  
+            .info {
+              z-index: 40;
+              position: absolute;
+              left: -200px;
+              top: 40px;
+              height: 250px;
+              width: 400px;
+              padding: 30px;
+  
+              .logo-cont {
+                @include background();
+                height: 70px;
+                width: 100%;
+                margin-bottom: 20px;
+              }
+  
+              p {
+                font-size: 18px;
+                letter-spacing: 2px;
+                line-height: 30px;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
