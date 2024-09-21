@@ -23,6 +23,7 @@
         h2 {
           font-size: 18px;
           text-align: center;
+          letter-spacing: 1px;
         }
 
         a {
@@ -75,6 +76,29 @@
           a {
             height: 170px;
             width: 170px;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 1300px) {
+  .download {
+    .page-cont {
+      section {
+        padding: 130px 40px 40px 40px;
+        margin-bottom: 60px;
+        .segment {
+          height: 170px;
+          margin-bottom: 50px;
+          h2 {
+            font-size: 14px;
+            font-weight: 400;
+          }
+          a {
+            height: 140px;
+            width: 140px;
           }
         }
       }

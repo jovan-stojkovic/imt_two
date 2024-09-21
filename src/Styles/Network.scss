@@ -12,9 +12,6 @@
 
       .text-part {
         width: 60%;
-        line-height: 30px;
-        text-align: justify;
-
         p {
           margin-bottom: 20px;
         }
@@ -256,6 +253,126 @@
     .page-cont {
       section {
         padding: 150px 50px;
+
+        
+      .text-part {
+        width: 45%;
+        p {
+          margin-bottom: 20px;
+        }
+      }
+      }
+    }
+  }
+}
+
+@media (max-width: 1300px) {
+  .network {
+    .page-cont {
+      section {
+        position: relative;
+        padding: 130px 30px;
+        margin-bottom: 100px;
+  
+        .text-part {
+          width: 65%;
+          p {
+            margin-bottom: 15px;
+          }
+        }
+  
+        .img-cont {
+          height: 350px;
+          width: 300px;
+  
+          .dot-logo {
+            height: 20px;
+            width: 20px;
+            top: 72.5px;
+            left: 132.5px;
+  
+            .info {
+              left: -500px;
+              top: 20px;
+              height: 180px;
+              width: 500px;
+              padding: 20px;
+              background-size: 150px;
+              h5 {
+                font-size: 18px;
+              }
+              p {
+                font-size: 15px;
+                line-height: 25px;
+              }
+            }
+          }
+  
+          .dot {
+            height: 15px;
+            width: 15px;
+  
+            &.agrorid {
+              top: 95px;
+              left: 110px;
+            }
+  
+            &.agrogas {
+              top: 135px;
+              left: 130px;
+  
+              .info {
+                width: 400px;
+                left: -400px;
+              }
+            }
+  
+            &.jugometal {
+              top: 155px;
+              left: 170px;
+            }
+  
+            &.agrouniverzal {
+              top: 165px;
+              left: 120px;
+            }
+  
+            &.agrocentar {
+              top: 200px;
+              left: 105px;
+            }
+  
+            &.agribau {
+              top: 270px;
+              left: 157.5px;
+            }
+  
+            &.rakic {
+              top: 112.5px;
+              left: 37.5px;
+            }
+  
+            .info {
+              left: -450px;
+              top: 15px;
+              height: 200px;
+              width: 450px;
+              padding: 10px;
+  
+              .logo-cont {
+                @include background();
+                height: 50px;
+                margin-bottom: 10px;
+              }
+  
+              p {
+                font-size: 15px;
+                line-height: 25px;
+                text-align: left;
+              }
+            }
+          }
+        }
       }
     }
   }

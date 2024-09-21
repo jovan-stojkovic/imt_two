@@ -32,3 +32,19 @@
     }
   }
 }
+
+@media (max-width: 1300px) {
+  .about {
+    .page-cont {
+      section {
+        height: 700px;
+        padding: 120px 50px;
+        margin-bottom: 70px;
+  
+        p {
+          margin-bottom: 30px;
+        }
+      }
+    }
+  }
+}

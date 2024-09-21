@@ -274,16 +274,6 @@
                 p {
                   font-size: 18px;
                 }
-
-                .labels {
-                  display: flex;
-                  justify-content: center;
-                  gap: 10%;
-
-                  input {
-                    margin-right: 10px;
-                  }
-                }
               }
             }
           }
@@ -296,6 +286,77 @@
               }
             }
           }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 1300px) {
+  .form {
+    input {
+      height: 35px;
+      margin-bottom: 5px;
+      font-size: 14px;
+      &::placeholder {
+        font-size: 14px;
+      }
+    }
+    #area {
+      font-size: 14px;
+      &::placeholder {
+        font-size: 14px;
+      }
+    }
+  }
+  .page.service {
+    .page-cont {
+      padding: 10px;
+      padding-top: 130px;
+      .service-form {
+        .service-flex {
+          label {
+            font-size: 14px;
+          }
+          .service-text-input {
+            padding: 0 15px;
+            height: 35px;
+            margin-bottom: 10px;
+            font-size: 14px;
+            letter-spacing: 1px;
+            &::placeholder {
+              font-size: 14px;
+            }
+          }
+          .service-left {
+            .model-input {
+              .model-boxes {
+                gap: 15px;
+                input {
+                  margin-right: 10px;
+                  cursor: pointer;
+                }
+              }
+            }
+            .input-flex {
+              .contact-cont {
+                p {
+                  font-size: 14px;
+                }
+              }
+            }
+          }
+          .service-right {
+            .service-area {
+              font-size: 14px;
+              &::placeholder {
+                font-size: 14px;
+              }
+            }
+          }
+        }
+        button {
+          height: 50px;
         }
       }
     }

@@ -263,3 +263,48 @@ nav {
     }
   }
 }
+
+@media (max-width: 1300px) {
+  nav {
+    .nav-cont {
+      width: 1000px;
+      .navlinks {
+        .navlinks-cont {
+          gap: 10px;
+          .navlink {
+            font-size: 12px;
+            letter-spacing: 1px;
+            padding: 5px 8px;
+          }
+          .navlink-with-dropdown {
+            .dropdown {
+              .padding-div {
+                width: 325px;
+                height: 30px;
+              }
+              .dropdown-cont {
+                width: 325px;
+                height: 180px;
+                .dropdown-navlink {
+                  padding: 2px 8px;
+                  font-size: 14px;
+                }
+              }
+            }
+          }
+        }
+      }
+      .right-transparent {
+        .logo-cont {
+          margin-top: 50px;
+          height: 90px;
+          width: 90px;
+          a {
+            height: 80px;
+            width: 80px;
+          }
+        }
+      }
+    }
+  }
+}

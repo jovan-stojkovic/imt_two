@@ -71,3 +71,22 @@
     }
   }
 }
+
+@media (max-width: 1300px) {
+  .products {
+    .page-cont {
+      section {
+        padding: 120px 30px 30px 30px;
+        margin-bottom: 70px;
+        .single-product {
+          a {
+            h1 {
+              font-size: 18px;
+              letter-spacing: 2px;
+            }
+          }
+        }
+      }
+    }
+  }
+}

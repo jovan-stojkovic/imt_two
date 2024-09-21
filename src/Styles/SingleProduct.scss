@@ -65,3 +65,30 @@
     }
   }
 }
+
+@media (max-width: 1300px) {
+  .single-product {
+    .page-cont {
+      section {
+        padding: 120px 40px;
+        margin-bottom: 70px;
+        .product-left {
+          gap: 20px;
+          img {
+            height: 300px;
+            width: 350px;
+          }
+        }
+        .product-right {
+          p {
+            font-size: 13px;
+            span {
+              font-weight: 600;
+              font-size: 15px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
