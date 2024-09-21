@@ -3,7 +3,7 @@
 .about {
   .page-cont {
     section {
-      height: 800px;
+      height: auto;
       border-radius: 5px;
       box-shadow: $shadow;
       position: relative;
@@ -21,7 +21,6 @@
   .about {
     .page-cont {
       section {
-        height: 700px;
         padding: 150px 50px;
         margin-bottom: 80px;
 
@@ -37,7 +36,6 @@
   .about {
     .page-cont {
       section {
-        height: 700px;
         padding: 120px 50px;
         margin-bottom: 70px;
 
@@ -53,17 +51,19 @@
   .about {
     .page-cont {
       section {
-        height: 600px;
         position: relative;
-        padding: 100px 40px;
+        padding: 100px 20px 50px 20px;
         margin-bottom: 50px;
 
         p {
           margin-bottom: 30px;
-          font-size: 12px;
-          line-height: 18px;
+          font-size: 14px;
+          line-height: 22px;
         }
       }
     }
   }
+}
+
+@media (max-width: 790px) {
 }

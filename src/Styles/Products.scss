@@ -110,3 +110,27 @@
     }
   }
 }
+
+@media (max-width: 790px) {
+  .products {
+    .page-cont {
+      section {
+        width: 100%;
+        padding: 100px 20px 50px 20px;
+        margin-bottom: 50px;
+        .single-product {
+          width: 48%;
+          margin: 1%;
+          aspect-ratio: 1.2/1;
+          border-radius: 2px;
+          margin-bottom: 50px;
+          a {
+            h1 {
+              font-size: 20px;
+            }
+          }
+        }
+      }
+    }
+  }
+}

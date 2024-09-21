@@ -258,10 +258,6 @@ main {
 }
 
 @media (max-width: 1050px) {
-  .app {
-    width: 95%;
-  }
-
   .bar {
     height: 50px;
     .left-red {
@@ -304,5 +300,27 @@ main {
     letter-spacing: 10px;
     margin-top: 140px;
     margin-bottom: 70px;
+  }
+}
+
+@media (max-width: 790px) {
+
+  .nav-left-background {
+    display: none;
+  }
+
+  .bar {
+    .left-red {
+      .bar-h1 {
+        font-size: 15px;
+        line-height: 50px;
+        padding-left: 5%;
+      }
+    }
+  }
+
+  .text-reveal-div {
+    font-size: 50px;
+    line-height: 50px;
   }
 }
