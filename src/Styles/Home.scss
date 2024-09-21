@@ -364,7 +364,6 @@
         margin-bottom: 15px;
         font-size: 12px;
         line-height: 16px;
-        letter-spacing: 1px;
       }
     }
 
@@ -401,6 +400,103 @@
       background-size: contain;
       @include flex();
 
+      .network-link {
+        height: 97%;
+        width: 70%;
+        cursor: pointer;
+      }
+    }
+  }
+}
+
+@media (max-width: 790px) {
+  .custom-swiper {
+    height: 40vh;
+    margin: 100px auto;
+  
+    .slide-content {
+      .slide-text {
+        padding: 5px;
+        width: 60%;
+        height: 40%;
+      }
+    }
+  }
+  
+  .home-models {
+    margin-bottom: 50px;
+    height: auto;
+  
+    .models {
+      height: 80%;
+      @include flex($direction: column);
+      margin: 50px 0;
+
+  
+      .part {
+        width: 50%;
+        height: 300px;
+  
+        .model-img {
+          height: 300px;
+        }
+  
+        .series-name {
+          font-size: 18px;
+          letter-spacing: 4px;
+        }
+  
+      }
+    }
+  }
+  
+  .home-about {
+    margin-bottom: 50px;
+    padding: 50px 10px;
+    height: auto;
+    @include flex($justify: space-between, $direction: column);
+  
+    .text-part {
+      text-align: justify;
+      height: auto;
+      width: 100%;
+  
+      p {
+        font-size: 16px;
+        line-height: 25px;
+      }
+    }
+  
+    .img-cont {
+      height: 500px;
+      margin-right: 0px;
+      width: 100%;
+    }
+  }
+  
+  .home-network {
+    margin-bottom: 50px;
+    padding: 100px 10px;
+    height: auto;
+    @include flex($justify: space-between, $direction: column-reverse);
+  
+    .text-part {
+      text-align: justify;
+      height: auto;
+      width: 100%;
+
+      p {
+        font-size: 16px;
+        line-height: 25px;
+      }
+    }
+  
+    .img-cont {
+      height: 500px;
+      margin-right: 0px;
+      width: 100%;
+      margin-top: 50px;
+  
       .network-link {
         height: 97%;
         width: 70%;
