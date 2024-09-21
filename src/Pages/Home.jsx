@@ -5,7 +5,7 @@ import HomeModels from "../Components/HomeModels";
 import HomeAbout from "../Components/HomeAbout";
 import HomeNetwork from "../Components/HomeNetwork";
 
-const Home = ({ TextReveal }) => {
+const Home = ({ sectionMotion }) => {
   const imgMotion = {
     hidden: {
       opacity: 0,
@@ -18,22 +18,6 @@ const Home = ({ TextReveal }) => {
     },
   };
 
-  const sectionMotion = {
-    hidden: {
-      opacity: 0,
-      x: -300,
-    },
-    visible: {
-      opacity: 1,
-      x: 0,
-      transition: {
-        delay: 0.1,
-        duration: 0.3,
-        type: "spring",
-        stiffness: 200,
-      },
-    },
-  };
 
   return (
     <>

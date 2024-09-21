@@ -1,6 +1,7 @@
 import "../Styles/Download.scss";
 import TextReveal from "../Components/TextReveal";
 import Bar from "../Components/Bar";
+import { motion } from "framer-motion";
 
 const brochures = [
   "IMT 539.2",
@@ -24,12 +25,18 @@ const manuals = [
   "TAFE 6515",
 ];
 
-const Download = () => {
+const Download = ({ sectionMotion }) => {
   return (
     <div className="page download">
       <TextReveal text="PREUZIMANJE" />
       <div className="page-cont">
-        <section className="info">
+        <motion.section
+          className="info"
+          variants={sectionMotion}
+          initial="hidden"
+          whileInView="visible"
+          viewport={{ amount: 0.2, once: true }}
+        >
           <Bar headline={"PODACI O FIRMI"} />
           <div className="segment">
             <h2>APR REŠENJE</h2>
@@ -52,9 +59,15 @@ const Download = () => {
               download="/Potvrda o izvršenom evidentiranju pdv-a.pdf"
             ></a>
           </div>
-        </section>
+        </motion.section>
 
-        <section className="brochures">
+        <motion.section
+          className="brochures"
+          variants={sectionMotion}
+          initial="hidden"
+          whileInView="visible"
+          viewport={{ amount: 0.2, once: true }}
+        >
           <Bar headline={"PROSPEKTI"} />
           {brochures.map((brochure) => (
             <div className="segment" key={brochure}>
@@ -65,9 +78,15 @@ const Download = () => {
               ></a>
             </div>
           ))}
-        </section>
+        </motion.section>
 
-        <section className="manuals">
+        <motion.section
+          className="manuals"
+          variants={sectionMotion}
+          initial="hidden"
+          whileInView="visible"
+          viewport={{ amount: 0.2, once: true }}
+        >
           <Bar headline={"UPUTSTVA ZA RUKOVANJE"} />
           {manuals.map((manual) => (
             <div className="segment" key={manual}>
@@ -78,7 +97,7 @@ const Download = () => {
               ></a>
             </div>
           ))}
-        </section>
+        </motion.section>
       </div>
     </div>
   );

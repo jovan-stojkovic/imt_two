@@ -7,7 +7,7 @@ import { scroller } from "react-scroll";
 import { useParams } from "react-router-dom";
 import TextReveal from "../Components/TextReveal";
 
-const About = () => {
+const About = ({ sectionMotion }) => {
   const { section } = useParams();
 
   useEffect(() => {
@@ -21,22 +21,7 @@ const About = () => {
     }
   }, [section]);
 
-  const sectionMotion = {
-    hidden: {
-      opacity: 0,
-      x: -300,
-    },
-    visible: {
-      opacity: 1,
-      x: 0,
-      transition: {
-        delay: 0.1,
-        duration: 0.3,
-        type: "spring",
-        stiffness: 200,
-      },
-    },
-  };
+
 
   return (
     <div className="page about">

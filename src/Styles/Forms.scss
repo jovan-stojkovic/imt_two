@@ -90,10 +90,11 @@
 
     .service-form {
       input::-webkit-outer-spin-button,
-input::-webkit-inner-spin-button {
-  -webkit-appearance: none;
-  margin: 0;
-}
+      input::-webkit-inner-spin-button {
+        -webkit-appearance: none;
+        margin: 0;
+      }
+      
       .service-flex {
         @include flex($align: top, $justify: space-between);
         gap: 50px;
@@ -233,6 +234,7 @@ input::-webkit-inner-spin-button {
         letter-spacing: 5px;
         cursor: pointer;
         transition: 0.5s;
+        text-align: center;
         &:hover {
           filter: brightness(1.1);
         }

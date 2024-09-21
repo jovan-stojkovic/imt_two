@@ -3,27 +3,10 @@ import { motion } from "framer-motion";
 import Bar from "../Components/Bar";
 import TextReveal from "../Components/TextReveal";
 
-const Network = () => {
-  const sectionMotion = {
-    hidden: {
-      opacity: 0,
-      x: -300,
-    },
-    visible: {
-      opacity: 1,
-      x: 0,
-      transition: {
-        delay: 0.1,
-        duration: 0.3,
-        type: "spring",
-        stiffness: 200,
-      },
-    },
-  };
-
+const Network = ({ sectionMotion }) => {
   return (
     <div className="page network">
-      <TextReveal text="PRODAJNA MREŽA"/>
+      <TextReveal text="PRODAJNA MREŽA" />
       <div className="page-cont">
         <motion.section
           variants={sectionMotion}

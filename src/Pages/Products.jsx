@@ -9,7 +9,7 @@ import { useParams } from "react-router-dom";
 import { scroller } from "react-scroll";
 import TextReveal from "../Components/TextReveal";
 
-const Products = ({ tractors }) => {
+const Products = ({ tractors, sectionMotion }) => {
   const { section } = useParams();
 
   useEffect(() => {
@@ -38,23 +38,6 @@ const Products = ({ tractors }) => {
       });
     }
   }, [section]);
-
-  const sectionMotion = {
-    hidden: {
-      opacity: 0,
-      x: -300,
-    },
-    visible: {
-      opacity: 1,
-      x: 0,
-      transition: {
-        delay: 0.1,
-        duration: 0.3,
-        type: "spring",
-        stiffness: 200,
-      },
-    },
-  };
 
   const standard = [
     {

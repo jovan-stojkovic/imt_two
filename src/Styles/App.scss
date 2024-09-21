@@ -7,46 +7,8 @@ $gray: rgb(188, 190, 192);
 $white: rgb(255, 255, 255);
 
 $shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
-
 $noto: "Noto Sans Display", sans-serif;
 $quicksand: "Quicksand", sans-serif;
-
-$p-size: 16px;
-$p-height: 25px;
-$p-spacing: 2px;
-$h1-size: 40px;
-$h1-spacing: 3px;
-$h2-size: 30px;
-$h2-spacing: 3px;
-$page-padding: 100px;
-$img-width: 550px;
-$img-height: 500px;
-$nav-height: 70px;
-$section-padding: 50px;
-
-@mixin paragraph {
-  color: $black;
-  font-size: $p-size;
-  line-height: $p-height;
-  letter-spacing: $p-spacing;
-  text-align: justify;
-}
-
-@mixin headline1 {
-  color: $black;
-  font-size: $h1-size;
-  letter-spacing: $h1-spacing;
-  margin-bottom: 20px;
-  font-weight: 500;
-}
-
-@mixin headline2 {
-  color: $black;
-  font-size: $h2-size;
-  letter-spacing: $h2-spacing;
-  margin-bottom: 20px;
-  font-weight: 500;
-}
 
 @mixin flex($align: center, $justify: center, $direction: row) {
   display: flex;
@@ -82,15 +44,27 @@ main {
   width: 100%;
 
   p {
-    @include paragraph();
+    color: $black;
+    font-size: 16px;
+    line-height: 25px;
+    letter-spacing: 2px;
+    text-align: justify;
   }
 
   h1 {
-    @include headline1();
+    color: $black;
+    font-size: 40px;
+    letter-spacing: 3px;
+    margin-bottom: 20px;
+    font-weight: 500;
   }
 
   h2 {
-    @include headline2();
+    color: $black;
+    font-size: 30px;
+    letter-spacing: 3px;
+    margin-bottom: 20px;
+    font-weight: 500;
   }
 
   h4 {
@@ -257,225 +231,4 @@ main {
   text-align: center;
   margin-top: 200px;
   margin-bottom: 130px;
-
-}
-
-//1440px - 1700px
-@media (max-width: 1700px) {
-  .page {
-    .top-img-cont {
-      max-width: 1800px;
-    }
-
-    .page-cont {
-      max-width: 1500px;
-    }
-  }
-}
-
-//1024px - 1440px
-@media (max-width: 1440px) {
-  $h1-size: 32px;
-  $page-padding: 40px;
-  $nav-height: 60px;
-
-  @mixin headline1 {
-    font-size: $h1-size;
-  }
-
-  main {
-    .nav-background {
-      height: $nav-height;
-    }
-    h1 {
-      @include headline1();
-    }
-  }
-
-  .page {
-    .page-cont {
-      padding-top: $page-padding;
-    }
-  }
-}
-
-//768px - 1024px
-@media (max-width: 1024px) {
-  $p-size: 14px;
-  $p-height: 22px;
-  $h1-size: 25px;
-  $h2-size: 20px;
-  $h2-spacing: 2px;
-  $page-padding: 50px;
-  $nav-height: 50px;
-
-  @mixin paragraph {
-    font-size: $p-size;
-    line-height: $p-height;
-  }
-
-  @mixin headline1 {
-    font-size: $h1-size;
-  }
-
-  @mixin headline2 {
-    font-size: $h2-size;
-    letter-spacing: $h2-spacing;
-  }
-
-  main {
-    .nav-background {
-      height: $nav-height;
-    }
-
-    p {
-      @include paragraph();
-    }
-
-    h1 {
-      @include headline1();
-    }
-
-    h2 {
-      @include headline2();
-    }
-
-    h4 {
-      font-size: 16px;
-    }
-  }
-  .page {
-    .page-cont {
-      padding-top: $page-padding;
-    }
-  }
-}
-
-//470px - 768px
-@media (max-width: 768px) {
-  $p-size: 13px;
-  $p-height: 20px;
-  $h1-size: 20px;
-  $h1-spacing: 2px;
-  $h2-size: 18px;
-  $h2-spacing: 2px;
-  $page-padding: 30px;
-  $nav-height: 50px;
-
-  @mixin paragraph {
-    font-size: $p-size;
-    line-height: $p-height;
-  }
-
-  @mixin headline1 {
-    font-size: $h1-size;
-    letter-spacing: $h1-spacing;
-  }
-
-  @mixin headline2 {
-    font-size: $h2-size;
-    letter-spacing: $h2-spacing;
-  }
-
-  main {
-    .nav-background {
-      height: $nav-height;
-    }
-    p {
-      @include paragraph();
-    }
-
-    h1 {
-      @include headline1();
-    }
-
-    h2 {
-      @include headline2();
-    }
-
-    h4 {
-      font-size: 15px;
-    }
-
-    .to-the-top-button {
-      bottom: 100px;
-      right: 30px;
-      width: 30px;
-      height: 30px;
-      img {
-        height: 30px;
-      }
-    }
-  }
-
-  .page {
-    .top-img-cont {
-      width: 100vw;
-    }
-    .page-cont {
-      padding-top: $page-padding;
-    }
-  }
-}
-
-//<<<<<<<<470px
-@media (max-width: 470px) {
-  $p-size: 12px;
-  $p-height: 18px;
-  $p-spacing: 1px;
-  $h1-size: 20px;
-  $h1-spacing: 2px;
-  $h2-size: 17px;
-  $h2-spacing: 2px;
-  $page-padding: 25px;
-  $nav-height: 40px;
-
-  @mixin paragraph {
-    font-size: $p-size;
-    line-height: $p-height;
-    letter-spacing: $p-spacing;
-  }
-
-  @mixin headline1 {
-    font-size: $h1-size;
-    letter-spacing: $h1-spacing;
-  }
-
-  @mixin headline2 {
-    font-size: $h2-size;
-    letter-spacing: $h2-spacing;
-  }
-
-  main {
-    .nav-background {
-      height: $nav-height;
-    }
-
-    p {
-      @include paragraph();
-    }
-
-    h1 {
-      @include headline1();
-    }
-
-    h2 {
-      @include headline2();
-    }
-
-    h4 {
-      font-size: 12px;
-      margin-top: -22px;
-    }
-  }
-
-  .page {
-    .top-img-cont {
-      width: 100vw;
-      aspect-ratio: 1/1.4;
-    }
-    .page-cont {
-      padding-top: $page-padding;
-    }
-  }
 }

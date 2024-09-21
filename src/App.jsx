@@ -31,6 +31,23 @@ const App = () => {
     }
   }, [menu]);
 
+  const sectionMotion = {
+    hidden: {
+      opacity: 0,
+      x: -100,
+    },
+    visible: {
+      opacity: 1,
+      x: 0,
+      transition: {
+        delay: 0.1,
+        duration: 0.3,
+        type: "spring",
+        stiffness: 50,
+      },
+    },
+  };
+
   return (
     <main>
       <BackToTopButton />
@@ -38,21 +55,35 @@ const App = () => {
       <div className="nav-left-background"></div>
       <div className="app">
         <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="/o-nama/:section?" element={<About />} />
+          <Route path="/" element={<Home sectionMotion={sectionMotion} />} />
+          <Route
+            path="/o-nama/:section?"
+            element={<About sectionMotion={sectionMotion} />}
+          />
 
           <Route
             path="/modeli/:section?"
-            element={<Products tractors={tractors} />}
+            element={
+              <Products tractors={tractors} sectionMotion={sectionMotion} />
+            }
           />
           <Route
             path="/modeli/:series/:tractorName"
             element={<SingleProduct tractors={tractors} />}
           />
-          <Route path="/prodajna-mreza" element={<Network />} />
-          <Route path="/preuzimanje" element={<Download />} />
+          <Route
+            path="/prodajna-mreza"
+            element={<Network sectionMotion={sectionMotion} />}
+          />
+          <Route
+            path="/preuzimanje"
+            element={<Download sectionMotion={sectionMotion} />}
+          />
           <Route path="/kontakt" element={<Contact />} />
-          <Route path="/zakazite-servis" element={<Service />} />
+          <Route
+            path="/zakazite-servis"
+            element={<Service sectionMotion={sectionMotion} />}
+          />
         </Routes>
       </div>
       <Footer />
