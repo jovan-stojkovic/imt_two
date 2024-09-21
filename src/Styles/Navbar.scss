@@ -10,7 +10,8 @@ nav {
 
   .nav-cont {
     @include flex();
-    width: 1600px;
+    max-width: 1600px;
+    width: 95%;
     margin: 0 auto;
 
     .navlinks {
@@ -237,7 +238,6 @@ nav {
   nav {
     .nav-cont {
       @include flex();
-      width: 1250px;
 
       .navlinks {
         .navlinks-cont {
@@ -267,7 +267,6 @@ nav {
 @media (max-width: 1300px) {
   nav {
     .nav-cont {
-      width: 1000px;
       .navlinks {
         .navlinks-cont {
           gap: 10px;
@@ -306,7 +305,6 @@ nav {
 @media (max-width: 1050px) {
   nav {
     .nav-cont {
-      width: 750px;
       .navlinks {
         .navlinks-cont {
           gap: 5px;
@@ -344,106 +342,81 @@ nav {
 
 @media (max-width: 790px) {
   nav {
-    .nav-cont {
-      @include flex($justify: space-between);
-      width: 90%;
+    width: 100%;
+    background-color: $red;
 
+    .nav-cont {
       .menu-btn {
         display: block;
         all: unset;
-        position: absolute;
-        left: 50px;
+        cursor: pointer;
         height: 30px;
         width: 30px;
         @include background();
         background-image: url("/icons/menu.svg");
-        cursor: pointer;
+        position: absolute;
+        left: 2.5%;
 
         &.show-menu {
           background-image: url("/icons/menu-close.svg");
-          background-size: 150%;
+          background-size: 140%;
         }
       }
 
       .navlinks {
-        .navlinks-cont {
-          position: absolute;
-          top: 70px;
-          left: 0;
-          @include flex($justify: baseline, $direction: column, $align: start);
-          gap: 50px;
-          backdrop-filter: blur(10px);
-          background-color: rgba(255, 255, 255, 0.5);
-          height: 0;
-          width: 100%;
-          padding: 0;
-          overflow: hidden;
+        position: absolute;
+        left: 0;
+        top: 70px;
+        height: 0;
+        overflow: hidden;
+        width: 100%;
+        @include flex();
+        background-color: transparent;
+        backdrop-filter: blur(10px);
+        transition: height 0.1s;
 
-          .empty-space {
-            position: absolute;
-            right: 0;
-            top: 0px;
-            height: 100%;
-            width: 50%;
-          }
+        &.show-menu {
+          height: calc(100vh - 70px);
+          transition: height 0.1s;
+        }
+
+        .navlinks-cont {
+          @include flex($direction: column, $align: start, $justify: start);
+          gap: 30px;
+          background-color: rgba(255, 255, 255, 0.6);
+          height: 100%;
+          width: 50%;
+          padding: 100px 20px;
+          box-shadow: $shadow;
 
           .navlink {
-            font-size: 15px;
-            letter-spacing: 2px;
-            font-weight: 500;
+            font-size: 16px;
+            letter-spacing: 3px;
             padding: 5px 15px;
-            border-radius: 2px;
           }
 
           .navlink-with-dropdown {
-            position: relative;
-            margin-bottom: 120px;
-
-            &.models {
-              margin-bottom: 80px;
-            }
+            position: static;
 
             .dropdown {
-              display: flex;
-              flex-direction: column;
-              height: 200px;
-              width: 310px;
-              overflow: hidden;
-              top: 20px;
+              height: auto;
+              width: auto;
+              position: static;
 
               .padding-div {
                 display: none;
               }
 
               .dropdown-cont {
-                padding: 20px 10px;
+                padding: 20px;
                 background-color: transparent;
-                border-radius: 3px;
                 box-shadow: none;
-                width: 310px;
-                height: 300px;
-                gap: 10px;
-                @include flex(
-                  $direction: column,
-                  $align: left,
-                  $justify: start
-                );
+                width: auto;
+                height: auto;
+                gap: 15px;
 
                 .dropdown-navlink {
-                  padding: 2px 20px;
-                  text-decoration: none;
-                  color: $black;
                   font-size: 14px;
-
-                  &:hover {
-                    color: $white;
-                    background-position: -100% 0;
-                  }
-
-                  &.active {
-                    color: $white;
-                    background-color: $black;
-                  }
                 }
               }
             }
@@ -460,8 +433,7 @@ nav {
             &.download {
               .dropdown {
                 .padding-div {
-                  width: 0;
-                  height: 0;
+                  display: none;
                 }
 
                 .dropdown-cont {
@@ -480,97 +452,31 @@ nav {
             }
           }
         }
-        &.show-menu {
-          .navlinks-cont {
-            height: calc(100vh - 70px);
-            padding: 50px;
-            width: 100%;
-            overflow: visible;
-            transition: height 0.2s;
-          }
+
+        .empty-space {
+          height: 110vh;
+          width: 50%;
         }
       }
 
       .creation {
-        position: relative;
-        flex-direction: column;
-        align-items: baseline;
-        height: 70px;
-
-        .background-gray {
-          position: absolute;
-          width: 20px;
-          height: 100%;
-          background-color: $gray;
-        }
-
-        .creation-left {
-          .left-trap {
-            width: 60px;
-            height: 50px;
-            background-color: $gray;
-            position: absolute;
-            right: -80px;
-            clip-path: polygon(0% 0%, 100% 0%, 58% 100%, 0% 100%);
-          }
-
-          .left-round {
-            position: absolute;
-            height: 70px;
-            width: 40px;
-            right: -60px;
-            background-color: $gray;
-            border-radius: 0 0 100px 0;
-          }
-        }
-
-        .creation-right {
-          .right-trap {
-            width: 60px;
-            height: 50px;
-            background-color: $red;
-            position: absolute;
-            clip-path: polygon(0% 0%, 100% 0%, 58% 100%, 0% 100%);
-          }
-
-          .right-round {
-            position: absolute;
-            height: 70px;
-            width: 40px;
-            background-color: $red;
-            border-radius: 0 0 100px 0;
-          }
-        }
+        display: none;
       }
 
       .right-transparent {
-        width: 20%;
-        background-color: transparent;
-        height: 70px;
-        display: flex;
-        align-items: center;
-        justify-content: end;
+        position: absolute;
+        right: 2.5%;
 
         .logo-cont {
-          margin-top: 100px;
-          height: 120px;
-          width: 120px;
+          margin-top: 0;
+          height: 50px;
+          width: 50px;
           background-image: url("/logos/logo-no-bg.png");
-          background-size: contain;
-          background-position: center;
-          backdrop-filter: blur(5px);
-          border-radius: 100px;
-          @include flex();
-          transition: transform 0.1s;
+          background-color: white;
 
           a {
-            height: 90px;
-            width: 90px;
-            cursor: pointer;
-            border-radius: 100px;
-          }
-          &:hover {
-            transform: rotate(360deg);
+            height: 40px;
+            width: 40px;
           }
         }
       }

@@ -7,7 +7,8 @@ footer {
 
   .footer-cont {
     @include flex($justify: space-between);
-    width: 1600px;
+    max-width: 1600px;
+    width: 95%;
     margin: 0 auto;
     height: 100%;
 
@@ -67,8 +68,6 @@ footer {
 @media (max-width: 1700px) {
   footer {
     .footer-cont {
-      width: 1250px;
-
       .center {
         gap: 40px;
       }
@@ -80,8 +79,6 @@ footer {
     height: 80px;
 
     .footer-cont {
-      width: 1000px;
-
       .center {
         gap: 30px;
 
@@ -105,10 +102,10 @@ footer {
 @media (max-width: 1050px) {
   footer {
     height: 70px;
-  
+
     .footer-cont {
       @include flex($justify: space-between);
-      width: 750px;
+      width: 95%;
     }
   }
 }
@@ -116,14 +113,14 @@ footer {
   footer {
     .footer-cont {
       width: 98%;
-  
+
       .left {
         @include background($size: 90%);
       }
-  
+
       .center {
         gap: 20px;
-  
+
         p {
           @include background($size: 15px, $position: left);
           padding-left: 30px;
@@ -133,7 +130,7 @@ footer {
           }
         }
       }
-  
+
       .right {
         a {
           font-size: 12px;

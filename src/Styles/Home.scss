@@ -194,7 +194,6 @@
 @media (max-width: 1700px) {
   .custom-swiper {
     .slide-content {
-      max-width: 1250px;
       .slide-text {
         padding: 8px;
         p {
@@ -225,6 +224,12 @@
     .text-part {
       margin-top: 80px;
       height: 400px;
+
+      p {
+        font-size: 16px;
+        line-height: 23px;
+        letter-spacing: 1px;
+      }
     }
     .img-cont {
       height: 380px;
@@ -246,11 +251,8 @@
 @media (max-width: 1300px) {
   .custom-swiper {
     .slide-content {
-      max-width: 1000px;
-
       .slide-text {
-        width: 50%;
-        height: 40%;
+        // width: 50%;
 
         h2 {
           font-size: 28px;
@@ -315,11 +317,7 @@
 @media (max-width: 1050px) {
   .custom-swiper {
     .slide-content {
-      max-width: 750px;
-
       .slide-text {
-        width: 50%;
-        height: 40%;
 
         h2 {
           font-size: 20px;

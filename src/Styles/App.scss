@@ -53,7 +53,8 @@ main {
 }
 
 .app {
-  width: 1600px;
+  max-width: 1600px;
+  width: 95%;
   margin: 0 auto;
 }
 
@@ -62,7 +63,7 @@ main {
   min-height: 100vh;
 
   .page-cont {
-    width: 1600px;
+    width: 100%;
     margin: 0 auto;
   }
 }
@@ -200,13 +201,7 @@ main {
     }
   }
   .app {
-    width: 1250px;
     margin: 0 auto;
-  }
-  .page {
-    .page-cont {
-      width: 1250px;
-    }
   }
   .bar {
     .left-red {
@@ -239,14 +234,6 @@ main {
       line-height: 22px;
     }
   }
-  .app {
-    width: 1000px;
-  }
-  .page {
-    .page-cont {
-      width: 1000px;
-    }
-  }
   .bar {
     .left-red {
       .bar-h1 {
@@ -272,14 +259,9 @@ main {
 
 @media (max-width: 1050px) {
   .app {
-    width: 750px;
+    width: 95%;
   }
-  .page {
-    .page-cont {
-      width: 750px;
-    }
-  }
-  
+
   .bar {
     height: 50px;
     .left-red {
@@ -315,7 +297,7 @@ main {
       }
     }
   }
-  
+
   .text-reveal-div {
     font-size: 70px;
     line-height: 70px;

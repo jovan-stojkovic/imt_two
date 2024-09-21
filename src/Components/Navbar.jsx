@@ -47,7 +47,6 @@ const Navbar = ({ menu, setMenu, handleMenu }) => {
             animate="visible"
             className="navlinks-cont"
           >
-            <div className="empty-space" onClick={() => setMenu(false)}></div>
             <motion.div variants={navlinksMotion}>
               <NavLink
                 className="navlink"
@@ -179,6 +178,7 @@ const Navbar = ({ menu, setMenu, handleMenu }) => {
                 PREUZIMANJE
               </NavLink>
             </motion.div>
+
             <motion.div variants={navlinksMotion}>
               <NavLink
                 className="navlink"
@@ -205,6 +205,7 @@ const Navbar = ({ menu, setMenu, handleMenu }) => {
               </NavLink>
             </motion.div>
           </motion.div>
+          <div className="empty-space" onClick={() => setMenu(false)}></div>
         </div>
         <div className="creation">
           <div className="background-gray"></div>
