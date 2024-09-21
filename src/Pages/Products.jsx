@@ -39,57 +39,6 @@ const Products = ({ tractors, sectionMotion }) => {
     }
   }, [section]);
 
-  const standard = [
-    {
-      name: "IMT 539.2 kabina ",
-      img: "/products/IMT 539.2 DI 2WD kabina.png",
-      hp: 47,
-      wd: 2,
-    },
-    {
-      name: "IMT 539.2 ROPS ",
-      img: "/products/IMT 539.2 DI 2WD ROPS.png",
-      hp: 47,
-      wd: 2,
-    },
-    {
-      name: "IMT 549.3 kabina ",
-      img: "/products/IMT 549.3 DI 4WD kabina.png",
-      hp: 47,
-      wd: 4,
-    },
-    {
-      name: "IMT 549.3 ROPS ",
-      img: "/products/IMT 549.3 DI 4WD ROPS.png",
-      hp: 47,
-      wd: 4,
-    },
-    {
-      name: "IMT 565.2 kabina",
-      img: "/products/IMT 565.2 DI 4WD kabina.png",
-      hp: 63,
-      wd: 4,
-    },
-    {
-      name: "IMT 565.2 ROPS",
-      img: "/products/IMT 565.2 DI 4WD ROPS.png",
-      hp: 63,
-      wd: 4,
-    },
-    {
-      name: "TAFE 4615 ROPS",
-      img: "/products/TAFE 4615 4WD ROPS.png",
-      hp: 47,
-      wd: 4,
-    },
-    {
-      name: "TAFE 6515 ROPS",
-      img: "/products/TAFE 6515 4WD ROPS.png",
-      hp: 65,
-      wd: 4,
-    },
-  ];
-
   return (
     <>
       <div className="page products">
@@ -107,15 +56,15 @@ const Products = ({ tractors, sectionMotion }) => {
               {tractors.map((product, index) => (
                 <div key={index} className="single-product">
                   <Link
-                    to={`/modeli/standardni/${product.name.trim().replace(/\s+/g, '-')}`}
+                    to={`/modeli/standardni/${product.name
+                      .trim()
+                      .replace(/\s+/g, "-")}`}
                     onClick={() => {
                       window.scrollTo({ top: 0, behavior: "smooth" });
                     }}
                   >
                     <img src={product.img} alt={product.name} />
                     <h1>{product.name}</h1>
-                    <p className="hp">{product.Snaga}</p>
-                    <p className="wd">{product.Pogon}</p>
                   </Link>
                 </div>
               ))}

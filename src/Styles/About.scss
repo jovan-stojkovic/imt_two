@@ -7,37 +7,26 @@
       border-radius: 5px;
       box-shadow: $shadow;
       position: relative;
-      padding: 200px 50px; 
+      padding: 200px 50px;
       margin-bottom: 100px;
 
       p {
         margin-bottom: 30px;
-        font-size: 18px;
-        line-height: 28px;
       }
     }
   }
 }
 
-//<<<<<<<<650px
-@media (max-width: 650px) {
+@media (max-width: 1700px) {
   .about {
-    .top-img-cont {
-      background-image: url("/backgrounds/home-mobile.webp");
-    }
     .page-cont {
       section {
-        background-image: url("/backgrounds/section.png");
-        background-position: top right;
-        height: auto;
-        background-size: 100%;
-        background-color: white;
-        padding: 50px 20px;
-
-        h1 {
-          font-size: 24px;
-          line-height: 30px;
-          letter-spacing: 6px;
+        height: 700px;
+        padding: 150px 50px;
+        margin-bottom: 80px;
+  
+        p {
+          margin-bottom: 25px;
         }
       }
     }

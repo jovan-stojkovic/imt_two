@@ -8,12 +8,7 @@
       position: relative;
       padding: 200px 50px 50px 50px;
       margin-bottom: 100px;
-
-      p {
-        margin-bottom: 30px;
-        font-size: 18px;
-        line-height: 28px;
-      }
+      display: flex;
 
       .segment {
         width: 30%;
@@ -21,8 +16,9 @@
         flex-direction: column;
         align-items: center;
         justify-content: space-between;
-        height: 250px;
+        height: 220px;
         margin-bottom: 100px;
+        justify-content: space-between;
 
         h2 {
           font-size: 18px;
@@ -50,77 +46,35 @@
         }
       }
 
-      &.info {
-        display: flex;
-        justify-content: space-between;
-      }
-
       &.brochures {
-        display: flex;
         flex-wrap: wrap;
-        justify-content: space-between;
-
-        .segment {
-          height: 190px;
-
-          h2 {
-            font-size: 18px;
-            text-align: center;
-          }
-
-          a {
-            height: 200px;
-            width: 200px;
-            background-image: url("/icons/pdf.svg");
-            background-position: center;
-            background-size: 80%;
-            background-repeat: no-repeat;
-            transition: 0.3s;
-          }
-
-          &:hover {
-            h2 {
-              color: $red;
-            }
-            a {
-              background-image: url("/icons/pdf red.svg");
-              scale: 1.05;
-            }
-          }
-        }
       }
 
       &.manuals {
-        display: flex;
         flex-wrap: wrap;
-        justify-content: space-between;
+      }
+    }
+  }
+}
+
+@media (max-width: 1700px) {
+  .download {
+    .page-cont {
+      section {
+        padding: 150px 50px 50px 50px;
+        margin-bottom: 80px;
 
         .segment {
           height: 190px;
+          margin-bottom: 80px;
 
           h2 {
-            font-size: 18px;
-            text-align: center;
+            font-size: 16px;
           }
 
           a {
-            height: 200px;
-            width: 200px;
-            background-image: url("/icons/pdf.svg");
-            background-position: center;
-            background-size: 80%;
-            background-repeat: no-repeat;
-            transition: 0.3s;
-          }
-
-          &:hover {
-            h2 {
-              color: $red;
-            }
-            a {
-              background-image: url("/icons/pdf red.svg");
-              scale: 1.05;
-            }
+            height: 170px;
+            width: 170px;
           }
         }
       }

@@ -140,32 +140,6 @@ nav {
             }
           }
         }
-
-        .nav-btns {
-          display: flex;
-          gap: 10px;
-          margin-left: 20px;
-          .nav-btn {
-            all: unset;
-            height: 30px;
-            width: 30px;
-            cursor: pointer;
-            transition: all 0.5s;
-            filter: invert(0.1);
-
-            &.facebook {
-              background-image: url("/icons/facebook.svg");
-            }
-
-            &.instagram {
-              background-image: url("/icons/instagram.svg");
-            }
-
-            &:hover {
-              filter: invert(0.9);
-            }
-          }
-        }
       }
     }
 
@@ -255,6 +229,37 @@ nav {
 
     .menu-btn {
       display: none;
+    }
+  }
+}
+
+@media (max-width: 1700px) {
+  nav {
+    .nav-cont {
+      @include flex();
+      width: 1250px;
+
+      .navlinks {
+        .navlinks-cont {
+          gap: 15px;
+
+          .navlink {
+            padding: 5px 12px;
+          }
+        }
+      }
+
+      .right-transparent {
+        .logo-cont {
+          margin-top: 80px;
+          height: 100px;
+          width: 100px;
+        }
+      }
+
+      .menu-btn {
+        display: none;
+      }
     }
   }
 }

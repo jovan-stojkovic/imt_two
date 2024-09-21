@@ -3,7 +3,7 @@ const Bar = ({headline}) => {
     <>
       <div className="bar">
         <div className="left-red">
-            <h1>{headline}</h1>
+            <h1 className="bar-h1">{headline}</h1>
         </div>
         <div className="creation">
           <div className="background-gray"></div>
