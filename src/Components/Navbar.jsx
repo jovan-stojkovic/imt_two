@@ -36,14 +36,18 @@ const Navbar = ({ menu, setMenu, handleMenu }) => {
   return (
     <nav>
       <div className="nav-cont">
+        <button
+          className={`menu-btn ${menu ? "show-menu" : ""}`}
+          onClick={handleMenu}
+        ></button>
         <div className={`navlinks ${menu ? "show-menu" : ""}`}>
-          <div className="empty-space" onClick={() => setMenu(false)}></div>
           <motion.div
             variants={generalMotion}
             initial="hidden"
             animate="visible"
             className="navlinks-cont"
           >
+            <div className="empty-space" onClick={() => setMenu(false)}></div>
             <motion.div variants={navlinksMotion}>
               <NavLink
                 className="navlink"
@@ -75,21 +79,31 @@ const Navbar = ({ menu, setMenu, handleMenu }) => {
               <div className="dropdown dropdown-about">
                 <div className="padding-div"></div>
                 <div className="dropdown-cont">
-                  <NavLink className="dropdown-navlink" to="/o-nama/tafe">
+                  <NavLink
+                    className="dropdown-navlink"
+                    to="/o-nama/tafe"
+                    onClick={() => setMenu(false)}
+                  >
                     TAFE
                   </NavLink>
-                  <NavLink className="dropdown-navlink" to="/o-nama/ind-masina">
+                  <NavLink
+                    className="dropdown-navlink"
+                    to="/o-nama/ind-masina"
+                    onClick={() => setMenu(false)}
+                  >
                     INDUSTRIJA MAŠINA I TRAKTORA
                   </NavLink>
                   <NavLink
                     className="dropdown-navlink"
                     to="/o-nama/ind-mehanizacije"
+                    onClick={() => setMenu(false)}
                   >
                     INDUSTRIJA MEHANIZACIJE I TRAKTORA
                   </NavLink>
                   <NavLink
                     className="dropdown-navlink"
                     to="/o-nama/politika-kvaliteta"
+                    onClick={() => setMenu(false)}
                   >
                     POLITIKA KVALITETA
                   </NavLink>
@@ -115,13 +129,25 @@ const Navbar = ({ menu, setMenu, handleMenu }) => {
               <div className="dropdown dropdown-models">
                 <div className="padding-div"></div>
                 <div className="dropdown-cont">
-                  <NavLink className="dropdown-navlink" to="/modeli/standardni">
+                  <NavLink
+                    className="dropdown-navlink"
+                    to="/modeli/standardni"
+                    onClick={() => setMenu(false)}
+                  >
                     STANDARDNI
                   </NavLink>
-                  <NavLink className="dropdown-navlink" to="/modeli/kompaktni">
+                  <NavLink
+                    className="dropdown-navlink"
+                    to="/modeli/kompaktni"
+                    onClick={() => setMenu(false)}
+                  >
                     KOMPAKTNI
                   </NavLink>
-                  <NavLink className="dropdown-navlink" to="/modeli/magna">
+                  <NavLink
+                    className="dropdown-navlink"
+                    to="/modeli/magna"
+                    onClick={() => setMenu(false)}
+                  >
                     MAGNA
                   </NavLink>
                 </div>
@@ -141,9 +167,7 @@ const Navbar = ({ menu, setMenu, handleMenu }) => {
               </NavLink>
             </motion.div>
 
-            <motion.div
-              variants={navlinksMotion}
-            >
+            <motion.div variants={navlinksMotion}>
               <NavLink
                 className="navlink"
                 to="/preuzimanje"
@@ -205,10 +229,6 @@ const Navbar = ({ menu, setMenu, handleMenu }) => {
             ></Link>
           </div>
         </div>
-        <button
-          className={`menu-btn ${menu ? "show-menu" : ""}`}
-          onClick={handleMenu}
-        ></button>
       </div>
     </nav>
   );
