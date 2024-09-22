@@ -8,24 +8,24 @@ import "swiper/scss/autoplay";
 const headline = "IMT TRAKTORI";
 
 const slidesPortrait = [
-  { image: "/logos/logo-wide.jpg" },
+  { image: "/logos/bg-portrait.jpg" },
   {
-    image: "/swiper/jm00.jpg",
+    image: "/swiper/jm00 portrait.jpg",
     headline: headline,
     text: "INDUSTRIJA MEHANIZACIJE I TRAKTORA je ekskluzivni distributer kompanije Tractors and Farm Equipment Limited - TAFE za brend traktora IMT i TAFE za tržište Srbije.",
   },
   {
-    image: "/swiper/jm01.jpg",
+    image: "/swiper/jm01 portrait.jpg",
     headline: headline,
     text: "Sklapamo traktore u pogonima IMT u Jarkovcu, opština Sečanj. Traktori se dopremaju u nesastavljenom stanju i namenjeni su za industrijsku montažu.",
   },
   {
-    image: "/swiper/jm02.jpg",
+    image: "/swiper/jm02 portrait.jpg",
     headline: headline,
     text: "Najbolji izbor za sve Vaše potrebe! Traktori od 26KS - 85KS za korišćenje u ratarstvu, vinogradarstvu kao i komunalnoj delatnosti.",
   },
   {
-    image: "/swiper/jm03.jpg",
+    image: "/swiper/jm03 portrait.jpg",
     headline: headline,
     text: "Najbolji izbor za sve Vaše potrebe! Garantni period od dve godine ili 2000h.",
   },
@@ -42,7 +42,7 @@ const PortraitSwiper = () => {
         delay: 4000,
         disableOnInteraction: false,
       }}
-      className="custom-swiper"
+      className="custom-swiper portrait-swiper"
     >
       {slidesPortrait.map((slide, index) => (
         <SwiperSlide key={index}>

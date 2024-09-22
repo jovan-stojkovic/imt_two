@@ -1,5 +1,6 @@
 import "../Styles/Home.scss";
 import CustomSwiper from "../Components/CustomSwiper";
+import PortraitSwiper from "../Components/PortraitSwiper";
 import { motion } from "framer-motion";
 import HomeModels from "../Components/HomeModels";
 import HomeAbout from "../Components/HomeAbout";
@@ -18,18 +19,23 @@ const Home = ({ sectionMotion }) => {
     },
   };
 
-
   return (
     <>
       <motion.div variants={imgMotion} initial="hidden" animate="visible">
-        <CustomSwiper />
+        <div className="landscape-swiper">
+          <CustomSwiper />
+        </div>
+
+        <div className="portrait-swiper">
+          <PortraitSwiper />
+        </div>
       </motion.div>
 
       <motion.section
         variants={sectionMotion}
         initial="hidden"
         whileInView="visible"
-        viewport={{ amount: 0.5, once: true }}
+        viewport={{ amount: 0.3, once: true }}
       >
         <HomeModels />
       </motion.section>
@@ -38,7 +44,7 @@ const Home = ({ sectionMotion }) => {
         variants={sectionMotion}
         initial="hidden"
         whileInView="visible"
-        viewport={{ amount: 0.5, once: true }}
+        viewport={{ amount: 0.3, once: true }}
       >
         <HomeAbout />
       </motion.section>
@@ -47,7 +53,7 @@ const Home = ({ sectionMotion }) => {
         variants={sectionMotion}
         initial="hidden"
         whileInView="visible"
-        viewport={{ amount: 0.5, once: true }}
+        viewport={{ amount: 0.3, once: true }}
       >
         <HomeNetwork />
       </motion.section>
