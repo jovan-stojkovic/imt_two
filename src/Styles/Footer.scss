@@ -136,3 +136,34 @@ footer {
     }
   }
 }
+
+@media (max-width: 450px) {
+  footer {
+    .footer-cont {
+      .left {
+        @include background($size: 50%);
+      }
+
+      .center {
+        gap: 5px;
+        flex-direction: column;
+
+        p {
+          font-size: 10px;
+          @include background($size: 15px, $position: left);
+          &:nth-of-type(3) {
+            background-size: 12px;
+          }
+        }
+      }
+
+      .right {
+        gap: 2px;
+        a {
+          font-size: 10px;
+          letter-spacing: 1px;
+        }
+      }
+    }
+  }
+}
