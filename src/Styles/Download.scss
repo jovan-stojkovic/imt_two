@@ -16,7 +16,7 @@
         flex-direction: column;
         align-items: center;
         justify-content: space-between;
-        height: 220px;
+        height: 270px;
         margin-bottom: 100px;
         justify-content: space-between;
 
@@ -24,25 +24,28 @@
           font-size: 18px;
           text-align: center;
           letter-spacing: 1px;
+          width: 50%;
         }
 
         a {
           height: 200px;
           width: 200px;
-          background-image: url("/icons/pdf.svg");
+          background-image: url("public/icons/file.svg");
           background-position: center;
           background-size: 80%;
           background-repeat: no-repeat;
           transition: 0.3s;
+          position: relative;
+          @include flex();
+
+          img {
+            height: 80px;
+          }
         }
 
         &:hover {
-          h2 {
-            color: $red;
-          }
           a {
-            background-image: url("/icons/pdf red.svg");
-            scale: 1.05;
+            scale: 1.1;
           }
         }
       }
@@ -149,5 +152,3 @@
     }
   }
 }
-
-
