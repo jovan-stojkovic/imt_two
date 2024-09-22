@@ -19,7 +19,9 @@ const Contact = () => {
 
   return (
     <div className="page contact">
-      <TextReveal text="KONTAKT" />
+      <div className="reveal-div-flex">
+        <TextReveal text="KONTAKT" />
+      </div>
       <div className="page-cont">
         <motion.div variants={formApear} initial="hidden" animate="visible">
           <Form />

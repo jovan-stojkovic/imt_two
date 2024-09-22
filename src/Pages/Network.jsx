@@ -6,7 +6,11 @@ import TextReveal from "../Components/TextReveal";
 const Network = ({ sectionMotion }) => {
   return (
     <div className="page network">
-      <TextReveal text="PRODAJNA MREŽA" />
+      <div className="reveal-div-flex">
+        <TextReveal text="PRODAJNA" />
+        <TextReveal text="MREŽA" />
+      </div>
+
       <div className="page-cont">
         <motion.section
           variants={sectionMotion}

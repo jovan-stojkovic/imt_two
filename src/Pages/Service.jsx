@@ -51,8 +51,10 @@ const Service = ({ sectionMotion }) => {
   return (
     <>
       <div className="page service">
-        <TextReveal text="ZAKAŽITE SERVIS" />
-
+        <div className="reveal-div-flex">
+          <TextReveal text="ZAKAŽITE" />
+          <TextReveal text="SERVIS" />
+        </div>
         <motion.div
           className="page-cont"
           variants={sectionMotion}

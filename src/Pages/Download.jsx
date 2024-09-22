@@ -28,7 +28,9 @@ const manuals = [
 const Download = ({ sectionMotion }) => {
   return (
     <div className="page download">
-      <TextReveal text="PREUZIMANJE" />
+      <div className="reveal-div-flex">
+        <TextReveal text="PREUZIMANJE" />
+      </div>
       <div className="page-cont">
         <motion.section
           className="info"

@@ -27,10 +27,12 @@ const SingleProduct = ({
 
   return (
     <div className="page single-product">
-      <TextReveal text={selectedTractor.name} />
+      <div className="reveal-div-flex">
+        <TextReveal text={"SPECIFIKACIJE"} />
+      </div>
       <div className="page-cont">
         <section>
-          <Bar headline={"SPECIFIKACIJE"} />
+          <Bar headline={selectedTractor.name} />
           <div className="product-left">
             <img src={selectedTractor.img} alt={selectedTractor.name} />
             <Form title={selectedTractor.name} />

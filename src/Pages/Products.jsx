@@ -47,7 +47,9 @@ const Products = ({
   return (
     <>
       <div className="page products">
-        <TextReveal text="MODELI" />
+        <div className="reveal-div-flex">
+          <TextReveal text="MODELI" />
+        </div>
 
         <div className="page-cont">
           <Element name="standardni">

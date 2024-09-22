@@ -23,7 +23,9 @@ const About = ({ sectionMotion }) => {
 
   return (
     <div className="page about">
-      <TextReveal text="O NAMA" />
+      <div className="reveal-div-flex">
+        <TextReveal text="O NAMA" />
+      </div>
       <div className="page-cont">
         <Element name="tafe">
           <motion.section
@@ -164,7 +166,6 @@ const About = ({ sectionMotion }) => {
             viewport={{ amount: 0.3, once: true }}
           >
             <Bar headline={"INDUSTRIJA MOTORA I TRAKTORA"} />
-            
           </motion.section>
         </Element>
         <Element name="ind-mehanizacije">
@@ -176,7 +177,6 @@ const About = ({ sectionMotion }) => {
             viewport={{ amount: 0.3, once: true }}
           >
             <Bar headline={"INDUSTRIJA MAŠINA I TRAKTORA"} />
-            
           </motion.section>
         </Element>
         <Element name="politika-kvaliteta">
@@ -188,8 +188,6 @@ const About = ({ sectionMotion }) => {
             viewport={{ amount: 0.5, once: true }}
           >
             <Bar headline={"POLITIKA KVALITETA"} />
-
-            
           </motion.section>
         </Element>
       </div>
