@@ -100,6 +100,17 @@ const SingleProduct = ({
             <p>
               Kompresor: <span>{selectedTractor.Kompresor}</span>{" "}
             </p>
+
+            <div className="pdf-download-cont">
+              <p>Preuzmite brošuru traktora:</p>
+              <a
+                className="single-product-pdf"
+                href={`/files/brosure/pojedinacno/${selectedTractor.name}.pdf`}
+                download={`${selectedTractor.name}.pdf`}
+              >
+                {selectedTractor.name}
+              </a>
+            </div>
           </div>
         </section>
       </div>

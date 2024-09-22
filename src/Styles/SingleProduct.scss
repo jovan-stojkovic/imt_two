@@ -40,6 +40,37 @@
             font-size: 19px;
           }
         }
+
+        .pdf-download-cont {
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+
+          p {
+            border-bottom: none;
+
+          }
+
+          .single-product-pdf {
+            font-size: 20px;
+            font-weight: 500;
+            color: $black;
+            text-decoration: none;
+            letter-spacing: 2px;
+            width: 400px;
+            background-image: url("/icons/pdf.svg");
+            background-size: 30px;
+            background-position: center right 10px;
+            background-repeat: no-repeat;
+            background-color: $red;
+            padding: 10px 20px;
+            box-shadow: $shadow;
+
+            &:hover {
+              filter: brightness(1.1);
+            }
+          }
+        }
       }
     }
   }
@@ -100,10 +131,10 @@
         flex-direction: column;
         justify-content: space-between;
         gap: 50px;
-  
+
         .product-left {
           width: 100%;
-  
+
           img {
             height: 550px;
             width: calc(100% - 40px);
@@ -113,14 +144,14 @@
             width: 100%;
           }
         }
-  
+
         .product-right {
           width: 100%;
           display: flex;
           flex-direction: column;
           justify-content: space-between;
           padding: 20px;
-  
+
           p {
             font-size: 18px;
             margin-bottom: 20px;
@@ -138,22 +169,21 @@
   .single-product {
     .page-cont {
       section {
-  
         .product-left {
           width: 100%;
-  
+
           img {
             height: 300px;
           }
         }
-  
+
         .product-right {
           width: 100%;
           display: flex;
           flex-direction: column;
           justify-content: space-between;
           padding: 0px;
-  
+
           p {
             font-size: 15px;
             margin-bottom: 20px;
