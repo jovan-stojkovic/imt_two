@@ -9,7 +9,12 @@ import { useParams } from "react-router-dom";
 import { scroller } from "react-scroll";
 import TextReveal from "../Components/TextReveal";
 
-const Products = ({ tractors, sectionMotion }) => {
+const Products = ({
+  standardProducts,
+  compactProducts,
+  magnaProducts,
+  sectionMotion,
+}) => {
   const { section } = useParams();
 
   useEffect(() => {
@@ -53,18 +58,18 @@ const Products = ({ tractors, sectionMotion }) => {
               viewport={{ amount: 0.2, once: true }}
             >
               <Bar headline={"STANDARDNA SERIJA"} />
-              {tractors.map((product, index) => (
+              {standardProducts.map((tractor, index) => (
                 <div key={index} className="single-product">
                   <Link
-                    to={`/modeli/standardni/${product.name
+                    to={`/modeli/standardni/${tractor.name
                       .trim()
                       .replace(/\s+/g, "-")}`}
                     onClick={() => {
                       window.scrollTo({ top: 0, behavior: "smooth" });
                     }}
                   >
-                    <img src={product.img} alt={product.name} />
-                    <h1>{product.name}</h1>
+                    <img src={tractor.img} alt={tractor.name} />
+                    <h1>{tractor.name}</h1>
                   </Link>
                 </div>
               ))}
@@ -79,6 +84,21 @@ const Products = ({ tractors, sectionMotion }) => {
               viewport={{ amount: 0.2, once: true }}
             >
               <Bar headline={"KOMPAKTNA SERIJA"} />
+              {compactProducts.map((tractor, index) => (
+                <div key={index} className="single-product">
+                  <Link
+                    to={`/modeli/kompaktni/${tractor.name
+                      .trim()
+                      .replace(/\s+/g, "-")}`}
+                    onClick={() => {
+                      window.scrollTo({ top: 0, behavior: "smooth" });
+                    }}
+                  >
+                    <img src={tractor.img} alt={tractor.name} />
+                    <h1>{tractor.name}</h1>
+                  </Link>
+                </div>
+              ))}
             </motion.section>
           </Element>
 
@@ -90,6 +110,21 @@ const Products = ({ tractors, sectionMotion }) => {
               viewport={{ amount: 0.2, once: true }}
             >
               <Bar headline={"MAGNA SERIJA"} />
+              {magnaProducts.map((tractor, index) => (
+                <div key={index} className="single-product">
+                  <Link
+                    to={`/modeli/magna/${tractor.name
+                      .trim()
+                      .replace(/\s+/g, "-")}`}
+                    onClick={() => {
+                      window.scrollTo({ top: 0, behavior: "smooth" });
+                    }}
+                  >
+                    <img src={tractor.img} alt={tractor.name} />
+                    <h1>{tractor.name}</h1>
+                  </Link>
+                </div>
+              ))}
             </motion.section>
           </Element>
         </div>

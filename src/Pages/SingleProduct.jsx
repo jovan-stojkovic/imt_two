@@ -4,13 +4,23 @@ import Bar from "../Components/Bar";
 import Form from "../Components/Form";
 import "../Styles/SingleProduct.scss";
 
-const SingleProduct = ({ tractors }) => {
+const SingleProduct = ({
+  standardProducts,
+  compactProducts,
+  magnaProducts,
+}) => {
   const { tractorName } = useParams();
 
-  const selectedTractor = tractors.find(
-    (tractor) => tractor.name.trim().replace(/\s+/g, "-") === tractorName
-  );
-
+  const selectedTractor =
+    standardProducts.find(
+      (tractor) => tractor.name.trim().replace(/\s+/g, "-") === tractorName
+    ) ||
+    compactProducts.find(
+      (tractor) => tractor.name.trim().replace(/\s+/g, "-") === tractorName
+    ) ||
+    magnaProducts.find(
+      (tractor) => tractor.name.trim().replace(/\s+/g, "-") === tractorName
+    );
   if (!selectedTractor) {
     return <h1>Traktor nije pronađen!</h1>;
   }
