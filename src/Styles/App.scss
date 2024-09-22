@@ -304,7 +304,6 @@ main {
 }
 
 @media (max-width: 790px) {
-
   .nav-left-background {
     display: none;
   }
@@ -324,3 +323,5 @@ main {
     line-height: 50px;
   }
 }
+
+@media (max-width: 450px) {}

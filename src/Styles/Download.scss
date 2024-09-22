@@ -105,3 +105,49 @@
     }
   }
 }
+
+@media (max-width: 1050px) {
+  .download {
+    .page-cont {
+      section {
+        padding: 100px 30px 30px 30px;
+        margin-bottom: 50px;
+
+        .segment {
+          margin-bottom: 50px;
+
+          h2 {
+            font-size: 14px;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 790px) {
+  .download {
+    .page-cont {
+      section {
+        padding: 100px 30px 30px 30px;
+        margin-bottom: 50px;
+
+        .segment {
+          height: 150px;
+          margin-bottom: 50px;
+
+          h2 {
+            font-size: 12px;
+          }
+
+          a {
+            height: 110px;
+            width: 110px;
+          }
+        }
+      }
+    }
+  }
+}
+
+

@@ -34,7 +34,7 @@ const App = () => {
   const sectionMotion = {
     hidden: {
       opacity: 0,
-      x: -100,
+      x: -10,
     },
     visible: {
       opacity: 1,
