@@ -10,6 +10,21 @@
       padding: 200px 50px;
       margin-bottom: 100px;
 
+      h3 {
+        font-size: 30px;
+        line-height: 32px;
+        letter-spacing: 2px;
+        color: $black;
+      }
+
+      h4 {
+        font-size: 16px;
+        font-weight: 400;
+        letter-spacing: 4px;
+        color: gray;
+        margin-bottom: 30px;
+      }
+
       p {
         margin-bottom: 30px;
       }

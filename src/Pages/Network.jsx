@@ -15,44 +15,7 @@ const Network = ({ sectionMotion }) => {
           viewport={{ amount: 0.2, once: true }}
         >
           <Bar />
-          <div className="text-part">
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-              Voluptatem esse perferendis consequuntur porro dolore animi quasi
-              delectus voluptates soluta sequi ad, voluptatum maiores voluptas
-              natus saepe assumenda autem. Animi esse nobis debitis iusto est
-              eos, quisquam unde culpa amet. Quis et quibusdam illo, molestiae
-              dolore ea commodi totam provident alias velit natus vero, sint
-              quidem voluptates.
-            </p>
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-              Voluptatem esse perferendis consequuntur porro dolore animi quasi
-              delectus voluptates soluta sequi ad, voluptatum maiores voluptas
-              natus saepe assumenda autem. Animi esse nobis debitis iusto est
-              eos, quisquam unde culpa amet. Quis et quibusdam illo, molestiae
-              dolore ea commodi totam provident alias velit natus vero, sint
-              quidem voluptates.
-            </p>
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-              Voluptatem esse perferendis consequuntur porro dolore animi quasi
-              delectus voluptates soluta sequi ad, voluptatum maiores voluptas
-              natus saepe assumenda autem. Animi esse nobis debitis iusto est
-              eos, quisquam unde culpa amet. Quis et quibusdam illo, molestiae
-              dolore ea commodi totam provident alias velit natus vero, sint
-              quidem voluptates.
-            </p>
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-              Voluptatem esse perferendis consequuntur porro dolore animi quasi
-              delectus voluptates soluta sequi ad, voluptatum maiores voluptas
-              natus saepe assumenda autem. Animi esse nobis debitis iusto est
-              eos, quisquam unde culpa amet. Quis et quibusdam illo, molestiae
-              dolore ea commodi totam provident alias velit natus vero, sint
-              quidem voluptates.
-            </p>
-          </div>
+          <h1>Ovlašćeni predstavnici prodaje i servisni zastupnici</h1>
           <div className="img-cont">
             <div className="dot-logo">
               <div className="info">
