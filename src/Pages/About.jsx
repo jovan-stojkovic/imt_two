@@ -21,11 +21,9 @@ const About = ({ sectionMotion }) => {
     }
   }, [section]);
 
-
-
   return (
     <div className="page about">
-      <TextReveal text="O NAMA"/>
+      <TextReveal text="O NAMA" />
       <div className="page-cont">
         <Element name="tafe">
           <motion.section
@@ -33,7 +31,7 @@ const About = ({ sectionMotion }) => {
             variants={sectionMotion}
             initial="hidden"
             whileInView="visible"
-            viewport={{ amount: 0.5, once: true }}
+            viewport={{ amount: 0.3, once: true }}
           >
             <Bar headline={"TAFE"} />
             <p>
@@ -80,7 +78,7 @@ const About = ({ sectionMotion }) => {
             variants={sectionMotion}
             initial="hidden"
             whileInView="visible"
-            viewport={{ amount: 0.5, once: true }}
+            viewport={{ amount: 0.3, once: true }}
           >
             <Bar headline={"INDUSTRIJA MOTORA I TRAKTORA"} />
             <p>
@@ -127,7 +125,7 @@ const About = ({ sectionMotion }) => {
             variants={sectionMotion}
             initial="hidden"
             whileInView="visible"
-            viewport={{ amount: 0.5, once: true }}
+            viewport={{ amount: 0.3, once: true }}
           >
             <Bar headline={"INDUSTRIJA MAŠINA I TRAKTORA"} />
             <p>

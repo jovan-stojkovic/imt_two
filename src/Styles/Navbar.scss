@@ -344,7 +344,6 @@ nav {
   nav {
     width: 100%;
     background-color: $red;
-    
 
     .nav-cont {
       .menu-btn {
@@ -457,6 +456,77 @@ nav {
         .empty-space {
           height: 110vh;
           width: 50%;
+        }
+      }
+
+      .creation {
+        display: none;
+      }
+
+      .right-transparent {
+        position: absolute;
+        right: 2.5%;
+
+        .logo-cont {
+          margin-top: 0;
+          height: 50px;
+          width: 50px;
+          background-image: url("/logos/logo-no-bg.png");
+          background-color: white;
+
+          a {
+            height: 40px;
+            width: 40px;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 450px) {
+  nav {
+    height: 50px;
+
+    .nav-cont {
+      .menu-btn {
+        height: 20px;
+        width: 20px;
+        &.show-menu {
+          background-size: 140%;
+        }
+      }
+
+      .navlinks {
+        left: 0;
+        top: 60px;
+
+        .navlinks-cont {
+          gap: 10px;
+          width: 80%;
+          padding: 50px 10px;
+
+          .navlink {
+            font-size: 14px;
+            letter-spacing: 2px;
+          }
+
+          .navlink-with-dropdown {
+            .dropdown {
+              .dropdown-cont {
+                gap: 10px;
+
+                .dropdown-navlink {
+                  font-size: 12px;
+                }
+              }
+            }
+          }
+        }
+
+        .empty-space {
+          height: 110vh;
+          width: 20%;
         }
       }
 
