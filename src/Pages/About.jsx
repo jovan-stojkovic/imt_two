@@ -154,6 +154,7 @@ const About = ({ sectionMotion }) => {
             </p>
           </motion.section>
         </Element>
+
         <Element name="ind-masina">
           <motion.section
             id="industrija-motora"
@@ -163,42 +164,7 @@ const About = ({ sectionMotion }) => {
             viewport={{ amount: 0.3, once: true }}
           >
             <Bar headline={"INDUSTRIJA MOTORA I TRAKTORA"} />
-            <p>
-              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolore
-              autem cupiditate dicta inventore ad, voluptatum mollitia quam
-              deleniti recusandae veniam, eos neque aliquam perspiciatis magnam
-              aspernatur facilis quibusdam molestiae modi pariatur perferendis
-              adipisci impedit excepturi est. Culpa velit suscipit omnis?
-              Impedit maiores, quo maxime rem incidunt hic mollitia molestiae
-              dicta. iatis magnam aspernatur facilis quibusdam molestiae modi
-              pariatur perferendis adipisci impedit excepturi est. Culpa velit
-              suscipit omnis? Impedit maiores, quo maxime rem incidunt hic
-              mollitia molestiae dicta.
-            </p>
-            <p>
-              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolore
-              autem cupiditate dicta inventore ad, voluptatum mollitia quam
-              deleniti recusandae veniam, eos neque aliquam perspiciatis magnam
-              aspernatur facilis quibusdam molestiae modi pariatur perferendis
-              adipisci impedit excepturi est. Culpa velit suscipit omnis?
-              Impedit maiores, quo maxime rem incidunt hic mollitia molestiae
-              dicta. iatis magnam aspernatur facilis quibusdam molestiae modi
-              pariatur perferendis adipisci impedit excepturi est. Culpa velit
-              suscipit omnis? Impedit maiores, quo maxime rem incidunt hic
-              mollitia molestiae dicta.
-            </p>
-            <p>
-              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolore
-              autem cupiditate dicta inventore ad, voluptatum mollitia quam
-              deleniti recusandae veniam, eos neque aliquam perspiciatis magnam
-              aspernatur facilis quibusdam molestiae modi pariatur perferendis
-              adipisci impedit excepturi est. Culpa velit suscipit omnis?
-              Impedit maiores, quo maxime rem incidunt hic mollitia molestiae
-              dicta. iatis magnam aspernatur facilis quibusdam molestiae modi
-              pariatur perferendis adipisci impedit excepturi est. Culpa velit
-              suscipit omnis? Impedit maiores, quo maxime rem incidunt hic
-              mollitia molestiae dicta.
-            </p>
+            
           </motion.section>
         </Element>
         <Element name="ind-mehanizacije">
@@ -210,42 +176,7 @@ const About = ({ sectionMotion }) => {
             viewport={{ amount: 0.3, once: true }}
           >
             <Bar headline={"INDUSTRIJA MAŠINA I TRAKTORA"} />
-            <p>
-              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolore
-              autem cupiditate dicta inventore ad, voluptatum mollitia quam
-              deleniti recusandae veniam, eos neque aliquam perspiciatis magnam
-              aspernatur facilis quibusdam molestiae modi pariatur perferendis
-              adipisci impedit excepturi est. Culpa velit suscipit omnis?
-              Impedit maiores, quo maxime rem incidunt hic mollitia molestiae
-              dicta. iatis magnam aspernatur facilis quibusdam molestiae modi
-              pariatur perferendis adipisci impedit excepturi est. Culpa velit
-              suscipit omnis? Impedit maiores, quo maxime rem incidunt hic
-              mollitia molestiae dicta.
-            </p>
-            <p>
-              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolore
-              autem cupiditate dicta inventore ad, voluptatum mollitia quam
-              deleniti recusandae veniam, eos neque aliquam perspiciatis magnam
-              aspernatur facilis quibusdam molestiae modi pariatur perferendis
-              adipisci impedit excepturi est. Culpa velit suscipit omnis?
-              Impedit maiores, quo maxime rem incidunt hic mollitia molestiae
-              dicta. iatis magnam aspernatur facilis quibusdam molestiae modi
-              pariatur perferendis adipisci impedit excepturi est. Culpa velit
-              suscipit omnis? Impedit maiores, quo maxime rem incidunt hic
-              mollitia molestiae dicta.
-            </p>
-            <p>
-              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolore
-              autem cupiditate dicta inventore ad, voluptatum mollitia quam
-              deleniti recusandae veniam, eos neque aliquam perspiciatis magnam
-              aspernatur facilis quibusdam molestiae modi pariatur perferendis
-              adipisci impedit excepturi est. Culpa velit suscipit omnis?
-              Impedit maiores, quo maxime rem incidunt hic mollitia molestiae
-              dicta. iatis magnam aspernatur facilis quibusdam molestiae modi
-              pariatur perferendis adipisci impedit excepturi est. Culpa velit
-              suscipit omnis? Impedit maiores, quo maxime rem incidunt hic
-              mollitia molestiae dicta.
-            </p>
+            
           </motion.section>
         </Element>
         <Element name="politika-kvaliteta">
@@ -258,42 +189,7 @@ const About = ({ sectionMotion }) => {
           >
             <Bar headline={"POLITIKA KVALITETA"} />
 
-            <p>
-              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolore
-              autem cupiditate dicta inventore ad, voluptatum mollitia quam
-              deleniti recusandae veniam, eos neque aliquam perspiciatis magnam
-              aspernatur facilis quibusdam molestiae modi pariatur perferendis
-              adipisci impedit excepturi est. Culpa velit suscipit omnis?
-              Impedit maiores, quo maxime rem incidunt hic mollitia molestiae
-              dicta. iatis magnam aspernatur facilis quibusdam molestiae modi
-              pariatur perferendis adipisci impedit excepturi est. Culpa velit
-              suscipit omnis? Impedit maiores, quo maxime rem incidunt hic
-              mollitia molestiae dicta.
-            </p>
-            <p>
-              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolore
-              autem cupiditate dicta inventore ad, voluptatum mollitia quam
-              deleniti recusandae veniam, eos neque aliquam perspiciatis magnam
-              aspernatur facilis quibusdam molestiae modi pariatur perferendis
-              adipisci impedit excepturi est. Culpa velit suscipit omnis?
-              Impedit maiores, quo maxime rem incidunt hic mollitia molestiae
-              dicta. iatis magnam aspernatur facilis quibusdam molestiae modi
-              pariatur perferendis adipisci impedit excepturi est. Culpa velit
-              suscipit omnis? Impedit maiores, quo maxime rem incidunt hic
-              mollitia molestiae dicta.
-            </p>
-            <p>
-              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolore
-              autem cupiditate dicta inventore ad, voluptatum mollitia quam
-              deleniti recusandae veniam, eos neque aliquam perspiciatis magnam
-              aspernatur facilis quibusdam molestiae modi pariatur perferendis
-              adipisci impedit excepturi est. Culpa velit suscipit omnis?
-              Impedit maiores, quo maxime rem incidunt hic mollitia molestiae
-              dicta. iatis magnam aspernatur facilis quibusdam molestiae modi
-              pariatur perferendis adipisci impedit excepturi est. Culpa velit
-              suscipit omnis? Impedit maiores, quo maxime rem incidunt hic
-              mollitia molestiae dicta.
-            </p>
+            
           </motion.section>
         </Element>
       </div>

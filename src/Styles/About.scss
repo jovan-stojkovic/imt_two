@@ -7,13 +7,15 @@
       border-radius: 5px;
       box-shadow: $shadow;
       position: relative;
-      padding: 200px 50px;
+      padding: 50px;
       margin-bottom: 100px;
+      min-height: 400px;
 
       h3 {
-        font-size: 30px;
-        line-height: 32px;
-        letter-spacing: 2px;
+        margin-top: 100px;
+        font-size: 40px;
+        line-height: 40px;
+        letter-spacing: 3px;
         color: $black;
       }
 
@@ -26,7 +28,10 @@
       }
 
       p {
-        margin-bottom: 30px;
+        margin-bottom: 20px;
+        font-size: 18px;
+        line-height: 30px;
+        letter-spacing: 1px;
       }
     }
   }
@@ -36,11 +41,16 @@
   .about {
     .page-cont {
       section {
-        padding: 150px 50px;
+        padding: 40px;
         margin-bottom: 80px;
-
+        h3 {
+          font-size: 35px;
+          line-height: 35px;
+        }
         p {
-          margin-bottom: 25px;
+          margin-bottom: 20px;
+          font-size: 16px;
+          line-height: 26px;
         }
       }
     }
@@ -51,11 +61,22 @@
   .about {
     .page-cont {
       section {
-        padding: 120px 50px;
-        margin-bottom: 70px;
+        padding: 25px;
+
+        h3 {
+          font-size: 25px;
+          line-height: 25px;
+        }
+
+        h4 {
+          font-size: 14px;
+          margin-bottom: 20px;
+        }
 
         p {
-          margin-bottom: 30px;
+          margin-bottom: 15px;
+          line-height: 22px;
+          font-size: 14px;
         }
       }
     }
@@ -66,14 +87,18 @@
   .about {
     .page-cont {
       section {
-        position: relative;
-        padding: 100px 20px 50px 20px;
+        padding: 10px;
         margin-bottom: 50px;
+        h3 {
+          letter-spacing: 2px;
+        }
 
+        h4 {
+          letter-spacing: 3px;
+        }
         p {
-          margin-bottom: 30px;
-          font-size: 14px;
-          line-height: 22px;
+          font-size: 13px;
+          line-height: 20px;
         }
       }
     }
@@ -81,4 +106,46 @@
 }
 
 @media (max-width: 790px) {
+  .about {
+    .page-cont {
+      section {
+        padding: 15px;
+        margin-bottom: 50px;
+        h3 {
+          letter-spacing: 2px;
+          margin-top: 70px;
+          font-size: 22px;
+        }
+
+        h4 {
+          letter-spacing: 2px;
+        }
+        p {
+          font-size: 11px;
+          line-height: 18px;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 450px) {
+  .about {
+    .page-cont {
+      section {
+        padding: 10px;
+        margin-bottom: 40px;
+        h3 {
+          letter-spacing: 2px;
+          margin-top: 60px;
+          font-size: 18px;
+        }
+
+        h4 {
+          letter-spacing: 2px;
+          font-size: 12px;
+        }
+      }
+    }
+  }
 }
