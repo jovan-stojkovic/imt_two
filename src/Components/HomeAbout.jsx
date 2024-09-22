@@ -3,7 +3,7 @@ import Bar from "./Bar";
 const HomeAbout = () => {
   return (
     <>
-      <div className="home-about">
+      <div className="home-about home-section section">
         <Bar headline={"O NAMA"} />
         <div className="text-part">
           <p>

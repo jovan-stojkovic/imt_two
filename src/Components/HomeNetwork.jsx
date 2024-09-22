@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 const HomeNetwork = () => {
   return (
     <>
-      <div className="home-network">
+      <div className="home-network home-section section">
         <Bar headline={"PRODAJNA MREŽA"} />
         <div className="img-cont">
           <Link

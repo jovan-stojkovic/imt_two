@@ -322,4 +322,56 @@ main {
     font-size: 250%;
     line-height: 50px;
   }
+
+  .to-the-top-button {
+    bottom: 80px;
+    right: 50px;
+    width: 30px;
+    height: 30px;
+    img {
+      height: 30px;
+    }
+  }
+}
+
+@media (max-width: 450px) {
+  .nav-left-background {
+    display: none;
+  }
+
+  .bar {
+    .left-red {
+      display: flex;
+      align-items: center;
+      .bar-h1 {
+        font-size: 15px;
+        line-height: 25px;
+        padding-left: 5%;
+      }
+    }
+
+    .right-transparent {
+      .logo-cont {
+        height: 50px;
+        width: 50px;
+        top: 10px;
+        right: 5px;
+      }
+    }
+  }
+
+  .text-reveal-div {
+    font-size: 250%;
+    line-height: 50px;
+  }
+
+  .to-the-top-button {
+    bottom: 80px;
+    right: 50px;
+    width: 30px;
+    height: 30px;
+    img {
+      height: 30px;
+    }
+  }
 }
