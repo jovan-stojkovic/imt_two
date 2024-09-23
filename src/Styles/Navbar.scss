@@ -381,7 +381,11 @@ nav {
         }
 
         .navlinks-cont {
-          @include flex($direction: column, $align: start, $justify: space-between);
+          @include flex(
+            $direction: column,
+            $align: start,
+            $justify: space-between
+          );
           background-color: rgba(255, 255, 255, 0.6);
           height: calc(100vh - 70px);
           width: 70%;
@@ -453,7 +457,7 @@ nav {
         }
 
         .empty-space {
-          height: 100vh;
+          height: 120vh;
           width: 30%;
           background-color: rgba(0, 0, 0, 0.05);
         }
@@ -508,7 +512,6 @@ nav {
 
         .navlinks-cont {
           height: calc(100vh - 50px);
-
 
           .navlink {
             font-size: 14px;
