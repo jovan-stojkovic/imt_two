@@ -19,7 +19,7 @@ const Network = ({ sectionMotion }) => {
           viewport={{ amount: 0.2, once: true }}
         >
           <Bar />
-          <h1>Ovlašćeni predstavnici prodaje i servisni zastupnici</h1>
+          <h1>OVLAŠĆENI PREDSTAVNICI PRODAJE I SERVISNI ZASTUPNICI</h1>
           <div className="img-cont">
             <div className="dot-logo">
               <div className="info">
