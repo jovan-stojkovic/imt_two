@@ -289,6 +289,7 @@
 
         h1 {
           font-size: 25px;
+          letter-spacing: 4px;
         }
 
         .img-cont {
@@ -331,14 +332,11 @@
             &.agribau {
               top: 635px;
               left: 335px;
-  
+
               .info {
                 top: -205px;
-                .logo-cont {
-                  background-image: url("/network/agribau.png");
-                }
               }
-  
+
               &:hover {
                 .info {
                   display: block;
@@ -374,6 +372,218 @@
   }
 }
 @media (max-width: 790px) {
+  .network {
+    .page-cont {
+      section {
+        padding: 100px 10px 10px 10px;
+        margin-bottom: 100px;
+
+        h1 {
+          font-size: 20px;
+          letter-spacing: 3px;
+        }
+
+        .img-cont {
+          height: calc(800px * 2 / 3);
+          width: calc(600px * 2 / 3);
+
+          .dot-logo {
+            height: calc(40px * 2 / 3);
+            width: calc(40px * 2 / 3);
+            top: calc(150px * 2 / 3);
+            left: calc(260px * 2 / 3);
+
+            .info {
+              position: absolute;
+              z-index: 40;
+              left: calc(-290px * 2 / 3);
+              top: calc(45px * 2 / 3);
+              height: calc(250px * 2 / 3);
+              width: calc(600px * 2 / 3);
+              @include background($size: 70px, $position: right);
+
+              h5 {
+                font-size: 16px;
+                margin-bottom: 10px;
+              }
+              p {
+                font-size: 14px;
+                line-height: 25px;
+                letter-spacing: 2px;
+              }
+            }
+          }
+
+          .dot {
+            height: calc(30px * 2 / 3);
+            width: calc(30px * 2 / 3);
+
+            &.agrorid {
+              top: calc(205px * 2 / 3);
+              left: calc(190px * 2 / 3);
+            }
+
+            &.agrogas {
+              top: calc(300px * 2 / 3);
+              left: calc(230px * 2 / 3);
+
+              .info {
+                width: 410px;
+                left: -170px;
+              }
+            }
+
+            &.jugometal {
+              top: calc(340px * 2 / 3);
+              left: calc(355px * 2 / 3);
+            }
+
+            &.agrouniverzal {
+              top: calc(380px * 2 / 3);
+              left: calc(225px * 2 / 3);
+            }
+
+            &.agrocentar {
+              top: calc(460px * 2 / 3);
+              left: calc(190px * 2 / 3);
+            }
+
+            &.agribau {
+              top: calc(635px * 2 / 3);
+              left: calc(335px * 2 / 3);
+
+              .info {
+                top: -205px;
+              }
+            }
+
+            &.rakic {
+              top: calc(240px * 2 / 3);
+              left: calc(25px * 2 / 3);
+            }
+
+            .info {
+              top: 25px;
+            }
+          }
+        }
+      }
+    }
+  }
 }
+
 @media (max-width: 450px) {
+  .network {
+    .page-cont {
+      section {
+        padding: 70px 10px 10px 10px;
+
+        h1 {
+          font-size: 18px;
+          letter-spacing: px;
+        }
+
+        .img-cont {
+          height: calc(800px / 2);
+          width: calc(600px / 2);
+
+          .dot-logo {
+            height: calc(40px / 2);
+            width: calc(40px / 2);
+            top: calc(150px / 2);
+            left: calc(260px / 2);
+
+            .info {
+              position: absolute;
+              z-index: 40;
+              left: calc(-260px / 2);
+              top: calc(45px / 2);
+              height: calc(250px / 2);
+              width: calc(600px / 2);
+              @include background($size: 60px, $position: right);
+
+              h5 {
+                font-size: 11px;
+                margin-bottom: 5px;
+              }
+              p {
+                font-size: 10px;
+                line-height: 15px;
+                letter-spacing: 1px;
+              }
+            }
+          }
+
+          .dot {
+            height: calc(30px / 2);
+            width: calc(30px / 2);
+
+            &.agrorid {
+              top: calc(205px / 2);
+              left: calc(190px / 2);
+            }
+
+            &.agrogas {
+              top: calc(300px / 2);
+              left: calc(230px / 2);
+
+              .info {
+                width: 270px;
+                left: -100px;
+              }
+            }
+
+            &.jugometal {
+              top: calc(340px / 2);
+              left: calc(355px / 2);
+            }
+
+            &.agrouniverzal {
+              top: calc(380px / 2);
+              left: calc(225px / 2);
+            }
+
+            &.agrocentar {
+              top: calc(460px / 2);
+              left: calc(190px / 2);
+            }
+
+            &.agribau {
+              top: calc(635px / 2);
+              left: calc(335px / 2);
+
+              .info {
+                top: -125px;
+              }
+            }
+
+            &.rakic {
+              top: calc(240px / 2);
+              left: calc(25px / 2);
+              .info {
+                left: 5px;
+              }
+            }
+            .info {
+              left: -80px;
+              top: 20px;
+              height: 120px;
+              width: 200px;
+              padding: 10px;
+  
+              .logo-cont {
+                height: 30px;
+                margin-bottom: 5px;
+              }
+              p {
+                font-size: 10px;
+                line-height: 15px;
+                letter-spacing: 1px;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
 }
