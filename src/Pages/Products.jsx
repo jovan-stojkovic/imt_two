@@ -18,12 +18,12 @@ const Products = ({
   const { section } = useParams();
 
   useEffect(() => {
-    let elements = document.querySelectorAll(".single-product");
+    let elements = document.querySelectorAll(".single-product-img");
     VanillaTilt.init(elements, {
-      max: 3,
+      max: 4,
       speed: 1000,
-      scale: 1.01,
-      glare: false,
+      scale: 1.03,
+      glare: true,
     });
 
     return () => {
@@ -56,8 +56,7 @@ const Products = ({
             <motion.section
               variants={sectionMotion}
               initial="hidden"
-              whileInView="visible"
-              viewport={{ amount: 0.2, once: true }}
+              animate="visible"
             >
               <Bar headline={"STANDARDNA SERIJA"} />
               {standardProducts.map((tractor, index) => (
@@ -70,7 +69,11 @@ const Products = ({
                       window.scrollTo({ top: 0, behavior: "smooth" });
                     }}
                   >
-                    <img src={tractor.img} alt={tractor.name} />
+                    <img
+                      src={tractor.img}
+                      alt={tractor.name}
+                      className="single-product-img"
+                    />
                     <h1>{tractor.name}</h1>
                   </Link>
                 </div>
@@ -83,7 +86,7 @@ const Products = ({
               variants={sectionMotion}
               initial="hidden"
               whileInView="visible"
-              viewport={{ amount: 0.2, once: true }}
+              viewport={{ amount: 0.3, once: true }}
             >
               <Bar headline={"KOMPAKTNA SERIJA"} />
               {compactProducts.map((tractor, index) => (
@@ -96,7 +99,11 @@ const Products = ({
                       window.scrollTo({ top: 0, behavior: "smooth" });
                     }}
                   >
-                    <img src={tractor.img} alt={tractor.name} />
+                    <img
+                      src={tractor.img}
+                      alt={tractor.name}
+                      className="single-product-img"
+                    />
                     <h1>{tractor.name}</h1>
                   </Link>
                 </div>
@@ -109,7 +116,7 @@ const Products = ({
               variants={sectionMotion}
               initial="hidden"
               whileInView="visible"
-              viewport={{ amount: 0.2, once: true }}
+              viewport={{ amount: 0.3, once: true }}
             >
               <Bar headline={"MAGNA SERIJA"} />
               {magnaProducts.map((tractor, index) => (
@@ -122,7 +129,11 @@ const Products = ({
                       window.scrollTo({ top: 0, behavior: "smooth" });
                     }}
                   >
-                    <img src={tractor.img} alt={tractor.name} />
+                    <img
+                      src={tractor.img}
+                      alt={tractor.name}
+                      className="single-product-img"
+                    />
                     <h1>{tractor.name}</h1>
                   </Link>
                 </div>

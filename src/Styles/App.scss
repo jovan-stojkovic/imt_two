@@ -7,6 +7,7 @@ $gray: rgb(188, 190, 192);
 $white: rgb(255, 255, 255);
 
 $shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+$shadow-small: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
 $noto: "Noto Sans Display", sans-serif;
 $quicksand: "Quicksand", sans-serif;
 
@@ -164,8 +165,8 @@ main {
 
 .reveal-div-flex {
   width: 100%;
-  margin-top: 120px;
-  margin-bottom: 50px;
+  margin-top: 170px;
+  margin-bottom: 60px;
 
   .text-reveal-div {
     font-size: 150px;
@@ -228,8 +229,8 @@ main {
   }
 
   .reveal-div-flex {
-    margin-top: 110px;
-    margin-bottom: 40px;
+    margin-top: 120px;
+    margin-bottom: 50px;
 
     .text-reveal-div {
       font-size: 130px;
@@ -265,9 +266,6 @@ main {
     }
   }
   .reveal-div-flex {
-    margin-top: 100px;
-    margin-bottom: 30px;
-
     .text-reveal-div {
       font-size: 120px;
       line-height: 160px;
@@ -318,8 +316,8 @@ main {
   }
 
   .reveal-div-flex {
-    margin-top: 90px;
-    margin-bottom: 20px;
+    margin-top: 110px;
+    margin-bottom: 40px;
 
     .text-reveal-div {
       font-size: 100px;
@@ -357,8 +355,8 @@ main {
   }
 
   .reveal-div-flex {
-    margin-top: 80px;
-    margin-bottom: 10px;
+    margin-top: 100px;
+    margin-bottom: 30px;
 
     .text-reveal-div {
       font-size: 70px;
@@ -405,6 +403,8 @@ main {
   }
 
   .reveal-div-flex {
+    margin-top: 80px;
+    margin-bottom: 30px;
     .text-reveal-div {
       font-size: 45px;
       line-height: 70px;

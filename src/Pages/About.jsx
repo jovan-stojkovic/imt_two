@@ -32,8 +32,7 @@ const About = ({ sectionMotion }) => {
             id="tafe"
             variants={sectionMotion}
             initial="hidden"
-            whileInView="visible"
-            viewport={{ amount: 0.3, once: true }}
+            animate="visible"
           >
             <Bar headline={"TAFE"} />
             <h3>TAFE - TRACTORS AND FARM EQUIPMENT LIMITED</h3>
