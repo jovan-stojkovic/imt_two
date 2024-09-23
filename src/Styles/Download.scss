@@ -6,36 +6,29 @@
       border-radius: 5px;
       box-shadow: $shadow;
       position: relative;
-      padding: 200px 50px 50px 50px;
+      padding: 150px 50px 50px 50px;
       margin-bottom: 100px;
       display: flex;
 
       .segment {
-        width: 30%;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: space-between;
-        height: 270px;
-        margin-bottom: 100px;
-        justify-content: space-between;
+        width: 25%;
+        @include flex($direction: column, $justify: space-between);
+        height: 260px;
+        margin-bottom: 50px;
 
         h2 {
           font-size: 18px;
           text-align: center;
           letter-spacing: 1px;
-          width: 50%;
+          width: 80%;
         }
 
         a {
           height: 200px;
           width: 200px;
           background-image: url("public/icons/file.svg");
-          background-position: center;
-          background-size: 80%;
-          background-repeat: no-repeat;
+          @include background($size: 80%);
           transition: 0.3s;
-          position: relative;
           @include flex();
 
           img {
@@ -65,20 +58,24 @@
   .download {
     .page-cont {
       section {
-        padding: 150px 50px 50px 50px;
+        padding: 120px 40px 40px 40px;
         margin-bottom: 80px;
 
         .segment {
-          height: 190px;
-          margin-bottom: 80px;
+          height: 240px;
+          margin-bottom: 40px;
 
           h2 {
             font-size: 16px;
           }
 
           a {
-            height: 170px;
-            width: 170px;
+            height: 180px;
+            width: 180px;
+
+            img {
+              height: 70px;
+            }
           }
         }
       }
@@ -90,18 +87,21 @@
   .download {
     .page-cont {
       section {
-        padding: 130px 40px 40px 40px;
-        margin-bottom: 60px;
+        padding: 100px 25px 25px 25px;
+        margin-bottom: 70px;
         .segment {
-          height: 170px;
-          margin-bottom: 50px;
+          height: 220px;
+          margin-bottom: 30px;
+
           h2 {
-            font-size: 14px;
-            font-weight: 400;
+            font-size: 15px;
           }
           a {
-            height: 140px;
-            width: 140px;
+            height: 150px;
+            width: 150px;
+            img {
+              height: 50px;
+            }
           }
         }
       }
@@ -113,14 +113,15 @@
   .download {
     .page-cont {
       section {
-        padding: 100px 30px 30px 30px;
-        margin-bottom: 50px;
-
+        padding: 100px 15px 15px 15px;
         .segment {
-          margin-bottom: 50px;
-
-          h2 {
-            font-size: 14px;
+          width: 33%;
+          a {
+            height: 140px;
+            width: 140px;
+            img {
+              height: 40px;
+            }
           }
         }
       }
@@ -132,20 +133,52 @@
   .download {
     .page-cont {
       section {
-        padding: 100px 30px 30px 30px;
+        padding: 100px 10px 10px 10px;
         margin-bottom: 50px;
-
+        flex-wrap: wrap;
         .segment {
-          height: 150px;
+          width: 50%;
+          height: 190px;
           margin-bottom: 50px;
 
           h2 {
-            font-size: 12px;
+            font-size: 13px;
+            letter-spacing: 0;
           }
-
           a {
-            height: 110px;
-            width: 110px;
+            height: 150px;
+            width: 150px;
+            img {
+              height: 50px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 450px) {
+  .download {
+    .page-cont {
+      section {
+        padding: 70px 10px 10px 10px;
+        margin-bottom: 50px;
+        flex-wrap: wrap;
+        .segment {
+          height: 160px;
+          margin-bottom: 50px;
+
+          h2 {
+            font-size: 11px;
+            letter-spacing: 0;
+          }
+          a {
+            height: 100px;
+            width: 100px;
+            img {
+              height: 30px;
+            }
           }
         }
       }
