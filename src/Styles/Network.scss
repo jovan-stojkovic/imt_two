@@ -28,6 +28,7 @@
         position: relative;
         border-radius: 20px;
         box-shadow: $shadow;
+        margin-bottom: 50px;
 
         .dot-logo {
           @include background($size: cover);
@@ -480,7 +481,7 @@
 
         h1 {
           font-size: 18px;
-          letter-spacing: px;
+          letter-spacing: 2px;
         }
 
         .img-cont {
@@ -570,7 +571,7 @@
               height: 120px;
               width: 200px;
               padding: 10px;
-  
+
               .logo-cont {
                 height: 30px;
                 margin-bottom: 5px;
