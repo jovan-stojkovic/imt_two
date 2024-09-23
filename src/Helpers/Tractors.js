@@ -212,7 +212,7 @@ export const standardProducts = [
 export const compactProducts = [
   {
     name: "TAFE 6028 M",
-    img: "/rest/no-img.webp",
+    img: "/products/6028M.png",
     serija: "kompaktni",
     Snaga: "47, EUII",
     Pogon: "4WD",
@@ -241,7 +241,7 @@ export const compactProducts = [
 export const magnaProducts = [
   {
     name: "IMT 569 M",
-    img: "/rest/no-img.webp",
+    img: "/products/569M.png",
     serija: "magna",
     Snaga: "65 EU III A",
     Pogon: "4WD",
@@ -267,7 +267,7 @@ export const magnaProducts = [
   },
   {
     name: "IMT 577 M",
-    img: "/rest/no-img.webp",
+    img: "/products/577M.png",
     serija: "magna",
     Snaga: "74.8 EU III A",
     Pogon: "4WD",
@@ -293,7 +293,7 @@ export const magnaProducts = [
   },
   {
     name: "IMT 587 M",
-    img: "/rest/no-img.webp",
+    img: "/products/587M.png",
     serija: "magna",
     Snaga: "80, EUII",
     Pogon: "4WD",

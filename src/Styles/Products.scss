@@ -30,7 +30,7 @@
           img {
             height: 90%;
             aspect-ratio: 1;
-            object-fit: cover;
+            object-fit: fill;
             border-radius: 10px;
             transition: box-shadow 0.5s;
           }
@@ -42,14 +42,6 @@
             color: $black;
             letter-spacing: 3px;
             font-weight: 500;
-          }
-        }
-
-        &:hover {
-          a {
-            img {
-              box-shadow: $shadow;
-            }
           }
         }
       }
