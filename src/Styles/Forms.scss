@@ -81,6 +81,7 @@
 }
 
 .page.service {
+  margin-bottom: 100px;
   .page-cont {
     position: relative;
     padding: 20px;
@@ -122,7 +123,6 @@
           letter-spacing: 2px;
           cursor: text;
           transition: 0.5s;
-          border-radius: 5px;
           &::placeholder {
             color: gray;
             font-size: 15px;
@@ -206,7 +206,6 @@
             margin-bottom: 20px;
             cursor: text;
             transition: 0.5s;
-            border-radius: 5px;
 
             &::placeholder {
               color: gray;
@@ -226,7 +225,6 @@
         margin-left: 80%;
         padding: 0 15px;
         height: 60px;
-        border-radius: 5px;
         color: $white;
         background-color: $red;
         backdrop-filter: blur(2px);
@@ -438,7 +436,6 @@
             letter-spacing: 2px;
             cursor: text;
             transition: 0.5s;
-            border-radius: 5px;
             &::placeholder {
               color: gray;
               font-size: 15px;
@@ -497,7 +494,6 @@
           margin-left: 20%;
           padding: 0 15px;
           height: 60px;
-          border-radius: 5px;
           color: $white;
           background-color: $red;
           backdrop-filter: blur(2px);

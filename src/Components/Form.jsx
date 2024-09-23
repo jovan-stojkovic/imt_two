@@ -51,7 +51,7 @@ const Form = ({ title }) => {
         className="form"
           onSubmit={handleSubmit(onSubmit)}
         >
-            <input type="text" value={title} placeholder="Predmet" />
+            <input type="text" defaultValue={title} placeholder="Predmet" />
           <p className="error">{errors.fullName?.message}</p>
           <input
             type="text"
