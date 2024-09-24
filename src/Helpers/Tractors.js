@@ -1,7 +1,7 @@
 export const standardProducts = [
   {
     name: "IMT 539.2 kabina",
-    img: "/products/IMT 539.2 DI 2WD kabina.png",
+    img: "/products/IMT-539.2-DI.webp",
     serija: "standardni",
     Snaga: "47, EUII",
     Pogon: "2WD",
@@ -27,7 +27,7 @@ export const standardProducts = [
   },
   {
     name: "IMT 539.2 ROPS",
-    img: "/products/IMT 539.2 DI 2WD ROPS.png",
+    img: "/products/IMT-539.2-DI.webp",
     serija: "standardni",
     Snaga: "47, EUII",
     Pogon: "2WD",
@@ -53,7 +53,7 @@ export const standardProducts = [
   },
   {
     name: "IMT 549.3 kabina",
-    img: "/products/IMT 549.3 DI 4WD kabina.png",
+    img: "/products/IMT-549.3-DI.webp",
     serija: "standardni",
     Snaga: "47, EUIII A",
     Pogon: "4WD",
@@ -79,7 +79,7 @@ export const standardProducts = [
   },
   {
     name: "IMT 549.3 ROPS",
-    img: "/products/IMT 549.3 DI 4WD ROPS.png",
+    img: "/products/IMT-549.3-DI.webp",
     serija: "standardni",
     Snaga: "47, EUIII A",
     Pogon: "4WD",
@@ -105,7 +105,7 @@ export const standardProducts = [
   },
   {
     name: "IMT 565.2 kabina",
-    img: "/products/IMT 565.2 DI 4WD kabina.png",
+    img: "/products/IMT-565.2-DI.webp",
     serija: "standardni",
     Snaga: "63, EUII",
     Pogon: "4WD",
@@ -131,7 +131,7 @@ export const standardProducts = [
   },
   {
     name: "IMT 565.2 ROPS",
-    img: "/products/IMT 565.2 DI 4WD ROPS.png",
+    img: "/products/IMT-565.2-DI.webp",
     serija: "standardni",
     Snaga: "63, EUII",
     Pogon: "4WD",
@@ -157,7 +157,7 @@ export const standardProducts = [
   },
   {
     name: "TAFE 4615 ROPS",
-    img: "/products/TAFE 4615 4WD ROPS.png",
+    img: "/products/4615.PNG",
     serija: "standardni",
     Snaga: "47, EUIII A",
     Pogon: "4WD",
@@ -183,7 +183,7 @@ export const standardProducts = [
   },
   {
     name: "TAFE 6515 ROPS",
-    img: "/products/TAFE 6515 4WD ROPS.png",
+    img: "/products/6515.PNG",
     serija: "standardni",
     Snaga: "65, EUIII A",
     Pogon: "4WD",
@@ -267,7 +267,7 @@ export const magnaProducts = [
   },
   {
     name: "IMT 577 M",
-    img: "/products/577M.png",
+    img: "/products/IMT-577M-HVAC.webp",
     serija: "magna",
     Snaga: "74.8 EU III A",
     Pogon: "4WD",
@@ -293,7 +293,7 @@ export const magnaProducts = [
   },
   {
     name: "IMT 587 M",
-    img: "/products/587M.png",
+    img: "/products/IMT-587M-HVAC.webp",
     serija: "magna",
     Snaga: "80, EUII",
     Pogon: "4WD",
