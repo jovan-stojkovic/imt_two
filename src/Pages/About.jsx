@@ -250,7 +250,7 @@ const About = ({ sectionMotion }) => {
             viewport={{ amount: 0.5, once: true }}
           >
             <Bar headline={"POLITIKA KVALITETA"} />
-            <h3>Misija</h3>
+            <h4>Misija</h4>
             <p>
               Sa iskustvom većim od polovine veka u gradnji traktora, mi smo tu
               da ponudimo snažne i kvalitetne traktore jednostavne za
@@ -268,7 +268,7 @@ const About = ({ sectionMotion }) => {
               naše angažovanje bude posvećeno očuvanju životne sredine.
             </p>
 
-            <h3>Vizija</h3>
+            <h4>Vizija</h4>
             <p>
               Cilj IMT je da budemo Korisnikov prvi izbor, kada je u pitanju
               efikasnost, pouzdanost, jednostavnost u rukovanju i održavanju.

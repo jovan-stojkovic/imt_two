@@ -20,6 +20,19 @@
         margin-bottom: 50px;
       }
 
+      h4 {
+        margin-top: 100px;
+        font-size: 30px;
+        line-height: 30px;
+        letter-spacing: 3px;
+        color: $black;
+        margin-bottom: 30px;
+
+        &:last-of-type {
+          margin-top: 20px;
+        }
+      }
+
       .floating-img-one {
         float: left;
         margin-right: 20px;
@@ -123,13 +136,40 @@
       section {
         padding: 40px;
         margin-bottom: 80px;
+
         h3 {
           font-size: 35px;
           line-height: 35px;
         }
+
+        h4 {
+          font-size: 25px;
+          line-height: 25px;
+        }
+
         p {
           font-size: 16px;
           line-height: 26px;
+
+          span {
+            margin-left: 20px;
+          }
+        }
+
+        .links {
+          a {
+            font-size: 18px;
+            line-height: 27px;
+          }
+        }
+
+        ul {
+          margin-left: 20px;
+          li {
+            margin-bottom: 10px;
+            font-size: 16px;
+            line-height: 26px;
+          }
         }
       }
     }
@@ -148,13 +188,43 @@
         }
 
         h4 {
-          font-size: 14px;
-          margin-bottom: 20px;
+          font-size: 20px;
+        }
+
+        .floating-img-one {
+          width: 30%;
+        }
+
+        .floating-img-two {
+          width: 30%;
+        }
+
+        .floating-img-three {
+          width: 40%;
         }
 
         p {
-          line-height: 22px;
           font-size: 14px;
+          line-height: 22px;
+
+          span {
+            margin-left: 17px;
+          }
+        }
+
+        .links {
+          a {
+            font-size: 16px;
+            line-height: 24px;
+          }
+        }
+
+        ul {
+          margin-left: 15px;
+          li {
+            font-size: 14px;
+            line-height: 22px;
+          }
         }
       }
     }
@@ -169,14 +239,55 @@
         margin-bottom: 50px;
         h3 {
           letter-spacing: 2px;
+          font-size: 22px;
+          margin-top: 80px;
+          margin-bottom: 30px;
         }
 
         h4 {
-          letter-spacing: 3px;
+          font-size: 18px;
+          margin-top: 70px;
+          line-height: 22px;
+          margin-bottom: 20px;
         }
+
+        .floating-img-one {
+          width: 35%;
+        }
+
+        .floating-img-two {
+          width: 35%;
+        }
+
+        .floating-img-three {
+          width: 40%;
+        }
+
         p {
           font-size: 13px;
           line-height: 20px;
+
+          span {
+            margin-left: 12px;
+          }
+        }
+
+        .link-tafe {
+          font-size: 25px;
+        }
+
+        .links {
+          a {
+            font-size: 15px;
+            line-height: 22px;
+          }
+        }
+
+        ul {
+          li {
+            font-size: 13px;
+            line-height: 20px;
+          }
         }
       }
     }
@@ -191,16 +302,56 @@
         margin-bottom: 50px;
         h3 {
           letter-spacing: 2px;
-          margin-top: 70px;
-          font-size: 22px;
+          margin-top: 60px;
+          font-size: 18px;
         }
 
         h4 {
+          font-size: 16px;
+          margin-top: 60px;
+          line-height: 20px;
+          margin-bottom: 15px;
           letter-spacing: 2px;
         }
+
+        .floating-img-one {
+          width: 50%;
+          margin-right: 10px;
+        }
+
+        .floating-img-two {
+          width: 45%;
+          margin-left: 10px;
+        }
+
+        .floating-img-three {
+          width: 50%;
+          margin-right: 10px;
+        }
+
         p {
           font-size: 11px;
           line-height: 18px;
+        }
+
+        .link-tafe {
+          font-size: 20px;
+        }
+
+        .links {
+          margin-bottom: 20px;
+
+          a {
+            font-size: 14px;
+            line-height: 20px;
+          }
+        }
+
+        ul {
+          li {
+            font-size: 11px;
+            line-height: 18px;
+          }
         }
       }
     }
@@ -221,8 +372,39 @@
         }
 
         h4 {
-          letter-spacing: 2px;
-          font-size: 12px;
+          margin-top: 50px;
+          font-size: 14px;
+        }
+
+        .floating-img-one {
+          width: 50%;
+        }
+
+        .floating-img-two {
+          width: 50%;
+        }
+
+        .floating-img-three {
+          width: 100%;
+        }
+
+        p {
+          span {
+            margin-left: 5px;
+          }
+        }
+
+        .link-tafe {
+          font-size: 18px;
+        }
+
+        .links {
+          margin-bottom: 15px;
+
+          a {
+            font-size: 13px;
+            line-height: 18px;
+          }
         }
       }
     }
