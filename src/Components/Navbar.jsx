@@ -87,14 +87,14 @@ const Navbar = ({ menu, setMenu, handleMenu }) => {
                   </NavLink>
                   <NavLink
                     className="dropdown-navlink"
-                    to="/o-nama/ind-masina"
+                    to="/o-nama/industrija-masina"
                     onClick={() => setMenu(false)}
                   >
                     INDUSTRIJA MAŠINA I TRAKTORA
                   </NavLink>
                   <NavLink
                     className="dropdown-navlink"
-                    to="/o-nama/ind-mehanizacije"
+                    to="/o-nama/industrija-mehanizacije"
                     onClick={() => setMenu(false)}
                   >
                     INDUSTRIJA MEHANIZACIJE I TRAKTORA

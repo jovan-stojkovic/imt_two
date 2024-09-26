@@ -49,14 +49,14 @@ const Home = ({ sectionMotion }) => {
         <HomeAbout />
       </motion.section>
 
-      <motion.section
+      {/* <motion.section
         variants={sectionMotion}
         initial="hidden"
         whileInView="visible"
         viewport={{ amount: 0.3, once: true }}
       >
         <HomeNetwork />
-      </motion.section>
+      </motion.section> */}
     </>
   );
 };
