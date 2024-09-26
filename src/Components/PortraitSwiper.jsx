@@ -39,7 +39,7 @@ const PortraitSwiper = () => {
       navigation
       loop={true}
       autoplay={{
-        delay: 4000,
+        delay: 6000,
         disableOnInteraction: false,
       }}
       className="custom-swiper portrait-swiper"

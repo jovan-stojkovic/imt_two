@@ -59,6 +59,21 @@
         }
       }
 
+      .link-tafe {
+        margin-bottom: 30px;
+        font-size: 30px;
+        line-height: 30px;
+        letter-spacing: 1px;
+        text-decoration: none;
+        color: $black;
+        font-weight: 500;
+        transition: color 0.2s;
+
+        &:hover {
+          color: $red;
+        }
+      }
+
       .links {
         @include flex($direction: column, $align: left);
         gap: 10px;

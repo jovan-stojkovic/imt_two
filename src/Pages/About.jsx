@@ -104,6 +104,8 @@ const About = ({ sectionMotion }) => {
               proizvodnju dizel motora, automobilskih komponenti, proizvoda lake
               industrije, plantaža i usluga.
             </p>
+
+            <Link target="_blank" className="link-tafe" to="https://www.tafe.com/">TAFE.com</Link>
           </motion.section>
         </Element>
 
