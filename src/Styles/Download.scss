@@ -12,8 +12,8 @@
 
       .segment {
         width: 25%;
-        @include flex($direction: column, $justify: space-between);
-        height: 260px;
+        @include flex($direction: column, $justify: baseline);
+        height: 240px;
         margin-bottom: 50px;
 
         h2 {
@@ -26,19 +26,15 @@
         a {
           height: 200px;
           width: 200px;
-          background-image: url("public/icons/file.svg");
+          background-image: url("/icons/file2.svg");
           @include background($size: 80%);
           transition: 0.3s;
           @include flex();
-
-          img {
-            height: 80px;
-          }
         }
 
         &:hover {
           a {
-            scale: 1.1;
+            scale: 1.05;
           }
         }
       }
@@ -62,20 +58,16 @@
         margin-bottom: 80px;
 
         .segment {
-          height: 240px;
+          height: 220px;
           margin-bottom: 40px;
 
           h2 {
-            font-size: 16px;
+            font-size: 15px;
           }
 
           a {
             height: 180px;
             width: 180px;
-
-            img {
-              height: 70px;
-            }
           }
         }
       }
@@ -90,11 +82,11 @@
         padding: 100px 25px 25px 25px;
         margin-bottom: 70px;
         .segment {
-          height: 220px;
+          height: 200px;
           margin-bottom: 30px;
 
           h2 {
-            font-size: 15px;
+            font-size: 13px;
           }
           a {
             height: 150px;
@@ -115,6 +107,7 @@
       section {
         padding: 100px 15px 15px 15px;
         .segment {
+          height: 180;
           width: 33%;
           a {
             height: 140px;
@@ -138,7 +131,7 @@
         flex-wrap: wrap;
         .segment {
           width: 50%;
-          height: 190px;
+          height: 170px;
           margin-bottom: 50px;
 
           h2 {
@@ -166,16 +159,17 @@
         margin-bottom: 50px;
         flex-wrap: wrap;
         .segment {
-          height: 160px;
-          margin-bottom: 50px;
+          width: 100%;
+          height: 170px;
+          margin-bottom: 20px;
 
           h2 {
-            font-size: 11px;
+            font-size: 13px;
             letter-spacing: 0;
           }
           a {
-            height: 100px;
-            width: 100px;
+            height: 120px;
+            width: 120px;
             img {
               height: 30px;
             }

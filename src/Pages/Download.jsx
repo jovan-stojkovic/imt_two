@@ -59,31 +59,22 @@ const Download = ({ sectionMotion }) => {
           >
             <Bar headline={"PODACI O FIRMI"} />
             <div className="segment about">
+              <a href="/files/firma/APR Rešenje.PDF" target="_blank"></a>
               <h2>APR REŠENJE</h2>
-              <a
-                href="/files/firma/APR Rešenje.PDF"
-                download="/APR Rešenje.PDF"
-              >
-                <img src="/logos/bg-bw.jpg" alt="logo" />
-              </a>
             </div>
             <div className="segment">
-              <h2>POTVRDA O IZVRŠENOJ REGISTRACIJI</h2>
               <a
                 href="/files/firma/Potvrda o izvršenoj registraciji.PDF"
-                download="/Potvrda o izvršenoj registraciji.PDF"
-              >
-                <img src="/logos/bg-bw.jpg" alt="logo" />
-              </a>
+                target="_blank"
+              ></a>
+              <h2>POTVRDA O IZVRŠENOJ REGISTRACIJI</h2>
             </div>
             <div className="segment">
-              <h2>POTVRDA O IZVRŠENOM EVIDENTIRANJU PDV-a</h2>
               <a
                 href="/files/firma/Potvrda o izvršenom evidentiranju pdv-a.pdf"
-                download="/Potvrda o izvršenom evidentiranju pdv-a.pdf"
-              >
-                <img src="/logos/bg-bw.jpg" alt="logo" />
-              </a>
+                target="_blank"
+              ></a>
+              <h2>POTVRDA O IZVRŠENOM EVIDENTIRANJU PDV-a</h2>
             </div>
           </motion.section>
         </Element>
@@ -99,13 +90,8 @@ const Download = ({ sectionMotion }) => {
             <Bar headline={"PROSPEKTI"} />
             {brochures.map((brochure) => (
               <div className="segment" key={brochure}>
+                <a href={`/files/brosure/${brochure}.pdf`} target="_blank"></a>
                 <h2>{brochure}</h2>
-                <a
-                  href={`/files/brosure/${brochure}.pdf`}
-                  download={`${brochure}.pdf`}
-                >
-                  <img src="/icons/tractor2.svg" alt="tr" />
-                </a>
               </div>
             ))}
           </motion.section>
@@ -122,13 +108,8 @@ const Download = ({ sectionMotion }) => {
             <Bar headline={"UPUTSTVA ZA RUKOVANJE"} />
             {manuals.map((manual) => (
               <div className="segment" key={manual}>
+                <a href={`/files/uputstva/${manual}.pdf`} target="_blank"></a>
                 <h2>{manual}</h2>
-                <a
-                  href={`/files/brosure/${manual}.pdf`}
-                  download={`${manual}.pdf`}
-                >
-                  <img src="/icons/book.svg" alt="manual" />
-                </a>
               </div>
             ))}
           </motion.section>
