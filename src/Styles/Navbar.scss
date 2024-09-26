@@ -381,19 +381,16 @@ nav {
         }
 
         .navlinks-cont {
-          @include flex(
-            $direction: column,
-            $align: start,
-            $justify: space-between
-          );
+          @include flex($direction: column, $align: start, $justify: baseline);
           background-color: rgba(255, 255, 255, 0.6);
           height: calc(100vh - 70px);
           width: 70%;
+          gap: 1vh;
           padding: 30px 0 80px 0;
           box-shadow: $shadow;
 
           .navlink {
-            font-size: 16px;
+            font-size: 14px;
             letter-spacing: 3px;
             padding: 5px 15px;
           }
@@ -416,10 +413,10 @@ nav {
                 box-shadow: none;
                 width: auto;
                 height: auto;
-                gap: 15px;
+                gap: 10px;
 
                 .dropdown-navlink {
-                  font-size: 14px;
+                  font-size: 13px;
                 }
               }
             }
@@ -512,10 +509,11 @@ nav {
 
         .navlinks-cont {
           height: calc(100vh - 50px);
+          width: 80%;
 
           .navlink {
-            font-size: 14px;
-            letter-spacing: 2px;
+            font-size: 13px;
+            letter-spacing: 1px;
           }
 
           .navlink-with-dropdown {
@@ -530,9 +528,10 @@ nav {
             }
           }
         }
-   
+
         .empty-space {
           height: 110vh;
+          width: 20%;
         }
       }
 
