@@ -2,6 +2,10 @@ import "../Styles/Download.scss";
 import TextReveal from "../Components/TextReveal";
 import Bar from "../Components/Bar";
 import { motion } from "framer-motion";
+import { Element } from "react-scroll";
+import { useParams } from "react-router-dom";
+import { scroller } from "react-scroll";
+import { useEffect } from "react";
 
 const brochures = [
   "IMT 539.2",
@@ -26,87 +30,109 @@ const manuals = [
 ];
 
 const Download = ({ sectionMotion }) => {
+  const { section } = useParams();
+
+  useEffect(() => {
+    if (section) {
+      scroller.scrollTo(section, {
+        duration: 800,
+        delay: 0,
+        smooth: "easeInOutQuart",
+        offset: -70,
+      });
+    }
+  }, [section]);
+
   return (
     <div className="page download">
       <div className="reveal-div-flex">
         <TextReveal text="PREUZIMANJE" />
       </div>
       <div className="page-cont">
-        <motion.section
-          className="info"
-          variants={sectionMotion}
-          initial="hidden"
-          whileInView="visible"
-          viewport={{ amount: 0.2, once: true }}
-        >
-          <Bar headline={"PODACI O FIRMI"} />
-          <div className="segment about">
-            <h2>APR REŠENJE</h2>
-            <a href="/files/firma/APR Rešenje.PDF" download="/APR Rešenje.PDF">
-              <img src="/logos/bg-bw.jpg" alt="logo" />
-            </a>
-          </div>
-          <div className="segment">
-            <h2>POTVRDA O IZVRŠENOJ REGISTRACIJI</h2>
-            <a
-              href="/files/firma/Potvrda o izvršenoj registraciji.PDF"
-              download="/Potvrda o izvršenoj registraciji.PDF"
-            >
-              <img src="/logos/bg-bw.jpg" alt="logo" />
-            </a>
-          </div>
-          <div className="segment">
-            <h2>POTVRDA O IZVRŠENOM EVIDENTIRANJU PDV-a</h2>
-            <a
-              href="/files/firma/Potvrda o izvršenom evidentiranju pdv-a.pdf"
-              download="/Potvrda o izvršenom evidentiranju pdv-a.pdf"
-            >
-              <img src="/logos/bg-bw.jpg" alt="logo" />
-            </a>
-          </div>
-        </motion.section>
-
-        <motion.section
-          className="brochures"
-          variants={sectionMotion}
-          initial="hidden"
-          whileInView="visible"
-          viewport={{ amount: 0.2, once: true }}
-        >
-          <Bar headline={"PROSPEKTI"} />
-          {brochures.map((brochure) => (
-            <div className="segment" key={brochure}>
-              <h2>{brochure}</h2>
+        <Element name="podaci-o-firmi">
+          <motion.section
+            className="info"
+            variants={sectionMotion}
+            initial="hidden"
+            whileInView="visible"
+            viewport={{ amount: 0.2, once: true }}
+          >
+            <Bar headline={"PODACI O FIRMI"} />
+            <div className="segment about">
+              <h2>APR REŠENJE</h2>
               <a
-                href={`/files/brosure/${brochure}.pdf`}
-                download={`${brochure}.pdf`}
+                href="/files/firma/APR Rešenje.PDF"
+                download="/APR Rešenje.PDF"
               >
-                <img src="/icons/tractor2.svg" alt="tr" />
+                <img src="/logos/bg-bw.jpg" alt="logo" />
               </a>
             </div>
-          ))}
-        </motion.section>
-
-        <motion.section
-          className="manuals"
-          variants={sectionMotion}
-          initial="hidden"
-          whileInView="visible"
-          viewport={{ amount: 0.2, once: true }}
-        >
-          <Bar headline={"UPUTSTVA ZA RUKOVANJE"} />
-          {manuals.map((manual) => (
-            <div className="segment" key={manual}>
-              <h2>{manual}</h2>
+            <div className="segment">
+              <h2>POTVRDA O IZVRŠENOJ REGISTRACIJI</h2>
               <a
-                href={`/files/brosure/${manual}.pdf`}
-                download={`${manual}.pdf`}
+                href="/files/firma/Potvrda o izvršenoj registraciji.PDF"
+                download="/Potvrda o izvršenoj registraciji.PDF"
               >
-                <img src="/icons/book.svg" alt="manual" />
+                <img src="/logos/bg-bw.jpg" alt="logo" />
               </a>
             </div>
-          ))}
-        </motion.section>
+            <div className="segment">
+              <h2>POTVRDA O IZVRŠENOM EVIDENTIRANJU PDV-a</h2>
+              <a
+                href="/files/firma/Potvrda o izvršenom evidentiranju pdv-a.pdf"
+                download="/Potvrda o izvršenom evidentiranju pdv-a.pdf"
+              >
+                <img src="/logos/bg-bw.jpg" alt="logo" />
+              </a>
+            </div>
+          </motion.section>
+        </Element>
+
+        <Element name="prospekti">
+          <motion.section
+            className="brochures"
+            variants={sectionMotion}
+            initial="hidden"
+            whileInView="visible"
+            viewport={{ amount: 0.2, once: true }}
+          >
+            <Bar headline={"PROSPEKTI"} />
+            {brochures.map((brochure) => (
+              <div className="segment" key={brochure}>
+                <h2>{brochure}</h2>
+                <a
+                  href={`/files/brosure/${brochure}.pdf`}
+                  download={`${brochure}.pdf`}
+                >
+                  <img src="/icons/tractor2.svg" alt="tr" />
+                </a>
+              </div>
+            ))}
+          </motion.section>
+        </Element>
+
+        <Element name="uputstva">
+          <motion.section
+            className="manuals"
+            variants={sectionMotion}
+            initial="hidden"
+            whileInView="visible"
+            viewport={{ amount: 0.2, once: true }}
+          >
+            <Bar headline={"UPUTSTVA ZA RUKOVANJE"} />
+            {manuals.map((manual) => (
+              <div className="segment" key={manual}>
+                <h2>{manual}</h2>
+                <a
+                  href={`/files/brosure/${manual}.pdf`}
+                  download={`${manual}.pdf`}
+                >
+                  <img src="/icons/book.svg" alt="manual" />
+                </a>
+              </div>
+            ))}
+          </motion.section>
+        </Element>
       </div>
     </div>
   );

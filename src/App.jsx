@@ -14,7 +14,11 @@ import Footer from "./Components/Footer";
 import Contact from "./Pages/Contact";
 import { useEffect, useState } from "react";
 
-import { standardProducts, compactProducts, magnaProducts } from "./Helpers/Tractors";
+import {
+  standardProducts,
+  compactProducts,
+  magnaProducts,
+} from "./Helpers/Tractors";
 
 const App = () => {
   const [menu, setMenu] = useState(false);
@@ -64,19 +68,30 @@ const App = () => {
           <Route
             path="/modeli/:section?"
             element={
-              <Products standardProducts={standardProducts} compactProducts={compactProducts} magnaProducts={magnaProducts} sectionMotion={sectionMotion} />
+              <Products
+                standardProducts={standardProducts}
+                compactProducts={compactProducts}
+                magnaProducts={magnaProducts}
+                sectionMotion={sectionMotion}
+              />
             }
           />
           <Route
             path="/modeli/:series/:tractorName"
-            element={<SingleProduct standardProducts={standardProducts} compactProducts={compactProducts} magnaProducts={magnaProducts} />}
+            element={
+              <SingleProduct
+                standardProducts={standardProducts}
+                compactProducts={compactProducts}
+                magnaProducts={magnaProducts}
+              />
+            }
           />
           <Route
             path="/prodajna-mreza"
             element={<Network sectionMotion={sectionMotion} />}
           />
           <Route
-            path="/preuzimanje"
+            path="/preuzimanje/:section?"
             element={<Download sectionMotion={sectionMotion} />}
           />
           <Route path="/kontakt" element={<Contact />} />

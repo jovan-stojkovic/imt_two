@@ -166,7 +166,10 @@ const Navbar = ({ menu, setMenu, handleMenu }) => {
               </NavLink>
             </motion.div>
 
-            <motion.div variants={navlinksMotion}>
+            <motion.div
+              variants={navlinksMotion}
+              className="navlink-with-dropdown download"
+            >
               <NavLink
                 className="navlink"
                 to="/preuzimanje"
@@ -177,6 +180,35 @@ const Navbar = ({ menu, setMenu, handleMenu }) => {
               >
                 PREUZIMANJE
               </NavLink>
+
+              <div className="dropdown dropdown-download">
+                <div className="padding-div"></div>
+                <div className="dropdown-cont">
+                  <NavLink
+                    className="dropdown-navlink"
+                    to="/preuzimanje/podaci-o-firmi"
+                    onClick={() => setMenu(false)}
+                  >
+                    PODACI O FIRMI
+                  </NavLink>
+
+                  <NavLink
+                    className="dropdown-navlink"
+                    to="/preuzimanje/prospekti"
+                    onClick={() => setMenu(false)}
+                  >
+                    PROSPEKTI
+                  </NavLink>
+
+                  <NavLink
+                    className="dropdown-navlink"
+                    to="/preuzimanje/uputstva"
+                    onClick={() => setMenu(false)}
+                  >
+                    UPUTSTVA
+                  </NavLink>
+                </div>
+              </div>
             </motion.div>
 
             <motion.div variants={navlinksMotion}>
