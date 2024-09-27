@@ -23,20 +23,18 @@ const Footer = () => {
       whileInView="visible"
     >
       <div className="footer-cont">
-        <div className="left"></div>
-        <div className="center">
-          <p>064 000 000 0</p>
-          <p>email@gmail.com</p>
-          <p>adresa</p>
+        <div className="footer-logo"></div>
+        <div className="footer-text">
+          <h1>INDUSTRIJA MEHANIZACIJE I TRAKTORA</h1>
+          <h5>
+            Ekskluzivni distributer kompanije{" "}
+            <Link target="_blank" to="https://www.tafe.com/">
+              "TAFE"
+            </Link>{" "}
+            za tržište Srbije.
+          </h5>
         </div>
-        <div className="right">
-          <Link target="_blank" to="https://www.instagram.com">
-            @instagram
-          </Link>
-          <Link target="_blank" to="https://www.facebook.com">
-            @facebook
-          </Link>
-        </div>
+        <div className="footer-logo"></div>
       </div>
     </motion.footer>
   );

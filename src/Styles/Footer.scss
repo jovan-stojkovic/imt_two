@@ -12,53 +12,36 @@ footer {
     margin: 0 auto;
     height: 100%;
 
-    .left {
+    .footer-logo {
       @include background($size: 80%);
       height: 100%;
       aspect-ratio: 1;
       background-image: url("/logos/logo-w.JPG");
     }
 
-    .center {
-      display: flex;
-      gap: 50px;
+    .footer-text {
+      text-align: center;
+      color: $black;
 
-      p {
-        @include flex();
-        @include background($size: 25px, $position: left);
-        padding-left: 40px;
-
-        &:nth-of-type(1) {
-          background-image: url("/icons/phone.svg");
-        }
-        &:nth-of-type(2) {
-          background-image: url("/icons/mail.svg");
-        }
-        &:nth-of-type(3) {
-          background-image: url("/icons/location.svg");
-          background-size: 20px;
-        }
+      h1 {
+        font-size: 30px;
+        letter-spacing: 4px;
       }
-    }
 
-    .right {
-      @include flex($direction: column, $align: start);
-      width: 100px;
-      gap: 3px;
-      a {
-        text-decoration: none;
-        width: fit-content;
-        color: $black;
-        display: inline-block;
-        background-image: linear-gradient($red 0 0);
-        background-position: 0 100%;
-        background-size: 0% 2px;
-        background-repeat: no-repeat;
-        transition: background-size 0.5s, background-position 0s 0.5s;
+      h5 {
+        font-weight: 400;
+        font-size: 18px;
+        letter-spacing: 2px;
 
-        &:hover {
-          background-position: 100% 100%;
-          background-size: 100% 3px;
+        a {
+          text-decoration: none;
+          font-weight: 600;
+          color: black;
+          transition: color 0.2s;
+
+          &:hover {
+            color: $red;
+          }
         }
       }
     }
@@ -68,8 +51,13 @@ footer {
 @media (max-width: 1700px) {
   footer {
     .footer-cont {
-      .center {
-        gap: 40px;
+      .footer-text {
+        h1 {
+          font-size: 28px;
+        }
+        h5 {
+          font-size: 17px;
+        }
       }
     }
   }
@@ -77,23 +65,12 @@ footer {
 
 @media (max-width: 1300px) {
   footer {
-    height: 80px;
-
     .footer-cont {
-      .center {
-        gap: 30px;
-
-        p {
-          @include background($size: 20px, $position: left);
-          padding-left: 30px;
-          &:nth-of-type(3) {
-            background-size: 15px;
-          }
+      .footer-text {
+        h1 {
+          font-size: 25px;
         }
-      }
-
-      .right {
-        a {
+        h5 {
           font-size: 14px;
         }
       }
@@ -103,34 +80,39 @@ footer {
 
 @media (max-width: 1050px) {
   footer {
-    height: 70px;
-
     .footer-cont {
-      @include flex($justify: space-between);
-      width: 95%;
+      .footer-logo {
+        @include background($size: 65%);
+      }
+      .footer-text {
+        h1 {
+          font-size: 23px;
+          letter-spacing: 3px;
+        }
+        h5 {
+          font-size: 13px;
+          letter-spacing: 1.5px;
+        }
+      }
     }
   }
 }
 
 @media (max-width: 790px) {
   footer {
-    height: 120px;
     .footer-cont {
-      width: 98%;
-
-      .left {
-        @include background($size: 60%);
+      .footer-logo {
+        height: 0%;
       }
-
-      .center {
-        gap: 10px;
-        flex-direction: column;
-
-        p {
-          @include background($size: 15px, $position: left);
-          &:nth-of-type(3) {
-            background-size: 12px;
-          }
+      .footer-text {
+        h1 {
+          font-size: 19px;
+          letter-spacing: 2px;
+          margin-bottom: 2px;
+        }
+        h5 {
+          font-size: 12px;
+          letter-spacing: 1px;
         }
       }
     }
@@ -140,28 +122,14 @@ footer {
 @media (max-width: 450px) {
   footer {
     .footer-cont {
-      .left {
-        @include background($size: 50%);
-      }
-
-      .center {
-        gap: 5px;
-        flex-direction: column;
-
-        p {
-          font-size: 10px;
-          @include background($size: 15px, $position: left);
-          &:nth-of-type(3) {
-            background-size: 12px;
-          }
-        }
-      }
-
-      .right {
-        gap: 2px;
-        a {
-          font-size: 10px;
+      .footer-text {
+        h1 {
+          font-size: 16px;
           letter-spacing: 1px;
+        }
+        h5 {
+          font-size: 10px;
+          letter-spacing: 0px;
         }
       }
     }
