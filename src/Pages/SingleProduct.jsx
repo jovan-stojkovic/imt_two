@@ -3,6 +3,7 @@ import TextReveal from "../Components/TextReveal";
 import Bar from "../Components/Bar";
 import Form from "../Components/Form";
 import "../Styles/SingleProduct.scss";
+import Disclaimer from "../Components/Disclaimer";
 
 const SingleProduct = ({
   standardProducts,
@@ -108,12 +109,17 @@ const SingleProduct = ({
               <a
                 className="single-product-pdf"
                 href={`/files/brosure/pojedinacno/${selectedTractor.name}.pdf`}
-                download={`${selectedTractor.name}.pdf`}
+                target="_blank"
               >
                 {selectedTractor.name}
               </a>
             </div>
           </div>
+        </section>
+
+        <section>
+          <Bar headline="DISCLAIMER" />
+          <Disclaimer />
         </section>
       </div>
     </div>

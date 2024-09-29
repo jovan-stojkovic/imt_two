@@ -105,7 +105,7 @@ const About = ({ sectionMotion }) => {
               industrije, plantaža i usluga.
             </p>
 
-            <Link target="_blank" className="link-tafe" to="https://www.tafe.com/">TAFE.com</Link>
+            <p>Više na sajtu: <Link target="_blank" className="link-tafe" to="https://www.tafe.com/">TAFE.com</Link></p>
           </motion.section>
         </Element>
 

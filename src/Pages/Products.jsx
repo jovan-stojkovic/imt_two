@@ -8,6 +8,7 @@ import { Element } from "react-scroll";
 import { useParams } from "react-router-dom";
 import { scroller } from "react-scroll";
 import TextReveal from "../Components/TextReveal";
+import Disclaimer from "../Components/Disclaimer";
 
 const Products = ({
   standardProducts,
@@ -140,6 +141,15 @@ const Products = ({
               ))}
             </motion.section>
           </Element>
+
+          <motion.section
+            variants={sectionMotion}
+            initial="hidden"
+            animate="visible"
+          >
+            <Bar headline={"DISCLAIMER"} />
+            <Disclaimer />
+          </motion.section>
         </div>
       </div>
     </>

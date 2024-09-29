@@ -19,9 +19,8 @@
         img {
           height: 100%;
           width: 100%;
-          object-fit: cover;
+          object-fit: contain;
           border-radius: 10px;
-          box-shadow: $shadow;
         }
 
         .form-cont {

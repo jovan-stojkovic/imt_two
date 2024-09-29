@@ -28,13 +28,11 @@ const Form = ({ title }) => {
     setSuccess(true);
   };
 
-
-
   return (
     <div className="form-cont">
       {success ? (
         <div className="success">
-          <div className="success-img-cont"></div>
+          <img src="public/rest/success.png" alt="success" />
           <p className="p-success">
             Uspešno ste poslali poruku. Naš tim će Vam odgovoriti u najkraćem
             roku!
@@ -47,11 +45,8 @@ const Form = ({ title }) => {
           </button>
         </div>
       ) : (
-        <form
-        className="form"
-          onSubmit={handleSubmit(onSubmit)}
-        >
-            <input type="text" defaultValue={title} placeholder="Predmet" />
+        <form className="form" onSubmit={handleSubmit(onSubmit)}>
+          <input type="text" defaultValue={title} placeholder="Predmet" />
           <p className="error">{errors.fullName?.message}</p>
           <input
             type="text"

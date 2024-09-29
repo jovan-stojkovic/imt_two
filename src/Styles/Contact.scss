@@ -2,12 +2,181 @@
 
 .contact {
   .page-cont {
-    .form-cont {
-      form {
-        width: 80%;
-        margin: 50px auto;
+    .map-section {
+      height: auto;
+      border-radius: 5px;
+      box-shadow: $shadow;
+      position: relative;
+      padding: 150px 50px 50px 50px;
+      margin-bottom: 100px;
+      min-height: 400px;
+      @include flex($justify: space-between, $align: start);
+
+      .info-side {
+        width: 40%;
+        h1 {
+          font-size: 25px;
+          letter-spacing: 2px;
+          color: $black;
+          font-weight: 600;
+          margin-bottom: 10px;
+        }
+
+        .info-p {
+          margin-bottom: 10px;
+        }
+      }
+
+      .map-side {
+        box-shadow: $shadow;
+        width: 60%;
+        height: 500px;
+      }
+    }
+
+    .form-section {
+      height: auto;
+      border-radius: 5px;
+      box-shadow: $shadow;
+      position: relative;
+      margin-bottom: 100px;
+      min-height: 400px;
+      padding-top: 100px;
+      .form-cont {
+        form {
+          width: 100%;
+          margin: 50px auto;
+        }
       }
     }
   }
 }
 
+@media (max-width: 1700px) {
+  .contact {
+    .page-cont {
+      .map-section {
+        padding: 150px 50px 50px 50px;
+        margin-bottom: 80px;
+
+        .info-side {
+          width: 40%;
+          h1 {
+            font-size: 22px;
+          }
+
+          .info-p {
+            font-size: 15px;
+          }
+        }
+
+        .map-side {
+          height: 450px;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 1300px) {
+  .contact {
+    .page-cont {
+      .map-section {
+        padding: 100px 25px 25px 25px;
+        @include flex(
+          $justify: space-between,
+          $align: center,
+          $direction: column
+        );
+        gap: 25px;
+
+        .info-side {
+          width: 100%;
+          h1 {
+            text-align: center;
+
+            font-size: 25px;
+          }
+
+          .info-p {
+            text-align: center;
+            font-size: 16px;
+          }
+        }
+
+        .map-side {
+          width: 90%;
+          height: 600px;
+        }
+      }
+    }
+  }
+}
+@media (max-width: 1050px) {
+  .map-section {
+    padding: 100px 15px 50px 15px;
+
+    .info-side {
+      h1 {
+        font-size: 22px;
+      }
+
+      .info-p {
+        font-size: 15px;
+      }
+    }
+
+    .map-side {
+      width: 90%;
+      height: 500px;
+    }
+  }
+}
+@media (max-width: 790px) {
+  .contact {
+    .page-cont {
+      .map-section {
+        padding: 100px 10px 30px 10px;
+
+        .info-side {
+          h1 {
+            font-size: 18px;
+          }
+
+          .info-p {
+            font-size: 13px;
+          }
+        }
+
+        .map-side {
+          width: 90%;
+          height: 400px;
+        }
+      }
+    }
+  }
+}
+@media (max-width: 450px) {
+  .contact {
+    .page-cont {
+      .map-section {
+        padding: 70px 10px 20px 10px;
+
+        .info-side {
+          h1 {
+            font-size: 16px;
+          }
+
+          .info-p {
+            font-size: 12px;
+          }
+        }
+
+        .map-side {
+          width: 95%;
+          height: 300px;
+        }
+      }
+    }
+  }
+}

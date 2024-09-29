@@ -80,6 +80,38 @@
   }
 }
 
+.success {
+  padding: 50px;
+  min-height: 400px;
+  @include flex($direction: column);
+  gap: 50px;
+
+  img {
+    height: 300px;
+  }
+
+  p {
+    text-align: center;
+  }
+
+  button {
+    all: unset;
+    width: 20%;
+    padding: 0 20px;
+    height: 60px;
+    color: $white;
+    text-align: center;
+    background-color: $red;
+    font-size: 15px;
+    letter-spacing: 5px;
+    cursor: pointer;
+    transition: 0.5s;
+    &:hover {
+      filter: brightness(1.1);
+    }
+  }
+}
+
 .page.service {
   margin-bottom: 100px;
   .page-cont {
@@ -307,6 +339,21 @@
       }
     }
   }
+
+  .success {
+    padding: 30px;
+    min-height: 400px;
+    gap: 40px;
+
+    img {
+      height: 250px;
+    }
+
+    button {
+      height: 50px;
+    }
+  }
+
   .page.service {
     .page-cont {
       padding: 10px;
@@ -362,6 +409,29 @@
 }
 
 @media (max-width: 1050px) {
+  .form {
+    padding: 10px;
+    .error {
+      font-size: 12px;
+      letter-spacing: 1px;
+      height: 18px;
+    }
+  }
+
+  .success {
+    padding: 20px;
+    min-height: 300px;
+    gap: 30px;
+
+    img {
+      height: 200px;
+    }
+
+    button {
+      height: 50px;
+    }
+  }
+
   .page.service {
     .page-cont {
       padding: 8px;
@@ -409,6 +479,60 @@
 }
 
 @media (max-width: 790px) {
+  .form {
+    input {
+      width: calc(100% - 10px);
+      height: 30px;
+      padding: 0 5px;
+      font-size: 12px;
+      letter-spacing: 1px;
+      &::placeholder {
+        font-size: 12px;
+        letter-spacing: 1px;
+      }
+    }
+
+    #area {
+      all: unset;
+      padding: 5px;
+      width: calc(100% - 10px);
+      font-size: 12px;
+      letter-spacing: 1px;
+      background-color: rgba(164, 164, 164, 0.5);
+      line-height: 18px;
+      margin-bottom: 20px;
+
+      &::placeholder {
+        font-size: 12px;
+        letter-spacing: 1px;
+      }
+    }
+
+    button {
+      height: 50px;
+      letter-spacing: 3px;
+    }
+
+    .error {
+      font-size: 10px;
+      letter-spacing: 1px;
+      height: 18px;
+    }
+  }
+
+  .success {
+    padding: 20px;
+    min-height: 300px;
+    gap: 25px;
+
+    img {
+      height: 180px;
+    }
+
+    button {
+      height: 40px;
+    }
+  }
   .page.service {
     .page-cont {
       .service-form {
@@ -508,6 +632,23 @@
           }
         }
       }
+    }
+  }
+}
+
+
+@media (max-width: 450px) {
+  .success {
+    padding: 10px;
+    min-height: 300px;
+    gap: 20px;
+
+    img {
+      height: 150px;
+    }
+
+    button {
+      height: 40px;
     }
   }
 }

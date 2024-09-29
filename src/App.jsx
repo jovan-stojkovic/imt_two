@@ -94,7 +94,7 @@ const App = () => {
             path="/preuzimanje/:section?"
             element={<Download sectionMotion={sectionMotion} />}
           />
-          <Route path="/kontakt" element={<Contact />} />
+          <Route path="/kontakt" element={<Contact sectionMotion={sectionMotion} />} />
           <Route
             path="/zakazite-servis"
             element={<Service sectionMotion={sectionMotion} />}

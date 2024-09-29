@@ -157,7 +157,7 @@ export const standardProducts = [
   },
   {
     name: "TAFE 4615 ROPS",
-    img: "/products/4615.PNG",
+    img: "/products/4615.webp",
     serija: "standardni",
     Snaga: "47, EUIII A",
     Pogon: "4WD",
@@ -183,7 +183,7 @@ export const standardProducts = [
   },
   {
     name: "TAFE 6515 ROPS",
-    img: "/products/6515.PNG",
+    img: "/products/6515.webp",
     serija: "standardni",
     Snaga: "65, EUIII A",
     Pogon: "4WD",
@@ -241,7 +241,7 @@ export const compactProducts = [
 export const magnaProducts = [
   {
     name: "IMT 569 M",
-    img: "/products/569M.png",
+    img: "/products/569.webp",
     serija: "magna",
     Snaga: "65 EU III A",
     Pogon: "4WD",
