@@ -214,6 +214,19 @@ const Navbar = ({ menu, setMenu, handleMenu }) => {
             <motion.div variants={navlinksMotion}>
               <NavLink
                 className="navlink"
+                to="/media"
+                onClick={() => {
+                  setMenu(false);
+                  window.scrollTo({ top: 0, behavior: "smooth" });
+                }}
+              >
+                MEDIA
+              </NavLink>
+            </motion.div>
+
+            <motion.div variants={navlinksMotion}>
+              <NavLink
+                className="navlink"
                 to="/kontakt"
                 onClick={() => {
                   setMenu(false);

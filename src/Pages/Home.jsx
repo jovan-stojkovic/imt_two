@@ -4,7 +4,6 @@ import PortraitSwiper from "../Components/PortraitSwiper";
 import { motion } from "framer-motion";
 import HomeModels from "../Components/HomeModels";
 import HomeAbout from "../Components/HomeAbout";
-import HomeNetwork from "../Components/HomeNetwork";
 
 const Home = ({ sectionMotion }) => {
   const imgMotion = {
@@ -48,15 +47,6 @@ const Home = ({ sectionMotion }) => {
       >
         <HomeAbout />
       </motion.section>
-
-      {/* <motion.section
-        variants={sectionMotion}
-        initial="hidden"
-        whileInView="visible"
-        viewport={{ amount: 0.3, once: true }}
-      >
-        <HomeNetwork />
-      </motion.section> */}
     </>
   );
 };

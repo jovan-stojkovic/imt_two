@@ -27,11 +27,12 @@ const Network = ({ sectionMotion }) => {
                 <p>Žanke Stokić 39, 11000 Beograd</p>
                 <p>Konstantina Danila BB, 23250 Jarkovac</p>
                 <p>
-                  <span>www.tafe.com</span>
+                  <span>www.tractors-europe.com </span>
                 </p>
                 <p>
-                  <span>info@tractors-europe.com</span>
+                  <span>dg@tractors-europe.com</span>
                 </p>
+                <p>Prodaja: <span>063 8608 565</span></p>
               </div>
             </div>
             <div className="dot agrorid">

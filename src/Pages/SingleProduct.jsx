@@ -118,7 +118,7 @@ const SingleProduct = ({
         </section>
 
         <section>
-          <Bar headline="DISCLAIMER" />
+          <Bar headline="ODRICANJE OD ODGOVORNOSTI" />
           <Disclaimer />
         </section>
       </div>

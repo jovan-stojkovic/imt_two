@@ -147,7 +147,7 @@ const Products = ({
             initial="hidden"
             animate="visible"
           >
-            <Bar headline={"DISCLAIMER"} />
+            <Bar headline={"ODRICANJE OD ODGOVORNOSTI"} />
             <Disclaimer />
           </motion.section>
         </div>

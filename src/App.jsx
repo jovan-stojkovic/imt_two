@@ -8,6 +8,7 @@ import Network from "./Pages/Network";
 import Download from "./Pages/Download";
 import Service from "./Pages/Service";
 import SingleProduct from "./Pages/SingleProduct";
+import Media from "./Pages/Media";
 
 import BackToTopButton from "./Components/BackToTopButton";
 import Footer from "./Components/Footer";
@@ -94,7 +95,11 @@ const App = () => {
             path="/preuzimanje/:section?"
             element={<Download sectionMotion={sectionMotion} />}
           />
-          <Route path="/kontakt" element={<Contact sectionMotion={sectionMotion} />} />
+          <Route path="/media" element={<Media />} sectionMotion={sectionMotion} />
+          <Route
+            path="/kontakt"
+            element={<Contact sectionMotion={sectionMotion} />}
+          />
           <Route
             path="/zakazite-servis"
             element={<Service sectionMotion={sectionMotion} />}

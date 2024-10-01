@@ -7,10 +7,12 @@ const Map = () => {
 
       <div className="info-side">
         <h1>Industrija Mehanizacije i Traktora</h1>
-        <p className="info-p">Žanke Stokić 39, 11000 Beograd</p>
-        <p className="info-p">Konstantina Danila bb, 23250 Jarkovac</p>
+        <p className="info-p">Žanke Stokić 39</p>
+        <p className="info-p">11000 Beograd</p>
+        <p className="info-p">Konstantina Danila bb</p>
+        <p className="info-p">23250 Jarkovac</p>
         <p className="info-p">www.tractors-europe.com</p>
-        <p className="info-p">info@tractors-europe.com</p>
+        <p className="info-p">dg@tractors-europe.com</p>
         <p className="info-p">Prodaja: 063 8608 565</p>
       </div>
 
