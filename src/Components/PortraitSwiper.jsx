@@ -22,12 +22,14 @@ const slidesPortrait = [
   {
     image: "/swiper/jm02 portrait.jpg",
     headline: headline,
-    text: "Najbolji izbor za sve Vaše potrebe! Traktori od 26KS - 85KS za korišćenje u ratarstvu, vinogradarstvu kao i komunalnoj delatnosti.",
+    pretext: "Najbolji izbor za sve Vaše potrebe!",
+    text: "Traktori od 26KS - 85KS za korišćenje u ratarstvu, vinogradarstvu kao i komunalnoj delatnosti.",
   },
   {
     image: "/swiper/jm03 portrait.jpg",
     headline: headline,
-    text: "Najbolji izbor za sve Vaše potrebe! Garantni period od dve godine ili 2000h.",
+    pretext: "Najbolji izbor za sve Vaše potrebe!",
+    text: "Garantni period od dve godine ili 2000h.",
   },
 ];
 
@@ -51,6 +53,8 @@ const PortraitSwiper = () => {
             {slide.headline && (
               <div className="slide-text">
                 <h2>{slide.headline}</h2>
+                <p>{slide.pretext}</p>
+
                 <p>{slide.text}</p>
               </div>
             )}
