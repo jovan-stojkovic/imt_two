@@ -241,7 +241,7 @@ nav {
 
       .navlinks {
         .navlinks-cont {
-          gap: 15px;
+          gap: 5px;
 
           .navlink {
             padding: 5px 12px;
@@ -310,7 +310,7 @@ nav {
           gap: 5px;
           .navlink {
             font-size: 11px;
-            letter-spacing: 1px;
+            letter-spacing: 0px;
             padding: 4px;
           }
           .navlink-with-dropdown {
@@ -385,14 +385,14 @@ nav {
           background-color: rgba(255, 255, 255, 0.6);
           height: calc(100vh - 70px);
           width: 70%;
-          gap: 1vh;
+          gap: 10px;
           padding: 30px 0 80px 0;
           box-shadow: $shadow;
 
           .navlink {
             font-size: 14px;
             letter-spacing: 3px;
-            padding: 5px 15px;
+            padding: 3px 15px;
           }
 
           .navlink-with-dropdown {
@@ -512,7 +512,7 @@ nav {
           width: 80%;
 
           .navlink {
-            font-size: 13px;
+            font-size: 12px;
             letter-spacing: 1px;
           }
 
@@ -522,7 +522,7 @@ nav {
                 gap: 5px;
 
                 .dropdown-navlink {
-                  font-size: 12px;
+                  font-size: 11px;
                 }
               }
             }
