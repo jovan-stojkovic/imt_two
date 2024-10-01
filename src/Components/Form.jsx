@@ -46,6 +46,7 @@ const Form = ({ title }) => {
         </div>
       ) : (
         <form className="form" onSubmit={handleSubmit(onSubmit)}>
+          <h5 className="form-headline">Kontaktirajte nas</h5>
           <input type="text" defaultValue={title} placeholder="Predmet" />
           <p className="error">{errors.fullName?.message}</p>
           <input

@@ -3,6 +3,15 @@
 .form {
   width: 100%;
   padding: 20px;
+
+  .form-headline {
+    height: 40px;
+    text-align: center;
+    font-size: 30px;
+    letter-spacing: 2px;
+    font-weight: 400;
+    color: gray;
+  }
   input {
     all: unset;
     width: calc(100% - 40px);
@@ -324,6 +333,9 @@
 
 @media (max-width: 1300px) {
   .form {
+    .form-headline {
+      font-size: 25px;
+    }
     input {
       height: 35px;
       margin-bottom: 5px;
@@ -411,6 +423,10 @@
 @media (max-width: 1050px) {
   .form {
     padding: 10px;
+    .form-headline {
+      font-size: 20px;
+      height: 30px;
+    }
     .error {
       font-size: 12px;
       letter-spacing: 1px;
@@ -480,6 +496,9 @@
 
 @media (max-width: 790px) {
   .form {
+    .form-headline {
+      font-size: 25px;
+    }
     input {
       width: calc(100% - 10px);
       height: 30px;
@@ -638,6 +657,12 @@
 
 
 @media (max-width: 450px) {
+  .form {
+    .form-headline {
+      font-size: 18px;
+      height: 25px;
+    }
+  }
   .success {
     padding: 10px;
     min-height: 300px;

@@ -32,13 +32,12 @@ const SingleProduct = ({
         <TextReveal text={"SPECIFIKACIJE"} />
       </div>
       <div className="page-cont">
-        <section>
+        <section className="grid">
           <Bar headline={selectedTractor.name} />
-          <div className="product-left">
-            <img src={selectedTractor.img} alt={selectedTractor.name} />
-            <Form title={selectedTractor.name} />
-          </div>
-          <div className="product-right">
+
+          <img src={selectedTractor.img} alt={selectedTractor.name} />
+
+          <div className="product-specs">
             <p>
               Snaga motora: <span>{selectedTractor.Snaga}</span>{" "}
             </p>
@@ -115,6 +114,7 @@ const SingleProduct = ({
               </a>
             </div>
           </div>
+          <Form title={selectedTractor.name} />
         </section>
 
         <section>

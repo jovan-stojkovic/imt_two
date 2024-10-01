@@ -8,33 +8,28 @@
       position: relative;
       padding: 150px 50px 50px 50px;
       margin-bottom: 100px;
-      display: flex;
       gap: 50px;
 
-      .product-left {
-        width: 100%;
-        @include flex($direction: column);
-        gap: 50px;
-
-        img {
-          height: 100%;
-          width: 100%;
-          object-fit: contain;
-          border-radius: 10px;
-        }
-
-        .form-cont {
-          width: 100%;
-          .form {
-            width: 100%;
-            padding: 0;
-          }
-        }
+      &.grid {
+        display: grid;
+        grid-template-columns: 1fr 1.2fr;
+        grid-template-rows: 1fr 1.2fr;
       }
 
-      .product-right {
+      img {
+        height: 100%;
+        width: 100%;
+        object-fit: contain;
+        border-radius: 10px;
+        grid-column: 1 / 2;
+        grid-row: 1 / 2;
+      }
+
+      .product-specs {
         width: 100%;
         @include flex($direction: column, $justify: space-between);
+        grid-column: 2 / 3;
+        grid-row: 1 / 3;
 
         p {
           font-size: 15px;
@@ -82,6 +77,17 @@
           }
         }
       }
+
+      .form-cont {
+        width: 100%;
+        grid-column: 1 / 2;
+        grid-row: 2 / 3;
+
+        .form {
+          width: 100%;
+          padding: 0;
+        }
+      }
     }
   }
 }
@@ -93,11 +99,7 @@
         padding: 120px 40px 40px 40px;
         gap: 40px;
 
-        .product-left {
-          gap: 40px;
-        }
-
-        .product-right {
+        .product-specs {
           p {
             font-size: 14px;
             line-height: 27px;
@@ -127,13 +129,8 @@
     .page-cont {
       section {
         padding: 100px 25px 25px 25px;
-        gap: 25px;
 
-        .product-left {
-          gap: 25px;
-        }
-
-        .product-right {
+        .product-specs {
           p {
             font-size: 13px;
             letter-spacing: 1px;
@@ -170,16 +167,12 @@
         margin-bottom: 80px;
         gap: 15px;
 
-        .product-left {
-          gap: 15px;
-        }
-
-        .product-right {
+        .product-specs {
           p {
             font-size: 12px;
             line-height: 23px;
             span {
-              font-size: 15px;
+              font-size: 13px;
             }
           }
 
@@ -212,22 +205,22 @@
       section {
         padding: 100px 10px 10px 10px;
         flex-direction: column;
-        gap: 50px;
+        gap: 100px;
 
-        .product-left {
-          gap: 50px;
+        &.grid {
+          display: flex;
         }
 
-        .product-right {
+        .product-specs {
           width: 100%;
           @include flex($direction: column, $justify: space-between);
 
           p {
-            font-size: 13px;
+            font-size: 12px;
             line-height: 40px;
             letter-spacing: 2px;
             span {
-              font-size: 16px;
+              font-size: 14px;
             }
           }
 
@@ -247,20 +240,16 @@
         padding: 70px 10px 10px 10px;
         gap: 40px;
 
-        .product-left {
-          gap: 40px;
-        }
-
-        .product-right {
+        .product-specs {
           width: 100%;
           @include flex($direction: column, $justify: space-between);
 
           p {
-            font-size: 12px;
+            font-size: 10px;
             line-height: 40px;
             letter-spacing: 2px;
             span {
-              font-size: 15px;
+              font-size: 13px;
             }
           }
 
