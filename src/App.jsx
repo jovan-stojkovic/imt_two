@@ -1,20 +1,27 @@
+//Styles
 import "./Styles/App.scss";
-import Navbar from "./Components/Navbar";
-import { Routes, Route } from "react-router-dom";
-import Home from "./Pages/Home";
-import Products from "./Pages/Products";
-import About from "./Pages/About";
-import Network from "./Pages/Network";
-import Download from "./Pages/Download";
-import Service from "./Pages/Service";
-import SingleProduct from "./Pages/SingleProduct";
-import Media from "./Pages/Media";
 
-import BackToTopButton from "./Components/BackToTopButton";
-import Footer from "./Components/Footer";
-import Contact from "./Pages/Contact";
+//Installs
+import { Routes, Route } from "react-router-dom";
 import { useEffect, useState } from "react";
 
+//Components
+import Navbar from "./Components/Navbar";
+import BackToTopButton from "./Components/BackToTopButton";
+import Footer from "./Components/Footer";
+
+//Pages
+import Home from "./Pages/Home";
+import About from "./Pages/About";
+import Products from "./Pages/Products";
+import SingleProduct from "./Pages/SingleProduct";
+import Network from "./Pages/Network";
+import Download from "./Pages/Download";
+import Media from "./Pages/Media";
+import Contact from "./Pages/Contact";
+import Service from "./Pages/Service";
+
+//Helpers
 import {
   standardProducts,
   compactProducts,
@@ -95,7 +102,11 @@ const App = () => {
             path="/preuzimanje/:section?"
             element={<Download sectionMotion={sectionMotion} />}
           />
-          <Route path="/media" element={<Media />} sectionMotion={sectionMotion} />
+          <Route
+            path="/media"
+            element={<Media />}
+            sectionMotion={sectionMotion}
+          />
           <Route
             path="/kontakt"
             element={<Contact sectionMotion={sectionMotion} />}

@@ -1,12 +1,10 @@
 import "../Styles/About.scss";
 import { motion } from "framer-motion";
-import Bar from "../Components/Bar";
-import { Element } from "react-scroll";
+import { Element, scroller } from "react-scroll";
 import { useEffect } from "react";
-import { scroller } from "react-scroll";
-import { useParams } from "react-router-dom";
+import { useParams, Link } from "react-router-dom";
 import TextReveal from "../Components/TextReveal";
-import { Link } from "react-router-dom";
+import Bar from "../Components/Bar";
 
 const About = ({ sectionMotion }) => {
   const { section } = useParams();

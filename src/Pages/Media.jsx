@@ -1,7 +1,7 @@
 import "../Styles/Media.scss";
+import { motion } from "framer-motion";
 import TextReveal from "../Components/TextReveal";
 import Bar from "../Components/Bar";
-import { motion } from "framer-motion";
 
 const Media = ({ sectionMotion }) => {
   return (

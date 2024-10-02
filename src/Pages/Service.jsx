@@ -1,11 +1,11 @@
 import "../Styles/Forms.scss";
 import { useForm } from "react-hook-form";
-import * as yup from "yup";
 import { yupResolver } from "@hookform/resolvers/yup";
+import * as yup from "yup";
 import { useState } from "react";
+import { motion } from "framer-motion";
 import TextReveal from "../Components/TextReveal";
 import Bar from "../Components/Bar";
-import { motion } from "framer-motion";
 
 const Service = ({ sectionMotion }) => {
   const [success, setSuccess] = useState(false);

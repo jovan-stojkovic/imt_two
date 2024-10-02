@@ -1,7 +1,7 @@
 import "../Styles/Home.scss";
+import { motion } from "framer-motion";
 import CustomSwiper from "../Components/CustomSwiper";
 import PortraitSwiper from "../Components/PortraitSwiper";
-import { motion } from "framer-motion";
 import HomeModels from "../Components/HomeModels";
 import HomeAbout from "../Components/HomeAbout";
 

@@ -2,11 +2,9 @@ import "../Styles/Products.scss";
 import { motion } from "framer-motion";
 import VanillaTilt from "vanilla-tilt";
 import { useEffect } from "react";
-import { Link } from "react-router-dom";
+import { Link, useParams } from "react-router-dom";
+import { Element, scroller } from "react-scroll";
 import Bar from "../Components/Bar";
-import { Element } from "react-scroll";
-import { useParams } from "react-router-dom";
-import { scroller } from "react-scroll";
 import TextReveal from "../Components/TextReveal";
 import Disclaimer from "../Components/Disclaimer";
 

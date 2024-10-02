@@ -1,11 +1,10 @@
 import "../Styles/Download.scss";
+import { motion } from "framer-motion";
+import { Element, scroller } from "react-scroll";
+import { useParams } from "react-router-dom";
+import { useEffect } from "react";
 import TextReveal from "../Components/TextReveal";
 import Bar from "../Components/Bar";
-import { motion } from "framer-motion";
-import { Element } from "react-scroll";
-import { useParams } from "react-router-dom";
-import { scroller } from "react-scroll";
-import { useEffect } from "react";
 
 const brochures = [
   "IMT 539.2",

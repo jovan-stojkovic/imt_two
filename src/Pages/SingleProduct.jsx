@@ -1,8 +1,8 @@
+import "../Styles/SingleProduct.scss";
 import { useParams } from "react-router-dom";
 import TextReveal from "../Components/TextReveal";
 import Bar from "../Components/Bar";
 import Form from "../Components/Form";
-import "../Styles/SingleProduct.scss";
 import Disclaimer from "../Components/Disclaimer";
 
 const SingleProduct = ({

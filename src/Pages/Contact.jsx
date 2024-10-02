@@ -1,7 +1,7 @@
-import Form from "../Components/Form";
 import "../Styles/Contact.scss";
-import TextReveal from "../Components/TextReveal";
 import { motion } from "framer-motion";
+import Form from "../Components/Form";
+import TextReveal from "../Components/TextReveal";
 import Map from "../Components/Map";
 import Bar from "../Components/Bar";
 
