@@ -1,7 +1,7 @@
 export const standardProducts = [
   {
     name: "IMT 539.2 kabina",
-    img: "/products/IMT-539.2-DI.webp",
+    img: "/products/2.png",
     serija: "standardni",
     Snaga: "47, EUII",
     Pogon: "2WD",
@@ -53,7 +53,7 @@ export const standardProducts = [
   },
   {
     name: "IMT 549.3 kabina",
-    img: "/products/IMT-549.3-DI.webp",
+    img: "/products/3.png",
     serija: "standardni",
     Snaga: "47, EUIII A",
     Pogon: "4WD",
@@ -105,7 +105,7 @@ export const standardProducts = [
   },
   {
     name: "IMT 565.2 kabina",
-    img: "/products/IMT-565.2-DI.webp",
+    img: "/products/1.png",
     serija: "standardni",
     Snaga: "63, EUII",
     Pogon: "4WD",
