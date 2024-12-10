@@ -197,11 +197,11 @@ const About = ({ sectionMotion }) => {
               Industriju mašine i traktora.
             </p>
             <p>
-              Sa partnerima iz Srbije, te iste 2018 godine formirano je novo
+              Sa partnerima iz Srbije, te iste 2018. godine formirano je novo
               preduzeće - Industrija mehanizacije i traktora d.o.o. Beograd.
             </p>
             <p>
-              Industrija mehanizacije i traktora je eksluzivni distributer
+              Industrija mehanizacije i traktora je ekskluzivni distributer
               kompanije TAFE za brendove traktora TAFE i IMT.
             </p>
             <p>
@@ -228,8 +228,8 @@ const About = ({ sectionMotion }) => {
             </p>
 
             <p>
-              Od decembra 2024. godine, tržištu Srbije pondićemo traktore IMT
-              577 M i IMT 587 M snage motora do 60 kW (80KS) sa konkuretnim
+              Od decembra 2024. godine, tržištu Srbije ponudićemo traktore IMT
+              577 M i IMT 587 M snage motora do 60 kW (80KS) sa konkurentnim
               karakteristikama (u standardnoj poundi je kabina sa klimom).
             </p>
 
@@ -289,19 +289,19 @@ const About = ({ sectionMotion }) => {
               </li>
               <li>
                 Stalno poboljšavamo efektivnost procesa da bi ostvarili
-                povecanje produktivnosti i profita, uz smanjenje troškova i
-                racionalno korišcenje resursa.
+                povećanje produktivnosti i profita, uz smanjenje troškova i
+                racionalno korišćenje resursa.
               </li>
               <li>
-                Zajedno sa isporuciocima - kooperantima stvaramo kvalitetnije
-                proizvode na zadovoljstvo korisnika, a u zajednickom interesu.
+                Zajedno sa isporučiocima - kooperantima stvaramo kvalitetnije
+                proizvode na zadovoljstvo korisnika, a u zajedničkom interesu.
               </li>
               <li>
                 Mišljenje korisnika je za nas ocena uspešnosti svakog
                 zaposlenog.
               </li>
               <li>
-                Motivišemo zaposlene kroz obuke i timski rad, uvažavajuci
+                Motivišemo zaposlene kroz obuke i timski rad, uvažavajući
                 njihovu kreativnost i inicijativu za poboljšavanje sistema.
               </li>
               <li>
@@ -309,7 +309,7 @@ const About = ({ sectionMotion }) => {
                 ugodnog radnog ambijenta.
               </li>
               <li>
-                Kvalitetno i na vreme odradeni poslovi predstavljaju licni
+                Kvalitetno i na vreme odrađeni poslovi predstavljaju lični
                 doprinos zaposlenih u sprovodenju načela poslovanja.
               </li>
               <li>

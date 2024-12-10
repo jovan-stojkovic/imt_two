@@ -4,7 +4,7 @@ const Disclaimer = () => {
       <div className="disclaimer">
         <p>
           ODRICANJE OD ODGOVORNOSTI: Informacije koje se odnose na traktore
-          TAFE, brenda IMT I TAFE, slike proizvoda, specifikacije i dostupnost
+          TAFE, brenda IMT i TAFE, slike proizvoda, specifikacije i dostupnost
           koje se nalaze na veb lokacijama, digitalnim i platformama društvenih
           medija podležu stalnoj reviziji i nadogradnji i možda neće odražavati
           ažurirane informacije. Savetujemo vam da kontaktirate regionalnog
@@ -15,15 +15,15 @@ const Disclaimer = () => {
           obaveštenja.
         </p>
         <p>
-          Industrija mehanizacije I traktora ne verifikuje, ne odobrava niti
+          Industrija mehanizacije i traktora ne verifikuje, ne odobrava niti
           odobrava bilo koju informaciju koja se odnosi na sebe, svoje
           proizvode, njihovu cenu, specifikaciju, dostupnost itd. koje pruža
           treća strana na bilo kojoj platformi, uključujući veb-sajtove,
           platforme društvenih medija, nedigitalne platforme - štampani mediji,
           trgovinski časopisi, publikacije itd. Ovim se jasno stavlja na znanje
           da se nijedna informacija dobijena od takve treće strane neće
-          tretirati kao tačna i Industrija mehanizacije I traktora neće biti
-          odgovoran za iste ni na koji način.
+          tretirati kao tačna i industrija mehanizacije i traktora neće biti
+          odgovorna za iste ni na koji način.
         </p>
       </div>
     </>
